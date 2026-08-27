@@ -140,7 +140,7 @@ export default function App() {
                 <label className="block text-xs font-bold text-gray-300">소방 캐릭터 선택</label>
                 <span className="truncate text-xs font-bold text-yellow-300">{getAvatarName(selectedAvatar)}</span>
               </div>
-              <div className="grid grid-cols-5 gap-2">
+              <div className="grid max-h-72 grid-cols-5 gap-2 overflow-y-auto px-1 py-1 scrollbar-thin">
                 {AVATAR_OPTIONS.map((avatar) => (
                   <button
                     type="button"
