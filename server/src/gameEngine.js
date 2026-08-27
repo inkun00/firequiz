@@ -42,8 +42,8 @@ class GameEngine {
       player.isFever = player.streak >= 3;
 
       // 2. 카트라이더 아이템 획득 (슬롯 최대 2개)
-      // 정답 시 50% 확률 또는 2연속 정답 시 아이템 획득
-      if (player.itemSlots.length < 2 && (Math.random() < 0.6 || player.streak % 2 === 0)) {
+      // 연속 정답 횟수의 홀짝과 관계없이 정답마다 50% 확률로 아이템 획득
+      if (player.itemSlots.length < 2 && Math.random() < 0.5) {
         const itemKeys = Object.keys(ITEMS);
         const randomKey = itemKeys[Math.floor(Math.random() * itemKeys.length)];
         gainedItem = { ...ITEMS[randomKey], slotId: Date.now() + Math.random() };
