@@ -569,11 +569,11 @@ export default function KartTrack3D({
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x60a5fa);
-    scene.fog = new THREE.Fog(0x8bc7ed, 38, 150);
-    const camera = new THREE.PerspectiveCamera(58, 1, 0.1, 400);
     const isBroadcast = latestRef.current.mode === 'broadcast';
-    camera.position.set(0, isBroadcast ? 10.5 : 4.2, isBroadcast ? 14 : 9.6);
-    camera.lookAt(0, isBroadcast ? 0.4 : 0.85, isBroadcast ? -18 : -7.5);
+    scene.fog = new THREE.Fog(0x8bc7ed, isBroadcast ? 72 : 38, isBroadcast ? 210 : 150);
+    const camera = new THREE.PerspectiveCamera(isBroadcast ? 52 : 58, 1, 0.1, 400);
+    camera.position.set(0, isBroadcast ? 52 : 4.2, isBroadcast ? 27 : 9.6);
+    camera.lookAt(0, isBroadcast ? 0 : 0.85, isBroadcast ? -24 : -7.5);
 
     scene.add(new THREE.HemisphereLight(0xdbeafe, 0x365314, 2.1));
     const sun = new THREE.DirectionalLight(0xfff1c7, 3.2);
@@ -670,7 +670,7 @@ export default function KartTrack3D({
       const myIndex = Math.max(0, source.findIndex((player) => player.id === current.myId));
       let racers;
       if (current.mode === 'broadcast') {
-        racers = source.slice(0, 12);
+        racers = source.slice(0, 30);
       } else {
         const start = Math.max(0, myIndex - 6);
         racers = source.slice(start, Math.min(source.length, myIndex + 1));
@@ -700,6 +700,7 @@ export default function KartTrack3D({
           label.position.y = 2.55;
           group.add(label);
           group.position.set(0, 0, current.mode === 'broadcast' ? -10 : 2);
+          if (current.mode === 'broadcast') group.scale.setScalar(0.76);
           scene.add(group);
           object = { group, player, label, isMine };
           racerObjects.set(player.id, object);
@@ -721,7 +722,8 @@ export default function KartTrack3D({
         const lane = LANE_X[hashString(player.id) % LANE_X.length];
         let targetZ;
         if (current.mode === 'broadcast') {
-          targetZ = -31 + Math.min(11, (player.rank || visibleIndex + 1) - 1) * 3.15;
+          const rankIndex = Math.max(0, (player.rank || visibleIndex + 1) - 1);
+          targetZ = -53 + Math.min(29, rankIndex) * 2.15;
         } else if (isMine) {
           targetZ = 2.15;
         } else {
@@ -821,11 +823,18 @@ export default function KartTrack3D({
       const stopped = current.isFrozen || current.isPaused;
       const sway = stopped ? 0 : Math.sin(elapsed * 0.72) * (current.isFever ? 0.24 : 0.12);
       const bob = stopped ? 0 : Math.sin(elapsed * 7.5) * (current.isFever ? 0.055 : 0.025);
-      const targetCameraY = broadcastMode ? 10.5 : (current.isFever ? 3.85 : 4.2);
-      camera.position.x = THREE.MathUtils.lerp(camera.position.x, sway, 0.04);
-      camera.position.y = THREE.MathUtils.lerp(camera.position.y, targetCameraY + bob, 0.05);
-      camera.position.z = THREE.MathUtils.lerp(camera.position.z, broadcastMode ? 14 : (current.isFever ? 9.15 : 9.6), 0.04);
-      camera.lookAt(sway * 0.4, broadcastMode ? 0.45 : 0.88, broadcastMode ? -18 : -7.5);
+      if (broadcastMode) {
+        camera.position.x = THREE.MathUtils.lerp(camera.position.x, 0, 0.05);
+        camera.position.y = THREE.MathUtils.lerp(camera.position.y, 52, 0.05);
+        camera.position.z = THREE.MathUtils.lerp(camera.position.z, 27, 0.05);
+        camera.lookAt(0, 0, -24);
+      } else {
+        const targetCameraY = current.isFever ? 3.85 : 4.2;
+        camera.position.x = THREE.MathUtils.lerp(camera.position.x, sway, 0.04);
+        camera.position.y = THREE.MathUtils.lerp(camera.position.y, targetCameraY + bob, 0.05);
+        camera.position.z = THREE.MathUtils.lerp(camera.position.z, current.isFever ? 9.15 : 9.6, 0.04);
+        camera.lookAt(sway * 0.4, 0.88, -7.5);
+      }
       renderer.render(scene, camera);
     };
 
@@ -853,8 +862,8 @@ export default function KartTrack3D({
         <div className="flex flex-wrap items-center gap-2">
           <div className="flex items-center gap-1.5 rounded-full border border-cyan-300/80 bg-slate-950/85 px-3 py-1 text-cyan-200 shadow-lg backdrop-blur-md">
             {mode === 'broadcast' ? <Radio className="h-4 w-4 animate-pulse text-red-400" /> : <Gauge className="h-4 w-4" />}
-            <span className="font-['Jua'] text-base font-black">{mode === 'broadcast' ? 'LIVE' : speed}</span>
-            <span className="text-[10px] font-bold">{mode === 'broadcast' ? '3D 중계' : 'km/h'}</span>
+            <span className="font-['Jua'] text-base font-black">{mode === 'broadcast' ? 'TOP VIEW' : speed}</span>
+            <span className="text-[10px] font-bold">{mode === 'broadcast' ? '전체 트랙 중계' : 'km/h'}</span>
           </div>
           {Number.isFinite(raceTimeSec) && (
             <div className={`flex items-center gap-1.5 rounded-full border px-3 py-1 shadow-lg backdrop-blur-md ${
