@@ -5,7 +5,10 @@ import HostScreen from './components/HostScreen';
 import PlayerScreen from './components/PlayerScreen';
 import { AVATAR_OPTIONS, DEFAULT_AVATAR, getAvatarName } from './data/avatarOptions';
 
-const socket = io('http://localhost:4000', {
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL
+  || (import.meta.env.DEV ? 'http://localhost:4000' : window.location.origin);
+
+const socket = io(SOCKET_URL, {
   transports: ['websocket', 'polling']
 });
 

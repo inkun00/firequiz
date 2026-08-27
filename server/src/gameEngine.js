@@ -8,7 +8,7 @@
 const ITEMS = {
   BONUS: { id: 'BONUS', name: '점수 부스터', desc: '랜덤 보너스 점수(+300~800점)와 급가속!', icon: '🚀', color: 'from-amber-500 to-yellow-400' },
   STEAL: { id: 'STEAL', name: '점수 뺏기', desc: '앞 순위 친구의 점수를 뺏어옵니다(-400점/+400점)!', icon: '🧲', color: 'from-purple-600 to-indigo-600' },
-  ICE_BOMB: { id: 'ICE_BOMB', name: '얼음 폭탄', desc: '주변 친구 1명을 얼려 4초간 행동 불가로 만듭니다!', icon: '🧊', color: 'from-cyan-500 to-blue-600' }
+  ICE_BOMB: { id: 'ICE_BOMB', name: '얼음 폭탄', desc: '나보다 앞선 플레이어 중 무작위 1명을 4초간 얼립니다!', icon: '🧊', color: 'from-cyan-500 to-blue-600' }
 };
 
 class GameEngine {
@@ -129,28 +129,27 @@ class GameEngine {
       }
     } 
     else if (item.id === 'ICE_BOMB') {
-      // 3. 얼음 폭탄 (지정된 타깃 또는 내 앞 순위 친구 4초간 얼리기)
-      let target = null;
-      if (targetPlayerId) {
-        target = this.room.players.get(targetPlayerId);
-      } else {
-        const leaderboard = this.calculateLeaderboard(Array.from(this.room.players.values()));
-        const myIdx = leaderboard.findIndex(p => p.id === userPlayer.id);
-        if (myIdx > 0) {
-          target = this.room.players.get(leaderboard[myIdx - 1].id);
-        } else if (leaderboard.length > 1) {
-          target = this.room.players.get(leaderboard[1].id);
-        }
+      // 3. 얼음 폭탄 (내 현재 순위보다 앞선 플레이어 중 무작위 1명을 4초간 얼리기)
+      const leaderboard = this.calculateLeaderboard(Array.from(this.room.players.values()));
+      const myIdx = leaderboard.findIndex(p => p.id === userPlayer.id);
+      const aheadPlayers = myIdx > 0 ? leaderboard.slice(0, myIdx) : [];
+
+      if (aheadPlayers.length === 0) {
+        // 1위는 공격할 대상이 없으므로 아이템을 소모하지 않습니다.
+        userPlayer.itemSlots.splice(slotIndex, 0, item);
+        effectResult.success = false;
+        effectResult.message = `${userPlayer.nickname}님보다 앞선 플레이어가 없어 [얼음 폭탄]을 사용할 수 없습니다.`;
+        return effectResult;
       }
 
-      if (target) {
-        const freezeDuration = 4000;
-        target.iceFrozenUntil = Math.max(target.iceFrozenUntil || 0, Date.now() + freezeDuration);
-        effectResult.targetName = target.nickname;
-        effectResult.targetId = target.id;
-        effectResult.freezeDuration = freezeDuration;
-        effectResult.message = `${userPlayer.nickname}님이 ${target.nickname}님에게 [얼음 폭탄]을 투척하여 얼렸습니다! 🧊`;
-      }
+      const randomTarget = aheadPlayers[Math.floor(Math.random() * aheadPlayers.length)];
+      const target = this.room.players.get(randomTarget.id);
+      const freezeDuration = 4000;
+      target.iceFrozenUntil = Math.max(target.iceFrozenUntil || 0, Date.now() + freezeDuration);
+      effectResult.targetName = target.nickname;
+      effectResult.targetId = target.id;
+      effectResult.freezeDuration = freezeDuration;
+      effectResult.message = `${userPlayer.nickname}님이 ${target.nickname}님에게 [얼음 폭탄]을 투척하여 얼렸습니다! 🧊`;
     }
 
     return effectResult;
