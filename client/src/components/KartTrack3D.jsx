@@ -17,6 +17,8 @@ const KART_COLORS = {
 const LANE_X = [-3.9, -1.35, 1.35, 3.9];
 const TRACK_LENGTH = 280;
 const SEGMENT_LENGTH = 10;
+const BROADCAST_MAX_ADVANCE = 62;
+const BROADCAST_SCORE_SCALE = 9000;
 const KART_SHEET_COLUMNS = 4;
 const KART_SHEET_ROWS = 2;
 const kartCanvasCache = new Map();
@@ -667,6 +669,8 @@ export default function KartTrack3D({
         score: 0, carColor: 'RED', avatar: current.myAvatar,
         isFever: current.isFever, isFrozen: current.isFrozen
       }];
+      const broadcastHasScore = current.mode === 'broadcast'
+        && source.some((player) => Number(player.score) > 0);
       const myIndex = Math.max(0, source.findIndex((player) => player.id === current.myId));
       let racers;
       if (current.mode === 'broadcast') {
@@ -723,7 +727,15 @@ export default function KartTrack3D({
         let targetZ;
         if (current.mode === 'broadcast') {
           const rankIndex = Math.max(0, (player.rank || visibleIndex + 1) - 1);
-          targetZ = -53 + Math.min(29, rankIndex) * 2.15;
+          if (broadcastHasScore) {
+            const score = Math.max(0, Number(player.score) || 0);
+            const scoreAdvance = BROADCAST_MAX_ADVANCE
+              * (1 - Math.exp(-score / BROADCAST_SCORE_SCALE));
+            targetZ = 9 - scoreAdvance + Math.min(29, rankIndex) * 0.06;
+          } else {
+            // 출발 전에는 4열 스타팅 그리드로 정렬합니다.
+            targetZ = -5 + Math.floor(rankIndex / LANE_X.length) * 2.35;
+          }
         } else if (isMine) {
           targetZ = 2.15;
         } else {
