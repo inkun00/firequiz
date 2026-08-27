@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #030712;
+    color: #f8fafc;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-synthesis: none;
+    letter-spacing: -0.012em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  /* 기존 장식 글꼴과 900 굵기를 읽기 편한 본문 계열로 통일 */
+  [class~="font-['Jua']"] {
+    font-family: 'IBM Plex Sans KR', sans-serif !important;
+  }
+
+  .font-black {
+    font-weight: 700;
+  }
+
+  .font-bold {
+    font-weight: 600;
+  }
+}
+
+/* 커스텀 스크롤바 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(239, 68, 68, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 68, 68, 1);
+}

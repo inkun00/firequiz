@@ -1,0 +1,15 @@
+node_modules/
+client/node_modules/
+server/node_modules/
+client/dist/
+
+.env
+.env.*
+!.env.example
+
+*.log
+.DS_Store
+Thumbs.db
+
+# Reference material exceeds GitHub's per-file size limit and is not required at runtime.
+2026불조심길라잡이.pdf
