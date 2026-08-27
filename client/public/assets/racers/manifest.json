@@ -1,14 +1,14 @@
 {
-  "version": 1,
+  "version": 2,
   "spriteFormat": {
     "layout": "4x2",
     "columns": 4,
     "rows": 2,
     "frameCount": 8,
-    "sheetWidth": 1536,
-    "sheetHeight": 1024,
-    "frameWidth": 384,
-    "frameHeight": 512,
+    "sheetWidth": 768,
+    "sheetHeight": 512,
+    "frameWidth": 192,
+    "frameHeight": 256,
     "frameOrder": "left-to-right, top-to-bottom",
     "fps": 12,
     "loop": true,
@@ -20,100 +20,100 @@
       "nameKo": "엠버 대장",
       "nameEn": "Ember Captain",
       "color": "RED",
-      "character": "/assets/racers/characters/01-ember-captain.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/01-ember-captain.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Ember Engine",
-      "kartSprite": "/assets/racers/karts/01-ember-engine-sheet.png"
+      "kartSprite": "/assets/racers/karts/01-ember-engine-sheet.webp"
     },
     {
       "id": "aqua-mechanic",
       "nameKo": "아쿠아 정비사",
       "nameEn": "Aqua Mechanic",
       "color": "BLUE",
-      "character": "/assets/racers/characters/02-aqua-mechanic.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/02-aqua-mechanic.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Aqua Hydrojet",
-      "kartSprite": "/assets/racers/karts/02-aqua-hydrojet-sheet.png"
+      "kartSprite": "/assets/racers/karts/02-aqua-hydrojet-sheet.webp"
     },
     {
       "id": "volt-responder",
       "nameKo": "볼트 구조대원",
       "nameEn": "Volt Responder",
       "color": "YELLOW",
-      "character": "/assets/racers/characters/03-volt-responder.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/03-volt-responder.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Volt Flash",
-      "kartSprite": "/assets/racers/karts/03-volt-flash-sheet.png"
+      "kartSprite": "/assets/racers/karts/03-volt-flash-sheet.webp"
     },
     {
       "id": "moss-guardian",
       "nameKo": "모스 수호대원",
       "nameEn": "Moss Guardian",
       "color": "GREEN",
-      "character": "/assets/racers/characters/04-moss-guardian.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/04-moss-guardian.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Moss Canopy",
-      "kartSprite": "/assets/racers/karts/04-moss-canopy-sheet.png"
+      "kartSprite": "/assets/racers/karts/04-moss-canopy-sheet.webp"
     },
     {
       "id": "violet-medic",
       "nameKo": "바이올렛 응급대원",
       "nameEn": "Violet Medic",
       "color": "PURPLE",
-      "character": "/assets/racers/characters/05-violet-medic.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/05-violet-medic.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Violet Pulse",
-      "kartSprite": "/assets/racers/karts/05-violet-pulse-sheet.png"
+      "kartSprite": "/assets/racers/karts/05-violet-pulse-sheet.webp"
     },
     {
       "id": "blaze-fox",
       "nameKo": "블레이즈 여우",
       "nameEn": "Blaze Fox",
       "color": "ORANGE",
-      "character": "/assets/racers/characters/06-blaze-fox.png",
-      "characterSize": { "width": 1182, "height": 1330 },
+      "character": "/assets/racers/characters/06-blaze-fox.webp",
+      "characterSize": { "width": 512, "height": 576 },
       "kartName": "Blaze Scout",
-      "kartSprite": "/assets/racers/karts/06-blaze-scout-sheet.png"
+      "kartSprite": "/assets/racers/karts/06-blaze-scout-sheet.webp"
     },
     {
       "id": "frost-penguin",
       "nameKo": "프로스트 펭귄",
       "nameEn": "Frost Penguin",
       "color": "CYAN",
-      "character": "/assets/racers/characters/07-frost-penguin.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/07-frost-penguin.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Frost Glider",
-      "kartSprite": "/assets/racers/karts/07-frost-glider-sheet.png"
+      "kartSprite": "/assets/racers/karts/07-frost-glider-sheet.webp"
     },
     {
       "id": "signal-bunny",
       "nameKo": "시그널 버니",
       "nameEn": "Signal Bunny",
       "color": "PINK",
-      "character": "/assets/racers/characters/08-signal-bunny.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/08-signal-bunny.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Signal Hopper",
-      "kartSprite": "/assets/racers/karts/08-signal-hopper-sheet.png"
+      "kartSprite": "/assets/racers/karts/08-signal-hopper-sheet.webp"
     },
     {
       "id": "patch-pup",
       "nameKo": "패치 퍼피",
       "nameEn": "Patch Pup",
       "color": "BLACK_WHITE_RED",
-      "character": "/assets/racers/characters/09-patch-pup.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/09-patch-pup.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Patch Patrol",
-      "kartSprite": "/assets/racers/karts/09-patch-patrol-sheet.png"
+      "kartSprite": "/assets/racers/karts/09-patch-patrol-sheet.webp"
     },
     {
       "id": "solar-lion",
       "nameKo": "솔라 라이온",
       "nameEn": "Solar Lion",
       "color": "GOLD",
-      "character": "/assets/racers/characters/10-solar-lion.png",
-      "characterSize": { "width": 1024, "height": 1536 },
+      "character": "/assets/racers/characters/10-solar-lion.webp",
+      "characterSize": { "width": 512, "height": 768 },
       "kartName": "Solar Roar",
-      "kartSprite": "/assets/racers/karts/10-solar-roar-sheet.png"
+      "kartSprite": "/assets/racers/karts/10-solar-roar-sheet.webp"
     }
   ]
 }

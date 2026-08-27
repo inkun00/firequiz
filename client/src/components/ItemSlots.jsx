@@ -7,8 +7,8 @@ export default function ItemSlots({ itemSlots = [], onUseItem, disabled = false 
 
   // 아이템별 3D 이미지 매핑
   const getItemImage = (itemId) => {
-    if (itemId === 'ICE_BOMB') return '/assets/ice_bomb.jpg';
-    if (itemId === 'BONUS' || itemId === 'STEAL') return '/assets/item_box.jpg';
+    if (itemId === 'ICE_BOMB') return '/assets/ice_bomb.webp';
+    if (itemId === 'BONUS' || itemId === 'STEAL') return '/assets/item_box.webp';
     return null;
   };
 

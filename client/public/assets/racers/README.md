@@ -1,27 +1,27 @@
 # Fire Quiz Racer Assets
 
-ImageGen으로 제작한 독자적인 소방 안전 레이서 10종입니다. 캐릭터와 카트 모두 PNG 알파 채널을 포함합니다.
+ImageGen으로 제작한 독자적인 소방 안전 레이서 캐릭터 30종과 카트 10종입니다. 배포 이미지는 WebP로 최적화했으며 원본에 알파 채널이 있는 경우 그대로 유지합니다.
 
 ## 폴더
 
-- `characters/`: 캐릭터 정적 전신 이미지 10종
+- `characters/`: 캐릭터 정적 전신 이미지 30종
 - `karts/`: 카트 주행 애니메이션 스프라이트 시트 10종
-- `manifest.json`: 캐릭터·카트 경로 및 프레임 메타데이터
+- `manifest.json`: 원본 캐릭터·카트 10종의 경로 및 프레임 메타데이터
 
 ## 카트 스프라이트 규격
 
-- 시트: 1536×1024px
+- 시트: 768×512px
 - 배열: 4열×2행
-- 프레임: 384×512px, 총 8프레임
+- 프레임: 192×256px, 총 8프레임
 - 순서: 왼쪽에서 오른쪽, 위 행에서 아래 행
 - 권장 속도: 12fps, 무한 반복
 - 권장 기준점: bottom-center
 - 프레임 구성: 기본 → 서스펜션 압축 → 좌측 기울기 → 배기 → 우측 기울기 → 반동 → 부스터 → 기본
 
 ```js
-const frameX = (frame % 4) * 384;
-const frameY = Math.floor(frame / 4) * 512;
-ctx.drawImage(sheet, frameX, frameY, 384, 512, x, y, width, height);
+const frameX = (frame % 4) * 192;
+const frameY = Math.floor(frame / 4) * 256;
+ctx.drawImage(sheet, frameX, frameY, 192, 256, x, y, width, height);
 ```
 
 ## ImageGen 프롬프트 프로필

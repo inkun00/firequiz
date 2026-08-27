@@ -87,7 +87,7 @@ export default function App() {
         {/* 메인 3D 카트 로고 & 타이틀 */}
         <div className="text-center mb-6">
           <div className="relative w-28 h-28 mx-auto mb-3 rounded-3xl overflow-hidden border-4 border-yellow-400 shadow-[0_0_35px_rgba(250,204,21,0.5)] animate-bounce-short">
-            <img src="/assets/kart_red.jpg" alt="Fire Kart 119" className="w-full h-full object-cover" />
+            <img src="/assets/kart_red.webp" alt="Fire Kart 119" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-4xl md:text-5xl font-black font-['Jua'] tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-400 to-orange-400">
             불조심 배틀 119

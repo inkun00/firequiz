@@ -290,7 +290,7 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
               {isIceFrozen ? (
                 <>
                   <div className="w-20 h-20 mb-2 rounded-2xl overflow-hidden border-2 border-cyan-300 shadow-[0_0_20px_rgba(6,182,212,0.8)] animate-spin">
-                    <img src="/assets/ice_bomb.jpg" alt="Frozen" className="w-full h-full object-cover" />
+                    <img src="/assets/ice_bomb.webp" alt="Frozen" className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-2xl font-black text-cyan-300 font-['Jua'] mb-1">
                     🧊 얼음 폭탄 피격!
