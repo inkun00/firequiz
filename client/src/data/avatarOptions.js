@@ -35,14 +35,26 @@ export const DEFAULT_AVATAR = AVATAR_OPTIONS[0].src;
 export const DEFAULT_KART_SHEET = AVATAR_OPTIONS[0].kartSrc;
 export const DEFAULT_KART_STRAIGHT = AVATAR_OPTIONS[0].straightSrc;
 
+export function normalizeAvatarSrc(src) {
+  if (typeof src !== 'string') return src;
+
+  return src.replace(
+    /^(\/assets\/racers\/characters\/[^?#]+)\.png([?#].*)?$/i,
+    '$1.webp$2'
+  );
+}
+
 export function getAvatarName(src) {
-  return AVATAR_OPTIONS.find((avatar) => avatar.src === src)?.name || '소방 레이서';
+  const normalizedSrc = normalizeAvatarSrc(src);
+  return AVATAR_OPTIONS.find((avatar) => avatar.src === normalizedSrc)?.name || '소방 레이서';
 }
 
 export function getKartSheet(src) {
-  return AVATAR_OPTIONS.find((avatar) => avatar.src === src)?.kartSrc || DEFAULT_KART_SHEET;
+  const normalizedSrc = normalizeAvatarSrc(src);
+  return AVATAR_OPTIONS.find((avatar) => avatar.src === normalizedSrc)?.kartSrc || DEFAULT_KART_SHEET;
 }
 
 export function getKartStraight(src) {
-  return AVATAR_OPTIONS.find((avatar) => avatar.src === src)?.straightSrc || DEFAULT_KART_STRAIGHT;
+  const normalizedSrc = normalizeAvatarSrc(src);
+  return AVATAR_OPTIONS.find((avatar) => avatar.src === normalizedSrc)?.straightSrc || DEFAULT_KART_STRAIGHT;
 }

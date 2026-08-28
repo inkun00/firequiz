@@ -11,18 +11,22 @@ const BOT_NAMES = [
   "손연우", "양유나", "백정우", "허가은", "노현우"
 ];
 
-const AVATARS = [
-  '/assets/racers/characters/01-ember-captain.png',
-  '/assets/racers/characters/02-aqua-mechanic.png',
-  '/assets/racers/characters/03-volt-responder.png',
-  '/assets/racers/characters/04-moss-guardian.png',
-  '/assets/racers/characters/05-violet-medic.png',
-  '/assets/racers/characters/06-blaze-fox.png',
-  '/assets/racers/characters/07-frost-penguin.png',
-  '/assets/racers/characters/08-signal-bunny.png',
-  '/assets/racers/characters/09-patch-pup.png',
-  '/assets/racers/characters/10-solar-lion.png'
+const AVATAR_FILES = [
+  '01-ember-captain', '02-aqua-mechanic', '03-volt-responder', '04-moss-guardian',
+  '05-violet-medic', '06-blaze-fox', '07-frost-penguin', '08-signal-bunny',
+  '09-patch-pup', '10-solar-lion', '11-cinder-scout', '12-foam-engineer',
+  '13-rescue-raccoon', '14-ember-bear', '15-hydro-otter', '16-siren-cat',
+  '17-ladder-giraffe', '18-spark-squirrel', '19-shield-rhino', '20-cloud-koala',
+  '21-neon-dragon', '22-comet-hawk', '23-ruby-panda', '24-mint-turtle',
+  '25-torch-tiger', '26-bubble-dolphin', '27-copper-robot', '28-luna-wolf',
+  '29-coral-deer', '30-nova-unicorn'
 ];
+const AVATARS = AVATAR_FILES.map(
+  fileName => `/assets/racers/characters/${fileName}.webp`
+);
+const normalizeAvatarPath = avatar => typeof avatar === 'string'
+  ? avatar.replace(/^(\/assets\/racers\/characters\/[^?#]+)\.png([?#].*)?$/i, '$1.webp$2')
+  : avatar;
 const CAR_COLORS = ['RED', 'BLUE', 'YELLOW', 'GREEN', 'PURPLE', 'ORANGE', 'CYAN', 'PINK'];
 
 class Room {
@@ -46,11 +50,12 @@ class Room {
     }
 
     const shuffledQuestions = [...this.questions].sort(() => Math.random() - 0.5);
+    const normalizedAvatar = normalizeAvatarPath(avatar);
 
     const player = {
       id: socketId,
       nickname: nickname || `레이서_${this.players.size + 1}`,
-      avatar: AVATARS.includes(avatar) ? avatar : AVATARS[this.players.size % AVATARS.length],
+      avatar: AVATARS.includes(normalizedAvatar) ? normalizedAvatar : AVATARS[this.players.size % AVATARS.length],
       carColor: CAR_COLORS[this.players.size % CAR_COLORS.length],
       score: 0,
       correctCount: 0,
