@@ -149,6 +149,7 @@ class GameEngine {
       effectResult.targetName = target.nickname;
       effectResult.targetId = target.id;
       effectResult.freezeDuration = freezeDuration;
+      effectResult.lockedUntil = target.iceFrozenUntil;
       effectResult.message = `${userPlayer.nickname}님이 ${target.nickname}님에게 [얼음 폭탄]을 투척하여 얼렸습니다! 🧊`;
     }
 

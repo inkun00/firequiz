@@ -3,6 +3,9 @@
  */
 const quizData = require('./quizData');
 const { GameEngine } = require('./gameEngine');
+const { randomUUID } = require('crypto');
+
+const QUESTION_TIME_LIMIT_SEC = 20;
 
 const BOT_NAMES = [
   "김민준", "이서연", "박도윤", "최서아", "정도현", "강지우", "조은우", "윤지아",
@@ -73,11 +76,103 @@ class Room {
       shuffledQuestions: shuffledQuestions,
       currentQuestion: null,
       questionStartTime: 0,
-      isFinished: false
+      isFinished: false,
+      sessionToken: randomUUID(),
+      isConnected: true,
+      answeredQuestionId: null,
+      nextQuestionAt: 0,
+      nextQuestionTimer: null
     };
 
     this.players.set(socketId, player);
     return { success: true, player };
+  }
+
+  getClientPlayer(player) {
+    return {
+      id: player.id,
+      nickname: player.nickname,
+      avatar: player.avatar,
+      carColor: player.carColor,
+      score: player.score,
+      correctCount: player.correctCount,
+      progress: player.progress,
+      isFinished: player.isFinished,
+      resumeToken: player.sessionToken
+    };
+  }
+
+  getQuestionPayload(player) {
+    const q = player.currentQuestion;
+    if (!q) return null;
+
+    return {
+      id: q.id,
+      part: q.part,
+      question: q.question,
+      options: q.options,
+      category: q.category,
+      timeLimit: QUESTION_TIME_LIMIT_SEC,
+      currentNumber: player.progress + 1,
+      totalQuestions: player.shuffledQuestions.length
+    };
+  }
+
+  getPlayerSnapshot(player) {
+    const now = Date.now();
+    const lockedUntil = Math.max(player.freezeUntil || 0, player.iceFrozenUntil || 0);
+    const awaitingNextQuestion = Boolean(
+      player.currentQuestion && player.answeredQuestionId === player.currentQuestion.id
+    );
+    const questionElapsedMs = player.questionStartTime
+      ? Math.max(0, now - player.questionStartTime)
+      : 0;
+
+    return {
+      status: this.status,
+      player: this.getClientPlayer(player),
+      leaderboard: this.gameEngine.calculateLeaderboard(Array.from(this.players.values())),
+      currentQuestion: this.status === 'RACING' ? this.getQuestionPayload(player) : null,
+      questionElapsedMs,
+      questionTimeLeftSec: Math.max(
+        0,
+        Math.ceil((QUESTION_TIME_LIMIT_SEC * 1000 - questionElapsedMs) / 1000)
+      ),
+      awaitingNextQuestion,
+      nextQuestionInMs: Math.max(0, (player.nextQuestionAt || 0) - now),
+      itemSlots: player.itemSlots,
+      consecutiveWrong: player.consecutiveWrong,
+      lockedUntil,
+      lockType: player.iceFrozenUntil > now ? 'ICE_BOMB' : lockedUntil > now ? 'PENALTY' : null,
+      remainingSec: this.status === 'RACING'
+        ? Math.max(0, Math.ceil((this.raceEndsAt - now) / 1000))
+        : this.status === 'FINAL' ? 0 : null,
+      endReason: this.finalEndReason
+    };
+  }
+
+  resumePlayer(socketId, sessionToken) {
+    if (!sessionToken) return null;
+
+    const player = Array.from(this.players.values()).find(
+      candidate => !candidate.isBot && candidate.sessionToken === sessionToken
+    );
+    if (!player) return null;
+
+    const previousSocketId = player.id;
+    if (previousSocketId !== socketId) {
+      this.players.delete(previousSocketId);
+      player.id = socketId;
+      this.players.set(socketId, player);
+    }
+    player.isConnected = true;
+
+    return { player, previousSocketId };
+  }
+
+  markPlayerDisconnected(socketId) {
+    const player = this.players.get(socketId);
+    if (player && !player.isBot) player.isConnected = false;
   }
 
   fillWithBots(targetCount = 30) {
@@ -146,11 +241,16 @@ class Room {
       player.currentQuestion = null;
       player.questionStartTime = 0;
       player.isFinished = false;
+      player.answeredQuestionId = null;
+      player.nextQuestionAt = 0;
+      clearTimeout(player.nextQuestionTimer);
+      player.nextQuestionTimer = null;
     }
   }
 
   startRace(io) {
     this.status = 'RACING';
+    this.finalEndReason = null;
     this.raceStartTime = Date.now();
     this.raceEndsAt = this.raceStartTime + (this.raceDurationSec * 1000);
     clearTimeout(this.raceEndTimeout);
@@ -187,8 +287,15 @@ class Room {
   }
 
   sendNextQuestionToPlayer(player, io) {
+    clearTimeout(player.nextQuestionTimer);
+    player.nextQuestionTimer = null;
+    player.nextQuestionAt = 0;
+    player.answeredQuestionId = null;
+
     if (player.progress >= player.shuffledQuestions.length) {
       player.isFinished = true;
+      player.currentQuestion = null;
+      player.questionStartTime = 0;
       if (!player.isBot) {
         io.to(player.id).emit('player_race_finished', {
           score: player.score,
@@ -204,52 +311,77 @@ class Room {
 
     if (!player.isBot) {
       io.to(player.id).emit('new_question_received', {
-        question: {
-          id: q.id,
-          part: q.part,
-          question: q.question,
-          options: q.options,
-          category: q.category,
-          timeLimit: 20,
-          currentNumber: player.progress + 1,
-          totalQuestions: player.shuffledQuestions.length
-        },
+        question: this.getQuestionPayload(player),
         itemSlots: player.itemSlots,
         score: player.score,
-        consecutiveWrong: player.consecutiveWrong
+        consecutiveWrong: player.consecutiveWrong,
+        lockedUntil: Math.max(player.freezeUntil || 0, player.iceFrozenUntil || 0),
+        lockType: player.iceFrozenUntil > Date.now() ? 'ICE_BOMB' : null
       });
     }
   }
 
-  handlePlayerAnswer(socketId, selectedAnswer, timeSpentMs, io) {
+  handlePlayerAnswer(socketId, questionId, selectedAnswer, timeSpentMs, io) {
     const player = this.players.get(socketId);
-    if (!player || !player.currentQuestion || player.isFinished) return;
+    if (!player) return { accepted: false, reason: 'PLAYER_NOT_FOUND' };
+    if (!player.currentQuestion || player.isFinished) {
+      return { accepted: false, reason: 'QUESTION_NOT_AVAILABLE' };
+    }
+    if (questionId != null && questionId !== player.currentQuestion.id) {
+      return { accepted: false, reason: 'QUESTION_MISMATCH' };
+    }
+    if (player.answeredQuestionId === player.currentQuestion.id) {
+      return {
+        accepted: false,
+        reason: 'ALREADY_ANSWERED',
+        retryAfterMs: Math.max(0, (player.nextQuestionAt || 0) - Date.now())
+      };
+    }
 
     const lockedUntil = Math.max(player.freezeUntil || 0, player.iceFrozenUntil || 0);
-    if (lockedUntil > Date.now()) return;
+    if (lockedUntil > Date.now()) {
+      return {
+        accepted: false,
+        reason: 'LOCKED',
+        lockedUntil,
+        lockType: player.iceFrozenUntil > Date.now() ? 'ICE_BOMB' : 'PENALTY'
+      };
+    }
+
+    const answeredQuestion = player.currentQuestion;
+    player.answeredQuestionId = answeredQuestion.id;
 
     const result = this.gameEngine.processAnswer(
       player,
-      player.currentQuestion,
+      answeredQuestion,
       selectedAnswer,
       timeSpentMs
     );
 
+    const activeLockUntil = Math.max(player.freezeUntil || 0, player.iceFrozenUntil || 0);
+
     io.to(socketId).emit('answer_result_feedback', {
       ...result,
       score: player.score,
-      correctAnswerIndex: player.currentQuestion.answerIndex,
-      explanation: player.currentQuestion.explanation,
+      correctAnswerIndex: answeredQuestion.answerIndex,
+      explanation: answeredQuestion.explanation,
       itemSlots: player.itemSlots,
-      freezeUntil: player.freezeUntil
+      lockedUntil: activeLockUntil,
+      lockType: player.iceFrozenUntil > Date.now() ? 'ICE_BOMB' : result.penaltyCooldownMs > 0 ? 'PENALTY' : null
     });
 
     const delay = result.penaltyCooldownMs > 0 ? result.penaltyCooldownMs : 800;
-    setTimeout(() => {
+    clearTimeout(player.nextQuestionTimer);
+    player.nextQuestionAt = Date.now() + delay;
+    player.nextQuestionTimer = setTimeout(() => {
+      player.nextQuestionTimer = null;
+      player.nextQuestionAt = 0;
       if (this.status === 'RACING') {
         this.sendNextQuestionToPlayer(player, io);
       }
     }, delay);
+
+    return { accepted: true, questionId: answeredQuestion.id };
   }
 
   startBotRacerLoop(io) {
@@ -309,6 +441,7 @@ class Room {
   endRace(io, endReason = 'ALL_FINISHED') {
     if (this.status === 'FINAL') return;
     this.status = 'FINAL';
+    this.finalEndReason = endReason;
     clearInterval(this.syncInterval);
     clearTimeout(this.raceEndTimeout);
     this.raceEndTimeout = null;

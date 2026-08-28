@@ -5,7 +5,7 @@ import ItemSlots from './ItemSlots';
 import { sounds } from '../utils/sound';
 import AvatarPortrait from './AvatarPortrait';
 
-export default function PlayerScreen({ socket, pin, playerInfo }) {
+export default function PlayerScreen({ socket, pin, playerInfo, resumeState = null }) {
   const [gameState, setGameState] = useState('LOBBY'); // LOBBY, RACING, FINISHED
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -25,6 +25,82 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
   const questionStartTimeRef = useRef(0);
   const timerRef = useRef(null);
   const raceCountdownTimerRef = useRef(null);
+  const cooldownTimerRef = useRef(null);
+
+  const stopCooldownTimer = () => {
+    clearInterval(cooldownTimerRef.current);
+    cooldownTimerRef.current = null;
+    setFreezeTimeLeft(0);
+    setIsIceFrozen(false);
+  };
+
+  const startCooldownTimer = (lockedUntil, lockType = 'PENALTY') => {
+    clearInterval(cooldownTimerRef.current);
+
+    const updateRemainingTime = () => {
+      const remaining = Math.max(0, Math.ceil((lockedUntil - Date.now()) / 1000));
+      setFreezeTimeLeft(remaining);
+      if (remaining <= 0) {
+        clearInterval(cooldownTimerRef.current);
+        cooldownTimerRef.current = null;
+        setIsIceFrozen(false);
+      }
+    };
+
+    setIsIceFrozen(lockType === 'ICE_BOMB');
+    updateRemainingTime();
+    if (lockedUntil > Date.now()) {
+      cooldownTimerRef.current = setInterval(updateRemainingTime, 250);
+    }
+  };
+
+  const applyPlayerSnapshot = (snapshot) => {
+    if (!snapshot) return;
+
+    setLeaderboard(snapshot.leaderboard || []);
+    setItemSlots(snapshot.itemSlots || []);
+    setConsecutiveWrong(snapshot.consecutiveWrong || 0);
+    if (Number.isFinite(snapshot.remainingSec)) setRemainingSec(snapshot.remainingSec);
+
+    if (snapshot.lockedUntil > Date.now()) {
+      startCooldownTimer(snapshot.lockedUntil, snapshot.lockType);
+    } else {
+      stopCooldownTimer();
+    }
+
+    if (snapshot.status === 'RACING' && snapshot.player?.isFinished) {
+      setGameState('FINISHED');
+      setCurrentQuestion(null);
+      setSelectedOption(null);
+      setRaceEndReason('ALL_QUESTIONS_COMPLETE');
+      return;
+    }
+
+    if (snapshot.status === 'RACING') {
+      setGameState('RACING');
+      setCurrentQuestion(snapshot.currentQuestion || null);
+      setSelectedOption(snapshot.awaitingNextQuestion ? -2 : null);
+      setAnswerFeedback(null);
+      setTimeLeft(snapshot.questionTimeLeftSec ?? snapshot.currentQuestion?.timeLimit ?? 20);
+      questionStartTimeRef.current = Date.now() - (snapshot.questionElapsedMs || 0);
+      return;
+    }
+
+    if (snapshot.status === 'FINAL') {
+      setGameState('FINISHED');
+      setCurrentQuestion(null);
+      setSelectedOption(null);
+      setRemainingSec(0);
+      setRaceEndReason(snapshot.endReason || 'MANUAL');
+      return;
+    }
+
+    setGameState('LOBBY');
+    setCurrentQuestion(null);
+    setSelectedOption(null);
+    setAnswerFeedback(null);
+    setRaceEndReason(null);
+  };
 
   useEffect(() => {
     if (!socket) return;
@@ -47,7 +123,13 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
       }, 1000);
     });
 
-    socket.on('new_question_received', ({ question, itemSlots: slots, score, consecutiveWrong: wrongs }) => {
+    socket.on('new_question_received', ({
+      question,
+      itemSlots: slots,
+      consecutiveWrong: wrongs,
+      lockedUntil = 0,
+      lockType = null
+    }) => {
       setGameState('RACING');
       setCurrentQuestion(question);
       setSelectedOption(null);
@@ -56,6 +138,11 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
       setItemSlots(slots || []);
       setConsecutiveWrong(wrongs || 0);
       questionStartTimeRef.current = Date.now();
+      if (lockedUntil > Date.now()) {
+        startCooldownTimer(lockedUntil, lockType);
+      } else {
+        stopCooldownTimer();
+      }
       sounds.playCountdown();
     });
 
@@ -68,8 +155,8 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
         sounds.playCorrect();
       } else {
         sounds.playWrong();
-        if (data.penaltyCooldownMs > 0) {
-          startCooldownTimer(data.penaltyCooldownMs / 1000);
+        if (data.lockedUntil > Date.now()) {
+          startCooldownTimer(data.lockedUntil, data.lockType);
         }
       }
     });
@@ -85,10 +172,11 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
       setTimeout(() => setItemAlert(null), 3000);
 
       if (effect.targetId === socket.id && effect.type === 'ICE_BOMB') {
-        setIsIceFrozen(true);
-        startCooldownTimer(4);
+        startCooldownTimer(effect.lockedUntil || Date.now() + (effect.freezeDuration || 4000), 'ICE_BOMB');
       }
     });
+
+    socket.on('player_state_sync', applyPlayerSnapshot);
 
     socket.on('item_slots_updated', ({ itemSlots: slots }) => {
       setItemSlots(slots || []);
@@ -105,8 +193,7 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
       setRaceEndReason(endReason || 'MANUAL');
       setCurrentQuestion(null);
       setSelectedOption(null);
-      setFreezeTimeLeft(0);
-      setIsIceFrozen(false);
+      stopCooldownTimer();
       setGameState('FINISHED');
     });
 
@@ -118,8 +205,7 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
       setAnswerFeedback(null);
       setTimeLeft(20);
       setItemSlots([]);
-      setFreezeTimeLeft(0);
-      setIsIceFrozen(false);
+      stopCooldownTimer();
       setConsecutiveWrong(0);
       setRemainingSec(null);
       setRaceEndReason(null);
@@ -133,12 +219,22 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
       socket.off('answer_result_feedback');
       socket.off('race_leaderboard_sync');
       socket.off('item_effect_broadcast');
+      socket.off('player_state_sync');
       socket.off('item_slots_updated');
       socket.off('player_race_finished');
       socket.off('race_game_over');
       socket.off('game_reset_to_lobby');
     };
   }, [socket]);
+
+  useEffect(() => {
+    applyPlayerSnapshot(resumeState);
+  }, [resumeState]);
+
+  useEffect(() => () => {
+    clearInterval(cooldownTimerRef.current);
+    clearInterval(timerRef.current);
+  }, []);
 
   useEffect(() => {
     if (gameState !== 'RACING' || !currentQuestion || selectedOption !== null || freezeTimeLeft > 0) return;
@@ -160,10 +256,21 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
   const handleTimeOut = () => {
     if (selectedOption !== null) return;
     setSelectedOption(-1);
-    socket.emit('player_submit_answer', {
+    socket.timeout(5000).emit('player_submit_answer', {
       pin,
+      questionId: currentQuestion?.id,
       selectedAnswer: -1,
       timeSpentMs: 20000
+    }, (error, response) => {
+      if (!error && response?.accepted) return;
+      if (response?.reason === 'ALREADY_ANSWERED') {
+        setSelectedOption(-2);
+        return;
+      }
+      setSelectedOption(null);
+      if (response?.lockedUntil > Date.now()) {
+        startCooldownTimer(response.lockedUntil, response.lockType);
+      }
     });
   };
 
@@ -174,10 +281,21 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
     setSelectedOption(index);
     clearInterval(timerRef.current);
 
-    socket.emit('player_submit_answer', {
+    socket.timeout(5000).emit('player_submit_answer', {
       pin,
+      questionId: currentQuestion?.id,
       selectedAnswer: index,
       timeSpentMs
+    }, (error, response) => {
+      if (!error && response?.accepted) return;
+      if (response?.reason === 'ALREADY_ANSWERED') {
+        setSelectedOption(-2);
+        return;
+      }
+      setSelectedOption(null);
+      if (response?.lockedUntil > Date.now()) {
+        startCooldownTimer(response.lockedUntil, response.lockType);
+      }
     });
   };
 
@@ -187,20 +305,6 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
       pin,
       slotIndex
     });
-  };
-
-  const startCooldownTimer = (seconds) => {
-    setFreezeTimeLeft(seconds);
-    const interval = setInterval(() => {
-      setFreezeTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          setIsIceFrozen(false);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
   };
 
   const OPTION_COLORS = [
@@ -281,9 +385,24 @@ export default function PlayerScreen({ socket, pin, playerInfo }) {
         </div>
       )}
 
+      {gameState === 'RACING' && !currentQuestion && (
+        <div className="flex-1 flex flex-col items-center justify-center text-center p-6 bg-slate-900/80 rounded-3xl border border-cyan-400/60 shadow-xl">
+          <div className="text-5xl mb-3 animate-pulse">🔄</div>
+          <h2 className="text-xl font-black text-cyan-300 font-['Jua'] mb-2">레이스 상태 복구 중</h2>
+          <p className="text-sm font-bold text-slate-300">현재 문제를 불러오고 있습니다.</p>
+        </div>
+      )}
+
       {/* 5. 퀴즈 풀이 영역 */}
       {gameState === 'RACING' && currentQuestion && (
         <div className="flex-1 flex flex-col justify-between relative">
+          {selectedOption === -2 && freezeTimeLeft <= 0 && (
+            <div className="absolute inset-0 z-20 flex items-center justify-center rounded-3xl bg-slate-950/70 backdrop-blur-sm">
+              <div className="rounded-2xl border border-cyan-400 bg-slate-900 px-5 py-3 text-sm font-black text-cyan-200 shadow-xl">
+                다음 문제 준비 중...
+              </div>
+            </div>
+          )}
           {/* 빙결 / 오답 쿨다운 오버레이 */}
           {freezeTimeLeft > 0 && (
             <div className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-slate-950/85 backdrop-blur-md rounded-3xl border-2 border-cyan-400 p-6 text-center animate-fade-in">

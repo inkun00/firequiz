@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import { Flame, Users, ArrowRight, Sparkles } from 'lucide-react';
 import HostScreen from './components/HostScreen';
@@ -12,6 +12,40 @@ const socket = io(SOCKET_URL, {
   transports: ['websocket', 'polling']
 });
 
+const PLAYER_SESSION_COOKIE = 'firequiz_player_session';
+const PLAYER_SESSION_MAX_AGE_SEC = 60 * 60 * 24;
+
+function loadPlayerSession() {
+  try {
+    const prefix = `${PLAYER_SESSION_COOKIE}=`;
+    const savedCookie = document.cookie
+      .split('; ')
+      .find(cookie => cookie.startsWith(prefix));
+
+    if (!savedCookie) return null;
+    return JSON.parse(decodeURIComponent(savedCookie.slice(prefix.length)));
+  } catch {
+    return null;
+  }
+}
+
+function savePlayerSession(pin, player) {
+  if (!player?.resumeToken) return;
+
+  const session = encodeURIComponent(JSON.stringify({
+    pin,
+    nickname: player.nickname,
+    resumeToken: player.resumeToken
+  }));
+  const secureAttribute = window.location.protocol === 'https:' ? '; Secure' : '';
+  document.cookie = `${PLAYER_SESSION_COOKIE}=${session}; Path=/; Max-Age=${PLAYER_SESSION_MAX_AGE_SEC}; SameSite=Lax${secureAttribute}`;
+}
+
+function clearPlayerSession() {
+  const secureAttribute = window.location.protocol === 'https:' ? '; Secure' : '';
+  document.cookie = `${PLAYER_SESSION_COOKIE}=; Path=/; Max-Age=0; SameSite=Lax${secureAttribute}`;
+}
+
 export default function App() {
   const [role, setRole] = useState(null);
   const [pin, setPin] = useState('');
@@ -20,10 +54,28 @@ export default function App() {
   const [playerInfo, setPlayerInfo] = useState(null);
   const [errorMsg, setErrorMsg] = useState('');
   const [isConnected, setIsConnected] = useState(socket.connected);
+  const [resumeState, setResumeState] = useState(null);
+  const resumeRequestedForSocketRef = useRef(null);
 
   useEffect(() => {
-    socket.on('connect', () => setIsConnected(true));
-    socket.on('disconnect', () => setIsConnected(false));
+    const requestSavedSession = () => {
+      setIsConnected(true);
+      if (resumeRequestedForSocketRef.current === socket.id) return;
+
+      const savedSession = loadPlayerSession();
+      if (!savedSession?.pin || !savedSession?.resumeToken) return;
+
+      resumeRequestedForSocketRef.current = socket.id;
+      socket.emit('player_resume_room', savedSession);
+    };
+
+    const handleDisconnect = () => {
+      setIsConnected(false);
+      resumeRequestedForSocketRef.current = null;
+    };
+
+    socket.on('connect', requestSavedSession);
+    socket.on('disconnect', handleDisconnect);
 
     socket.on('room_created', ({ pin }) => {
       setPin(pin);
@@ -31,20 +83,49 @@ export default function App() {
     });
 
     socket.on('joined_successfully', ({ player, pin }) => {
+      savePlayerSession(pin, player);
       setPlayerInfo(player);
       setPin(pin);
+      setResumeState(null);
       setRole('PLAYER');
+    });
+
+    socket.on('resumed_successfully', (state) => {
+      savePlayerSession(state.pin, state.player);
+      setPlayerInfo(state.player);
+      setPin(state.pin);
+      setResumeState({ ...state, receivedAt: Date.now() });
+      setErrorMsg('');
+      setRole('PLAYER');
+    });
+
+    socket.on('resume_error', () => {
+      clearPlayerSession();
+      resumeRequestedForSocketRef.current = null;
+    });
+
+    socket.on('player_session_replaced', () => {
+      clearPlayerSession();
+      setPlayerInfo(null);
+      setResumeState(null);
+      setRole(null);
+      setErrorMsg('다른 창에서 이 레이스에 다시 연결했습니다.');
     });
 
     socket.on('join_error', ({ message }) => {
       setErrorMsg(message);
     });
 
+    if (socket.connected) requestSavedSession();
+
     return () => {
-      socket.off('connect');
-      socket.off('disconnect');
+      socket.off('connect', requestSavedSession);
+      socket.off('disconnect', handleDisconnect);
       socket.off('room_created');
       socket.off('joined_successfully');
+      socket.off('resumed_successfully');
+      socket.off('resume_error');
+      socket.off('player_session_replaced');
       socket.off('join_error');
     };
   }, []);
@@ -72,7 +153,14 @@ export default function App() {
   }
 
   if (role === 'PLAYER' && playerInfo) {
-    return <PlayerScreen socket={socket} pin={pin} playerInfo={playerInfo} />;
+    return (
+      <PlayerScreen
+        socket={socket}
+        pin={pin}
+        playerInfo={playerInfo}
+        resumeState={resumeState}
+      />
+    );
   }
 
   return (

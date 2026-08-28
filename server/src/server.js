@@ -54,7 +54,7 @@ io.on('connection', (socket) => {
 
     socket.join(pin);
     socket.emit('joined_successfully', {
-      player: res.player,
+      player: room.getClientPlayer(res.player),
       pin: room.pin
     });
 
@@ -70,7 +70,44 @@ io.on('connection', (socket) => {
     });
   });
 
-  // 3. 호스트: 30명 AI 봇 채우기
+  // 3. 연결이 끊긴 플레이어가 기존 레이스 상태로 복귀
+  socket.on('player_resume_room', ({ pin, resumeToken }) => {
+    const normalizedPin = String(pin || '').trim();
+    const room = roomManager.getRoom(normalizedPin);
+    if (!room) {
+      return socket.emit('resume_error', { reason: 'ROOM_NOT_FOUND' });
+    }
+
+    const resumed = room.resumePlayer(socket.id, resumeToken);
+    if (!resumed) {
+      return socket.emit('resume_error', { reason: 'SESSION_NOT_FOUND' });
+    }
+
+    socket.join(normalizedPin);
+    if (resumed.previousSocketId !== socket.id) {
+      io.to(resumed.previousSocketId).emit('player_session_replaced');
+    }
+
+    socket.emit('resumed_successfully', {
+      pin: normalizedPin,
+      ...room.getPlayerSnapshot(resumed.player)
+    });
+
+    if (room.status === 'LOBBY') {
+      io.to(normalizedPin).emit('lobby_players_updated', {
+        players: Array.from(room.players.values()).map(player => ({
+          id: player.id,
+          nickname: player.nickname,
+          avatar: player.avatar,
+          carColor: player.carColor,
+          isBot: player.isBot
+        })),
+        count: room.players.size
+      });
+    }
+  });
+
+  // 4. 호스트: 30명 AI 봇 채우기
   socket.on('host_fill_bots', ({ pin, targetCount = 30 }) => {
     const room = roomManager.getRoom(pin);
     if (!room) return;
@@ -88,7 +125,7 @@ io.on('connection', (socket) => {
     });
   });
 
-  // 4. 호스트: 레이스 시작
+  // 5. 호스트: 레이스 시작
   socket.on('host_start_game', ({ pin, durationSec }) => {
     const room = roomManager.getRoom(pin);
     if (!room || room.hostSocketId !== socket.id || room.status !== 'LOBBY') return;
@@ -108,15 +145,26 @@ io.on('connection', (socket) => {
     }, 3500);
   });
 
-  // 5. 플레이어: 답안 제출
-  socket.on('player_submit_answer', ({ pin, selectedAnswer, timeSpentMs }) => {
+  // 6. 플레이어: 답안 제출
+  socket.on('player_submit_answer', ({ pin, questionId, selectedAnswer, timeSpentMs }, acknowledge) => {
     const room = roomManager.getRoom(pin);
-    if (!room || room.status !== 'RACING') return;
+    if (!room || room.status !== 'RACING') {
+      if (typeof acknowledge === 'function') {
+        acknowledge({ accepted: false, reason: 'RACE_NOT_ACTIVE' });
+      }
+      return;
+    }
 
-    room.handlePlayerAnswer(socket.id, selectedAnswer, timeSpentMs, io);
+    const result = room.handlePlayerAnswer(socket.id, questionId, selectedAnswer, timeSpentMs, io);
+    if (typeof acknowledge === 'function') acknowledge(result);
+
+    if (!result.accepted) {
+      const player = room.players.get(socket.id);
+      if (player) socket.emit('player_state_sync', room.getPlayerSnapshot(player));
+    }
   });
 
-  // 6. 플레이어: 아이템 사용
+  // 7. 플레이어: 아이템 사용
   socket.on('player_use_item', ({ pin, slotIndex, targetPlayerId }) => {
     const room = roomManager.getRoom(pin);
     if (!room || room.status !== 'RACING') return;
@@ -129,14 +177,14 @@ io.on('connection', (socket) => {
     socket.emit('item_slots_updated', { itemSlots: player.itemSlots, score: player.score });
   });
 
-  // 7. 호스트: 강제 레이스 종료
+  // 8. 호스트: 강제 레이스 종료
   socket.on('host_end_race', ({ pin }) => {
     const room = roomManager.getRoom(pin);
     if (!room) return;
     room.endRace(io, 'MANUAL');
   });
 
-  // 8. 호스트: 게임 종료 후 로비로 돌아가기 (다시 하기)
+  // 9. 호스트: 게임 종료 후 로비로 돌아가기 (다시 하기)
   socket.on('host_reset_lobby', ({ pin }) => {
     const room = roomManager.getRoom(pin);
     if (!room) return;
@@ -157,6 +205,9 @@ io.on('connection', (socket) => {
   });
 
   socket.on('disconnect', () => {
+    for (const room of roomManager.rooms.values()) {
+      room.markPlayerDisconnected(socket.id);
+    }
     console.log(`[Disconnected] ID: ${socket.id}`);
   });
 });
