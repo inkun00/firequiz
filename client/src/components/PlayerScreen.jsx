@@ -9,6 +9,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
   const [gameState, setGameState] = useState('LOBBY'); // LOBBY, RACING, FINISHED
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [shortAnswer, setShortAnswer] = useState('');
   const [answerFeedback, setAnswerFeedback] = useState(null);
   const [timeLeft, setTimeLeft] = useState(10);
   const [leaderboard, setLeaderboard] = useState([]);
@@ -72,6 +73,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       setGameState('FINISHED');
       setCurrentQuestion(null);
       setSelectedOption(null);
+      setShortAnswer('');
       setRaceEndReason('ALL_QUESTIONS_COMPLETE');
       return;
     }
@@ -80,6 +82,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       setGameState('RACING');
       setCurrentQuestion(snapshot.currentQuestion || null);
       setSelectedOption(snapshot.awaitingNextQuestion ? -2 : null);
+      setShortAnswer('');
       setAnswerFeedback(null);
       setTimeLeft(snapshot.questionTimeLeftSec ?? snapshot.currentQuestion?.timeLimit ?? 20);
       questionStartTimeRef.current = Date.now() - (snapshot.questionElapsedMs || 0);
@@ -90,6 +93,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       setGameState('FINISHED');
       setCurrentQuestion(null);
       setSelectedOption(null);
+      setShortAnswer('');
       setRemainingSec(0);
       setRaceEndReason(snapshot.endReason || 'MANUAL');
       return;
@@ -98,6 +102,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
     setGameState('LOBBY');
     setCurrentQuestion(null);
     setSelectedOption(null);
+    setShortAnswer('');
     setAnswerFeedback(null);
     setRaceEndReason(null);
   };
@@ -133,6 +138,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       setGameState('RACING');
       setCurrentQuestion(question);
       setSelectedOption(null);
+      setShortAnswer('');
       setAnswerFeedback(null);
       setTimeLeft(question.timeLimit || 20);
       setItemSlots(slots || []);
@@ -193,6 +199,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       setRaceEndReason(endReason || 'MANUAL');
       setCurrentQuestion(null);
       setSelectedOption(null);
+      setShortAnswer('');
       stopCooldownTimer();
       setGameState('FINISHED');
     });
@@ -202,6 +209,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       setGameState('LOBBY');
       setCurrentQuestion(null);
       setSelectedOption(null);
+      setShortAnswer('');
       setAnswerFeedback(null);
       setTimeLeft(20);
       setItemSlots([]);
@@ -260,7 +268,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       pin,
       questionId: currentQuestion?.id,
       selectedAnswer: -1,
-      timeSpentMs: 20000
+      timeSpentMs: (currentQuestion?.timeLimit || 20) * 1000
     }, (error, response) => {
       if (!error && response?.accepted) return;
       if (response?.reason === 'ALREADY_ANSWERED') {
@@ -285,6 +293,33 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       pin,
       questionId: currentQuestion?.id,
       selectedAnswer: index,
+      timeSpentMs
+    }, (error, response) => {
+      if (!error && response?.accepted) return;
+      if (response?.reason === 'ALREADY_ANSWERED') {
+        setSelectedOption(-2);
+        return;
+      }
+      setSelectedOption(null);
+      if (response?.lockedUntil > Date.now()) {
+        startCooldownTimer(response.lockedUntil, response.lockType);
+      }
+    });
+  };
+
+  const handleSubmitShortAnswer = (event) => {
+    event.preventDefault();
+    const submittedAnswer = shortAnswer.trim();
+    if (!submittedAnswer || selectedOption !== null || freezeTimeLeft > 0 || gameState !== 'RACING') return;
+
+    const timeSpentMs = Date.now() - questionStartTimeRef.current;
+    setSelectedOption(-3);
+    clearInterval(timerRef.current);
+
+    socket.timeout(5000).emit('player_submit_answer', {
+      pin,
+      questionId: currentQuestion?.id,
+      selectedAnswer: submittedAnswer,
       timeSpentMs
     }, (error, response) => {
       if (!error && response?.accepted) return;
@@ -453,26 +488,55 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
             </h3>
           </div>
 
-          {/* 4개 컬러 선택지 버튼 */}
-          <div className="grid grid-cols-2 gap-2.5 flex-1 max-h-[50vh]">
-            {currentQuestion.options.map((opt, idx) => (
-              <button
-                key={idx}
+          {currentQuestion.type === 'short-answer' ? (
+            <form
+              onSubmit={handleSubmitShortAnswer}
+              className="flex flex-1 flex-col justify-center gap-3 rounded-2xl border-2 border-cyan-500/60 bg-slate-900/85 p-4 shadow-xl"
+            >
+              <label htmlFor="short-answer" className="text-center text-sm font-black text-cyan-200 font-['Jua']">
+                정답을 짧게 입력하세요
+              </label>
+              <input
+                id="short-answer"
+                type="text"
+                value={shortAnswer}
+                onChange={(event) => setShortAnswer(event.target.value)}
                 disabled={selectedOption !== null || freezeTimeLeft > 0}
-                onClick={() => handleSelectOption(idx)}
-                className={`flex flex-col items-center justify-center p-3 rounded-2xl border-2 text-center transition-all bg-gradient-to-br shadow-xl ${
-                  OPTION_COLORS[idx % 4]
-                } ${selectedOption === idx ? 'ring-4 ring-white scale-95' : ''}`}
+                autoComplete="off"
+                autoCapitalize="off"
+                maxLength={40}
+                className="w-full rounded-2xl border-2 border-slate-600 bg-slate-950 px-4 py-4 text-center text-xl font-black text-white outline-none transition focus:border-cyan-400 focus:ring-4 focus:ring-cyan-500/20 disabled:opacity-60"
+                placeholder="정답 입력"
+              />
+              <button
+                type="submit"
+                disabled={!shortAnswer.trim() || selectedOption !== null || freezeTimeLeft > 0}
+                className="rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 px-4 py-3 text-lg font-black text-white shadow-lg transition active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 font-['Jua']"
               >
-                <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-black text-lg font-['Jua'] mb-1">
-                  {idx + 1}
-                </span>
-                <span className="text-sm font-black leading-tight line-clamp-3">
-                  {opt}
-                </span>
+                정답 제출
               </button>
-            ))}
-          </div>
+            </form>
+          ) : (
+            <div className="grid grid-cols-2 gap-2.5 flex-1 max-h-[50vh]">
+              {(currentQuestion.options || []).map((opt, idx) => (
+                <button
+                  key={idx}
+                  disabled={selectedOption !== null || freezeTimeLeft > 0}
+                  onClick={() => handleSelectOption(idx)}
+                  className={`flex flex-col items-center justify-center p-3 rounded-2xl border-2 text-center transition-all bg-gradient-to-br shadow-xl ${
+                    OPTION_COLORS[idx % 4]
+                  } ${selectedOption === idx ? 'ring-4 ring-white scale-95' : ''}`}
+                >
+                  <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-black text-lg font-['Jua'] mb-1">
+                    {idx + 1}
+                  </span>
+                  <span className="text-sm font-black leading-tight line-clamp-3">
+                    {opt}
+                  </span>
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* 답안 피드백 팝업 */}
           {answerFeedback && (
@@ -486,8 +550,10 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
                     {answerFeedback.gainedItem && ` (🎁 [${answerFeedback.gainedItem.name}] 획득!)`}
                   </span>
                 ) : (
-                  <span className="text-rose-400 flex items-center gap-1">
-                    <XCircle className="w-4 h-4" /> {answerFeedback.isTimeout ? '시간 초과!' : '오답!'} (엔진 쿨다운 발생)
+                  <span className="text-rose-400 flex flex-wrap items-center justify-center gap-1">
+                    <XCircle className="w-4 h-4" /> {answerFeedback.isTimeout ? '시간 초과!' : '오답!'}
+                    {answerFeedback.correctAnswer && <span>정답: {answerFeedback.correctAnswer}</span>}
+                    <span>(엔진 쿨다운 발생)</span>
                   </span>
                 )}
               </div>

@@ -11,6 +11,27 @@ const ITEMS = {
   ICE_BOMB: { id: 'ICE_BOMB', name: '얼음 폭탄', desc: '나보다 앞선 플레이어 중 무작위 1명을 4초간 얼립니다!', icon: '🧊', color: 'from-cyan-500 to-blue-600' }
 };
 
+function normalizeShortAnswer(value) {
+  return String(value ?? '')
+    .normalize('NFKC')
+    .toLocaleLowerCase('ko-KR')
+    .replace(/\s/gu, '')
+    .replace(/[!！?？。]+$/gu, '')
+    .replace(/[～〜]/gu, '~');
+}
+
+function isCorrectAnswer(question, submittedAnswer) {
+  if (submittedAnswer === -1) return false;
+  if (question.type !== 'short-answer') {
+    return submittedAnswer === question.answerIndex;
+  }
+
+  const normalized = normalizeShortAnswer(submittedAnswer);
+  return Boolean(normalized) && question.acceptedAnswers.some(
+    (answer) => normalizeShortAnswer(answer) === normalized
+  );
+}
+
 class GameEngine {
   constructor(room) {
     this.room = room;
@@ -20,8 +41,8 @@ class GameEngine {
    * 개인별 답안 채점 및 오답 쿨다운 계산
    */
   processAnswer(player, currentQuestion, selectedAnswer, timeSpentMs) {
-    const isCorrect = selectedAnswer === currentQuestion.answerIndex;
     const isTimeout = selectedAnswer === -1; // 시간초과
+    const isCorrect = isCorrectAnswer(currentQuestion, selectedAnswer);
     const totalTimeMs = (currentQuestion.timeLimit || 20) * 1000;
 
     let pointsEarned = 0;
@@ -195,4 +216,4 @@ class GameEngine {
   }
 }
 
-module.exports = { GameEngine, ITEMS };
+module.exports = { GameEngine, ITEMS, isCorrectAnswer, normalizeShortAnswer };

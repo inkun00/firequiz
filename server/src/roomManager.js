@@ -45,6 +45,9 @@ class Room {
     this.raceDurationSec = 300;
     this.raceEndsAt = 0;
     this.raceEndTimeout = null;
+    this.raceStartTimeout = null;
+    this.isSinglePlayer = false;
+    this.finalEndReason = null;
   }
 
   addPlayer(socketId, nickname, avatar = AVATARS[0]) {
@@ -108,11 +111,12 @@ class Room {
 
     return {
       id: q.id,
+      type: q.type || 'multiple-choice',
       part: q.part,
       question: q.question,
-      options: q.options,
+      options: q.options || [],
       category: q.category,
-      timeLimit: QUESTION_TIME_LIMIT_SEC,
+      timeLimit: q.timeLimit || QUESTION_TIME_LIMIT_SEC,
       currentNumber: player.progress + 1,
       totalQuestions: player.shuffledQuestions.length
     };
@@ -136,7 +140,7 @@ class Room {
       questionElapsedMs,
       questionTimeLeftSec: Math.max(
         0,
-        Math.ceil((QUESTION_TIME_LIMIT_SEC * 1000 - questionElapsedMs) / 1000)
+        Math.ceil((((player.currentQuestion?.timeLimit || QUESTION_TIME_LIMIT_SEC) * 1000) - questionElapsedMs) / 1000)
       ),
       awaitingNextQuestion,
       nextQuestionInMs: Math.max(0, (player.nextQuestionAt || 0) - now),
@@ -182,14 +186,15 @@ class Room {
     for (let i = 0; i < needCount; i++) {
       const botId = `bot_${Date.now()}_${i}`;
       const name = BOT_NAMES[i % BOT_NAMES.length];
-      const avatar = AVATARS[(this.players.size + i) % AVATARS.length];
+      const botIndex = this.players.size;
+      const avatar = AVATARS[botIndex % AVATARS.length];
       const shuffled = [...this.questions].sort(() => Math.random() - 0.5);
 
       const botPlayer = {
         id: botId,
         nickname: name,
         avatar: avatar,
-        carColor: CAR_COLORS[(this.players.size + i) % CAR_COLORS.length],
+        carColor: CAR_COLORS[botIndex % CAR_COLORS.length],
         score: 0,
         correctCount: 0,
         consecutiveWrong: 0,
@@ -218,7 +223,9 @@ class Room {
     this.status = 'LOBBY';
     clearInterval(this.syncInterval);
     clearTimeout(this.raceEndTimeout);
+    clearTimeout(this.raceStartTimeout);
     this.raceEndTimeout = null;
+    this.raceStartTimeout = null;
     this.raceEndsAt = 0;
     this.botIntervals.forEach(i => clearInterval(i));
     this.botIntervals = [];
@@ -246,9 +253,34 @@ class Room {
       clearTimeout(player.nextQuestionTimer);
       player.nextQuestionTimer = null;
     }
+    this.finalEndReason = null;
+  }
+
+  startCountdown(io, durationSec = 300) {
+    if (this.status !== 'LOBBY') return false;
+
+    const requestedDuration = Number(durationSec);
+    this.raceDurationSec = Number.isFinite(requestedDuration)
+      ? Math.min(1800, Math.max(60, Math.round(requestedDuration)))
+      : 300;
+
+    clearTimeout(this.raceStartTimeout);
+    io.to(this.pin).emit('game_starting_countdown', {
+      count: 3,
+      durationSec: this.raceDurationSec
+    });
+
+    this.raceStartTimeout = setTimeout(() => {
+      this.raceStartTimeout = null;
+      if (this.status === 'LOBBY') this.startRace(io);
+    }, 3500);
+
+    return true;
   }
 
   startRace(io) {
+    clearTimeout(this.raceStartTimeout);
+    this.raceStartTimeout = null;
     this.status = 'RACING';
     this.finalEndReason = null;
     this.raceStartTime = Date.now();
@@ -364,6 +396,7 @@ class Room {
       ...result,
       score: player.score,
       correctAnswerIndex: answeredQuestion.answerIndex,
+      correctAnswer: answeredQuestion.type === 'short-answer' ? answeredQuestion.answer : undefined,
       explanation: answeredQuestion.explanation,
       itemSlots: player.itemSlots,
       lockedUntil: activeLockUntil,
@@ -417,10 +450,15 @@ class Room {
           }
 
           const isAccurate = Math.random() < 0.76;
-          let ans = q.answerIndex;
-          if (!isAccurate) {
-            const wrongOptions = [0, 1, 2, 3].filter(idx => idx !== q.answerIndex);
-            ans = wrongOptions[Math.floor(Math.random() * wrongOptions.length)];
+          let ans;
+          if (q.type === 'short-answer') {
+            ans = isAccurate ? q.answer : '오답';
+          } else {
+            ans = q.answerIndex;
+            if (!isAccurate) {
+              const wrongOptions = [0, 1, 2, 3].filter(idx => idx !== q.answerIndex);
+              ans = wrongOptions[Math.floor(Math.random() * wrongOptions.length)];
+            }
           }
 
           const res = this.gameEngine.processAnswer(player, q, ans, thinkTimeMs);
@@ -444,7 +482,14 @@ class Room {
     this.finalEndReason = endReason;
     clearInterval(this.syncInterval);
     clearTimeout(this.raceEndTimeout);
+    clearTimeout(this.raceStartTimeout);
     this.raceEndTimeout = null;
+    this.raceStartTimeout = null;
+    for (const player of this.players.values()) {
+      clearTimeout(player.nextQuestionTimer);
+      player.nextQuestionTimer = null;
+      player.nextQuestionAt = 0;
+    }
 
     const finalLeaderboard = this.gameEngine.calculateLeaderboard(Array.from(this.players.values()));
     const averageScore = Math.round(
@@ -481,11 +526,29 @@ class RoomManager {
     return this.rooms.get(pin);
   }
 
+  markPlayerDisconnected(socketId) {
+    for (const room of this.rooms.values()) {
+      room.markPlayerDisconnected(socketId);
+    }
+  }
+
+  removeSingleRoomsForSocket(socketId) {
+    for (const [pin, room] of this.rooms.entries()) {
+      if (room.isSinglePlayer && room.hostSocketId === socketId) {
+        this.removeRoom(pin);
+      }
+    }
+  }
+
   removeRoom(pin) {
     const room = this.rooms.get(pin);
     if (room) {
       clearInterval(room.syncInterval);
       clearTimeout(room.raceEndTimeout);
+      clearTimeout(room.raceStartTimeout);
+      for (const player of room.players.values()) {
+        clearTimeout(player.nextQuestionTimer);
+      }
       this.rooms.delete(pin);
     }
   }

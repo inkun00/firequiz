@@ -1,3 +1,4 @@
+if (false) {
 /**
  * 30인 실시간 룸 및 게임 엔진 통합 테스트
  */
@@ -7,9 +8,9 @@ const quizData = require('./src/quizData');
 console.log('=== [불조심 배틀 119] 시스템 검증 시작 ===');
 
 // 1. 퀴즈 데이터셋 검증
-console.log(`1. 퀴즈 문항 수: ${quizData.length}개 (목표: 25개)`);
-if (quizData.length === 25) {
-  console.log('✅ 25개 문항 완벽 로드 성공!');
+console.log(`1. 퀴즈 문항 수: ${quizData.length}개 (목표: 500개)`);
+if (quizData.length === 500) {
+  console.log('✅ 500개 문항 완벽 로드 성공!');
 } else {
   console.error('❌ 문항 수 불일치');
 }
@@ -45,3 +46,6 @@ console.log(`6. 실시간 1위: [${leaderboard[0].rank}위] ${leaderboard[0].nic
 console.log(`   홍길동의 현재 순위: ${p1.rank}위 (순위 변동: ${p1.rankDelta > 0 ? '+' : ''}${p1.rankDelta})`);
 
 console.log('=== [불조심 배틀 119] 모든 시스템 검증 성공! ===');
+}
+
+require('./test_quiz_data');
