@@ -1,19 +1,31 @@
 const express = require('express');
 const http = require('http');
-const path = require('path');
 const { Server } = require('socket.io');
 const cors = require('cors');
 const roomManager = require('./roomManager');
 
+const allowedOrigins = (process.env.CLIENT_ORIGINS || '')
+  .split(',')
+  .map(origin => origin.trim())
+  .filter(Boolean);
+const originIsAllowed = origin => !origin || allowedOrigins.length === 0 || allowedOrigins.includes(origin);
+const corsOptions = {
+  origin(origin, callback) {
+    if (originIsAllowed(origin)) return callback(null, true);
+    return callback(new Error('허용되지 않은 클라이언트 출처입니다.'));
+  },
+  methods: ['GET', 'POST']
+};
+
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: {
-    origin: '*',
-    methods: ['GET', 'POST']
+  cors: corsOptions,
+  perMessageDeflate: {
+    threshold: 512
   }
 });
 
@@ -21,11 +33,8 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', serverTime: new Date().toISOString() });
 });
 
-const clientDistPath = path.join(__dirname, '../../client/dist');
-app.use(express.static(clientDistPath));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(clientDistPath, 'index.html'));
+app.get('/', (req, res) => {
+  res.json({ service: 'firequiz-game-server', status: 'ok' });
 });
 
 io.on('connection', (socket) => {
@@ -129,20 +138,7 @@ io.on('connection', (socket) => {
   socket.on('host_start_game', ({ pin, durationSec }) => {
     const room = roomManager.getRoom(pin);
     if (!room || room.hostSocketId !== socket.id || room.status !== 'LOBBY') return;
-
-    const requestedDuration = Number(durationSec);
-    room.raceDurationSec = Number.isFinite(requestedDuration)
-      ? Math.min(1800, Math.max(60, Math.round(requestedDuration)))
-      : 300;
-
-    io.to(pin).emit('game_starting_countdown', {
-      count: 3,
-      durationSec: room.raceDurationSec
-    });
-
-    setTimeout(() => {
-      room.startRace(io);
-    }, 3500);
+    room.startCountdown(io, durationSec);
   });
 
   // 6. 플레이어: 답안 제출

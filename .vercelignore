@@ -1,0 +1,7 @@
+server/
+quiz_capture_build/
+node_modules/
+client/node_modules/
+client/dist/
+2026불조심길라잡이.pdf
+extracted_guide.txt

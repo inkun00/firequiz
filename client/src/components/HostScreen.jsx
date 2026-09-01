@@ -4,6 +4,7 @@ import { Trophy, Users, Sparkles, Play, Flame, Snowflake, ArrowUp, ArrowDown, Fl
 import { sounds } from '../utils/sound';
 import KartTrack3D from './KartTrack3D';
 import AvatarPortrait from './AvatarPortrait';
+import { mergeLeaderboardUpdate } from '../utils/leaderboard';
 
 const PLAY_DURATION_OPTIONS = [2, 3, 5, 7, 10];
 
@@ -47,8 +48,13 @@ export default function HostScreen({ socket, pin }) {
       }, 1000);
     });
 
+    socket.on('race_roster_snapshot', ({ leaderboard, remainingSec: serverRemainingSec }) => {
+      setPlayers(leaderboard || []);
+      if (Number.isFinite(serverRemainingSec)) setRemainingSec(serverRemainingSec);
+    });
+
     socket.on('race_leaderboard_sync', ({ leaderboard, remainingSec: serverRemainingSec }) => {
-      setPlayers(leaderboard);
+      setPlayers(previous => mergeLeaderboardUpdate(previous, leaderboard));
       if (Number.isFinite(serverRemainingSec)) setRemainingSec(serverRemainingSec);
     });
 
@@ -74,6 +80,7 @@ export default function HostScreen({ socket, pin }) {
     return () => {
       socket.off('lobby_players_updated');
       socket.off('game_starting_countdown');
+      socket.off('race_roster_snapshot');
       socket.off('race_leaderboard_sync');
       socket.off('item_effect_broadcast');
       socket.off('race_game_over');

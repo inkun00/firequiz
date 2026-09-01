@@ -6,6 +6,7 @@ const { GameEngine } = require('./gameEngine');
 const { randomUUID } = require('crypto');
 
 const QUESTION_TIME_LIMIT_SEC = 20;
+const LEADERBOARD_SYNC_INTERVAL_MS = 1000;
 
 const BOT_NAMES = [
   "김민준", "이서연", "박도윤", "최서아", "정도현", "강지우", "조은우", "윤지아",
@@ -46,6 +47,7 @@ class Room {
     this.raceEndsAt = 0;
     this.raceEndTimeout = null;
     this.raceStartTimeout = null;
+    this.syncInterval = null;
     this.isSinglePlayer = false;
     this.finalEndReason = null;
   }
@@ -155,6 +157,25 @@ class Room {
     };
   }
 
+  getLeaderboardUpdate(leaderboard) {
+    return leaderboard.map(player => ({
+      id: player.id,
+      score: player.score,
+      progress: player.progress,
+      rank: player.rank,
+      rankDelta: player.rankDelta,
+      isFever: player.isFever,
+      isFrozen: player.isFrozen,
+      itemSlotsCount: player.itemSlotsCount
+    }));
+  }
+
+  stopLeaderboardSync() {
+    if (!this.syncInterval) return;
+    clearInterval(this.syncInterval);
+    this.syncInterval = null;
+  }
+
   resumePlayer(socketId, sessionToken) {
     if (!sessionToken) return null;
 
@@ -221,7 +242,7 @@ class Room {
   // 게임 종료 후 로비 상태로 리셋 (플레이어 유지)
   resetToLobby() {
     this.status = 'LOBBY';
-    clearInterval(this.syncInterval);
+    this.stopLeaderboardSync();
     clearTimeout(this.raceEndTimeout);
     clearTimeout(this.raceStartTimeout);
     this.raceEndTimeout = null;
@@ -257,14 +278,13 @@ class Room {
   }
 
   startCountdown(io, durationSec = 300) {
-    if (this.status !== 'LOBBY') return false;
+    if (this.status !== 'LOBBY' || this.raceStartTimeout) return false;
 
     const requestedDuration = Number(durationSec);
     this.raceDurationSec = Number.isFinite(requestedDuration)
       ? Math.min(1800, Math.max(60, Math.round(requestedDuration)))
       : 300;
 
-    clearTimeout(this.raceStartTimeout);
     io.to(this.pin).emit('game_starting_countdown', {
       count: 3,
       durationSec: this.raceDurationSec
@@ -279,8 +299,11 @@ class Room {
   }
 
   startRace(io) {
+    if (this.status !== 'LOBBY') return false;
+
     clearTimeout(this.raceStartTimeout);
     this.raceStartTimeout = null;
+    this.stopLeaderboardSync();
     this.status = 'RACING';
     this.finalEndReason = null;
     this.raceStartTime = Date.now();
@@ -290,21 +313,29 @@ class Room {
       this.endRace(io, 'TIME_UP');
     }, this.raceDurationSec * 1000);
 
+    const initialLeaderboard = this.gameEngine.calculateLeaderboard(Array.from(this.players.values()));
+    io.to(this.pin).emit('race_roster_snapshot', {
+      leaderboard: initialLeaderboard,
+      remainingSec: this.raceDurationSec,
+      durationSec: this.raceDurationSec
+    });
+
     for (const player of this.players.values()) {
       this.sendNextQuestionToPlayer(player, io);
     }
 
     this.startBotRacerLoop(io);
 
-    this.syncInterval = setInterval(() => {
+    const syncInterval = setInterval(() => {
       if (this.status !== 'RACING') {
-        clearInterval(this.syncInterval);
+        clearInterval(syncInterval);
+        if (this.syncInterval === syncInterval) this.syncInterval = null;
         return;
       }
       const leaderboard = this.gameEngine.calculateLeaderboard(Array.from(this.players.values()));
       const remainingSec = Math.max(0, Math.ceil((this.raceEndsAt - Date.now()) / 1000));
       io.to(this.pin).emit('race_leaderboard_sync', {
-        leaderboard,
+        leaderboard: this.getLeaderboardUpdate(leaderboard),
         remainingSec,
         durationSec: this.raceDurationSec
       });
@@ -315,7 +346,9 @@ class Room {
       if (allFinished) {
         this.endRace(io, 'ALL_FINISHED');
       }
-    }, 500);
+    }, LEADERBOARD_SYNC_INTERVAL_MS);
+    this.syncInterval = syncInterval;
+    return true;
   }
 
   sendNextQuestionToPlayer(player, io) {
@@ -480,7 +513,7 @@ class Room {
     if (this.status === 'FINAL') return;
     this.status = 'FINAL';
     this.finalEndReason = endReason;
-    clearInterval(this.syncInterval);
+    this.stopLeaderboardSync();
     clearTimeout(this.raceEndTimeout);
     clearTimeout(this.raceStartTimeout);
     this.raceEndTimeout = null;
@@ -543,7 +576,7 @@ class RoomManager {
   removeRoom(pin) {
     const room = this.rooms.get(pin);
     if (room) {
-      clearInterval(room.syncInterval);
+      room.stopLeaderboardSync();
       clearTimeout(room.raceEndTimeout);
       clearTimeout(room.raceStartTimeout);
       for (const player of room.players.values()) {

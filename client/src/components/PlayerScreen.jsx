@@ -4,6 +4,7 @@ import KartTrack3D from './KartTrack3D';
 import ItemSlots from './ItemSlots';
 import { sounds } from '../utils/sound';
 import AvatarPortrait from './AvatarPortrait';
+import { mergeLeaderboardUpdate } from '../utils/leaderboard';
 
 export default function PlayerScreen({ socket, pin, playerInfo, resumeState = null }) {
   const [gameState, setGameState] = useState('LOBBY'); // LOBBY, RACING, FINISHED
@@ -167,8 +168,13 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       }
     });
 
+    socket.on('race_roster_snapshot', ({ leaderboard: lb, remainingSec: serverRemainingSec }) => {
+      setLeaderboard(lb || []);
+      if (Number.isFinite(serverRemainingSec)) setRemainingSec(serverRemainingSec);
+    });
+
     socket.on('race_leaderboard_sync', ({ leaderboard: lb, remainingSec: serverRemainingSec }) => {
-      setLeaderboard(lb);
+      setLeaderboard(previous => mergeLeaderboardUpdate(previous, lb));
       if (Number.isFinite(serverRemainingSec)) setRemainingSec(serverRemainingSec);
     });
 
@@ -225,6 +231,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       socket.off('game_starting_countdown');
       socket.off('new_question_received');
       socket.off('answer_result_feedback');
+      socket.off('race_roster_snapshot');
       socket.off('race_leaderboard_sync');
       socket.off('item_effect_broadcast');
       socket.off('player_state_sync');
