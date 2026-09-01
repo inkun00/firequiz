@@ -1,7 +1,7 @@
 import React from 'react';
 import { Zap, Sparkles } from 'lucide-react';
 
-export default function ItemSlots({ itemSlots = [], onUseItem, disabled = false }) {
+export default function ItemSlots({ itemSlots = [], onUseItem, disabled = false, locked = false }) {
   const slot1 = itemSlots[0] || null;
   const slot2 = itemSlots[1] || null;
 
@@ -12,25 +12,39 @@ export default function ItemSlots({ itemSlots = [], onUseItem, disabled = false 
     return null;
   };
 
+  const canUseItem = (item) => Boolean(item) && !disabled && (!locked || item.effectType === 'RECOVERY');
+
+  const renderItemVisual = (item) => {
+    const imageSrc = getItemImage(item.id);
+    if (imageSrc) {
+      return <img src={imageSrc} alt={item.name} className="w-full h-full object-cover brightness-110" />;
+    }
+
+    return (
+      <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${item.color || 'from-violet-600 to-cyan-500'}`}>
+        <span className="text-3xl drop-shadow-lg" aria-hidden="true">{item.icon || '✨'}</span>
+      </div>
+    );
+  };
+
   return (
     <div className="flex items-center gap-2 bg-slate-950/90 border-2 border-yellow-400/80 p-2 rounded-2xl shadow-[0_0_20px_rgba(250,204,21,0.3)] backdrop-blur-md">
       {/* 슬롯 1 (메인 아이템) */}
       <button
-        onClick={() => slot1 && !disabled && onUseItem(0)}
-        disabled={!slot1 || disabled}
+        onClick={() => canUseItem(slot1) && onUseItem(0)}
+        disabled={!canUseItem(slot1)}
+        title={slot1 ? `${slot1.name}: ${slot1.desc}` : '빈 아이템 슬롯'}
         className={`relative w-14 h-14 md:w-16 md:h-16 rounded-2xl border-2 flex flex-col items-center justify-center overflow-hidden transition-all ${
-          slot1
+          canUseItem(slot1)
             ? 'bg-slate-900 border-yellow-300 shadow-xl hover:scale-105 active:scale-95 cursor-pointer ring-2 ring-yellow-400 animate-pulse'
-            : 'bg-slate-900/60 border-slate-800 text-gray-600 cursor-not-allowed'
+            : slot1
+              ? 'bg-slate-900 border-slate-600 opacity-60 cursor-not-allowed'
+              : 'bg-slate-900/60 border-slate-800 text-gray-600 cursor-not-allowed'
         }`}
       >
         {slot1 ? (
           <>
-            <img 
-              src={getItemImage(slot1.id)} 
-              alt={slot1.name} 
-              className="w-full h-full object-cover brightness-110" 
-            />
+            {renderItemVisual(slot1)}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-1">
               <span className="text-[9px] font-black text-yellow-300 font-['Jua'] truncate">
                 {slot1.name}
@@ -47,21 +61,20 @@ export default function ItemSlots({ itemSlots = [], onUseItem, disabled = false 
 
       {/* 슬롯 2 (예비 아이템) */}
       <button
-        onClick={() => slot2 && !disabled && onUseItem(1)}
-        disabled={!slot2 || disabled}
+        onClick={() => canUseItem(slot2) && onUseItem(1)}
+        disabled={!canUseItem(slot2)}
+        title={slot2 ? `${slot2.name}: ${slot2.desc}` : '빈 아이템 슬롯'}
         className={`relative w-14 h-14 md:w-16 md:h-16 rounded-2xl border-2 flex flex-col items-center justify-center overflow-hidden transition-all ${
-          slot2
+          canUseItem(slot2)
             ? 'bg-slate-900 border-cyan-300 shadow-xl hover:scale-105 active:scale-95 cursor-pointer ring-2 ring-cyan-400'
-            : 'bg-slate-900/60 border-slate-800 text-gray-600 cursor-not-allowed'
+            : slot2
+              ? 'bg-slate-900 border-slate-600 opacity-60 cursor-not-allowed'
+              : 'bg-slate-900/60 border-slate-800 text-gray-600 cursor-not-allowed'
         }`}
       >
         {slot2 ? (
           <>
-            <img 
-              src={getItemImage(slot2.id)} 
-              alt={slot2.name} 
-              className="w-full h-full object-cover brightness-110" 
-            />
+            {renderItemVisual(slot2)}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-1">
               <span className="text-[9px] font-black text-cyan-300 font-['Jua'] truncate">
                 {slot2.name}

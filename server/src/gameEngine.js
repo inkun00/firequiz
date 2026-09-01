@@ -5,6 +5,13 @@
  * - 개인별 독립 문제 진행 및 2칸 아이템 슬롯
  */
 
+const {
+  getAvatarKey,
+  getCharacterItem
+} = require('./characterItems');
+
+const ITEM_DROP_RATE = 0.5;
+
 const ITEMS = {
   BONUS: { id: 'BONUS', name: '점수 부스터', desc: '랜덤 보너스 점수(+300~800점)와 급가속!', icon: '🚀', color: 'from-amber-500 to-yellow-400' },
   STEAL: { id: 'STEAL', name: '점수 뺏기', desc: '앞 순위 친구의 점수를 뺏어옵니다(-400점/+400점)!', icon: '🧲', color: 'from-purple-600 to-indigo-600' },
@@ -64,10 +71,15 @@ class GameEngine {
 
       // 2. 카트라이더 아이템 획득 (슬롯 최대 2개)
       // 연속 정답 횟수의 홀짝과 관계없이 정답마다 50% 확률로 아이템 획득
-      if (player.itemSlots.length < 2 && Math.random() < 0.5) {
-        const itemKeys = Object.keys(ITEMS);
-        const randomKey = itemKeys[Math.floor(Math.random() * itemKeys.length)];
-        gainedItem = { ...ITEMS[randomKey], slotId: Date.now() + Math.random() };
+      if (player.itemSlots.length < 2 && Math.random() < ITEM_DROP_RATE) {
+        const characterItem = getCharacterItem(player.avatar);
+        const specialRateWithinDrop = characterItem
+          ? Math.min(1, characterItem.dropRate / ITEM_DROP_RATE)
+          : 0;
+        const selectedItem = characterItem && Math.random() < specialRateWithinDrop
+          ? characterItem
+          : Object.values(ITEMS)[Math.floor(Math.random() * Object.keys(ITEMS).length)];
+        gainedItem = { ...selectedItem, slotId: Date.now() + Math.random() };
         player.itemSlots.push(gainedItem);
       }
     } else {
@@ -111,9 +123,27 @@ class GameEngine {
     }
 
     const item = userPlayer.itemSlots[slotIndex];
+    const now = Date.now();
+    const lockedUntil = Math.max(userPlayer.freezeUntil || 0, userPlayer.iceFrozenUntil || 0);
+
+    if (lockedUntil > now && item.effectType !== 'RECOVERY') {
+      return { success: false, type: item.id, message: '잠금 중에는 회복형 전용 아이템만 사용할 수 있습니다.' };
+    }
+
+    if (item.isCharacterSpecial && item.ownerAvatar !== getAvatarKey(userPlayer.avatar)) {
+      return { success: false, type: item.id, message: '현재 캐릭터의 전용 아이템이 아닙니다.' };
+    }
+
     userPlayer.itemSlots.splice(slotIndex, 1); // 슬롯에서 제거
 
-    let effectResult = { type: item.id, userName: userPlayer.nickname, success: true };
+    let effectResult = {
+      type: item.id,
+      itemName: item.name,
+      effectType: item.effectType || item.id,
+      userId: userPlayer.id,
+      userName: userPlayer.nickname,
+      success: true
+    };
 
     if (item.id === 'BONUS') {
       // 1. 점수 보너스 (+300~800점)
@@ -135,6 +165,14 @@ class GameEngine {
       }
 
       if (target && target.score > 100) {
+        if (this.consumeSpecialGuard(target)) {
+          effectResult.targetName = target.nickname;
+          effectResult.targetId = target.id;
+          effectResult.blocked = true;
+          effectResult.message = `${target.nickname}님의 전용 방패가 ${userPlayer.nickname}님의 [점수 뺏기]를 막았습니다! 🛡️`;
+          return effectResult;
+        }
+
         const stealAmount = Math.min(target.score, Math.floor(Math.random() * 300) + 300);
         target.score -= stealAmount;
         userPlayer.score += stealAmount;
@@ -165,6 +203,15 @@ class GameEngine {
 
       const randomTarget = aheadPlayers[Math.floor(Math.random() * aheadPlayers.length)];
       const target = this.room.players.get(randomTarget.id);
+
+      if (this.consumeSpecialGuard(target)) {
+        effectResult.targetName = target.nickname;
+        effectResult.targetId = target.id;
+        effectResult.blocked = true;
+        effectResult.message = `${target.nickname}님의 전용 방패가 ${userPlayer.nickname}님의 [얼음 폭탄]을 막았습니다! 🛡️`;
+        return effectResult;
+      }
+
       const freezeDuration = 4000;
       target.iceFrozenUntil = Math.max(target.iceFrozenUntil || 0, Date.now() + freezeDuration);
       effectResult.targetName = target.nickname;
@@ -173,8 +220,96 @@ class GameEngine {
       effectResult.lockedUntil = target.iceFrozenUntil;
       effectResult.message = `${userPlayer.nickname}님이 ${target.nickname}님에게 [얼음 폭탄]을 투척하여 얼렸습니다! 🧊`;
     }
+    else if (item.isCharacterSpecial) {
+      effectResult = this.applyCharacterSpecial(userPlayer, item, effectResult);
+    }
 
     return effectResult;
+  }
+
+  consumeSpecialGuard(target) {
+    if (!target || !target.specialGuardUntil || target.specialGuardUntil <= Date.now()) {
+      return false;
+    }
+
+    target.specialGuardUntil = 0;
+    return true;
+  }
+
+  applyCharacterSpecial(userPlayer, item, effectResult) {
+    if (item.effectType === 'BOOST') {
+      userPlayer.score += item.score;
+      effectResult.bonusScore = item.score;
+      effectResult.message = `${userPlayer.nickname}님의 [${item.name}] 발동! (+${item.score}점) ${item.icon}`;
+      return effectResult;
+    }
+
+    if (item.effectType === 'RECOVERY') {
+      const now = Date.now();
+      const reduceLock = (lockedUntil = 0) => {
+        if (lockedUntil <= now || item.fullRecovery) return 0;
+        const reducedUntil = lockedUntil - (item.cooldownReductionMs || 0);
+        return reducedUntil > now ? reducedUntil : 0;
+      };
+
+      userPlayer.score += item.score;
+      userPlayer.freezeUntil = reduceLock(userPlayer.freezeUntil);
+      userPlayer.iceFrozenUntil = reduceLock(userPlayer.iceFrozenUntil);
+      userPlayer.consecutiveWrong = Math.max(
+        0,
+        userPlayer.consecutiveWrong - (item.wrongReduction || 0)
+      );
+      effectResult.bonusScore = item.score;
+      effectResult.recoveryApplied = true;
+      effectResult.lockedUntil = Math.max(userPlayer.freezeUntil || 0, userPlayer.iceFrozenUntil || 0);
+      effectResult.clearLock = effectResult.lockedUntil <= now;
+      effectResult.message = `${userPlayer.nickname}님의 [${item.name}] 발동! ${item.desc} ${item.icon}`;
+      return effectResult;
+    }
+
+    if (item.effectType === 'GUARD') {
+      userPlayer.score += item.score;
+      userPlayer.specialGuardUntil = Date.now() + item.durationMs;
+      effectResult.bonusScore = item.score;
+      effectResult.guardUntil = userPlayer.specialGuardUntil;
+      effectResult.message = `${userPlayer.nickname}님의 [${item.name}] 발동! ${item.desc} ${item.icon}`;
+      return effectResult;
+    }
+
+    if (item.effectType === 'CONTROL') {
+      const leaderboard = this.calculateLeaderboard(Array.from(this.room.players.values()));
+      const myIdx = leaderboard.findIndex(player => player.id === userPlayer.id);
+      const aheadPlayers = myIdx > 0 ? leaderboard.slice(0, myIdx) : [];
+
+      if (aheadPlayers.length === 0) {
+        userPlayer.score += item.fallbackScore;
+        effectResult.bonusScore = item.fallbackScore;
+        effectResult.message = `${userPlayer.nickname}님의 [${item.name}]은 대상이 없어 안전 가속으로 전환! (+${item.fallbackScore}점) ${item.icon}`;
+        return effectResult;
+      }
+
+      const randomTarget = aheadPlayers[Math.floor(Math.random() * aheadPlayers.length)];
+      const target = this.room.players.get(randomTarget.id);
+      effectResult.targetName = target.nickname;
+      effectResult.targetId = target.id;
+
+      if (this.consumeSpecialGuard(target)) {
+        effectResult.blocked = true;
+        effectResult.message = `${target.nickname}님의 전용 방패가 ${userPlayer.nickname}님의 [${item.name}]을 막았습니다! 🛡️`;
+        return effectResult;
+      }
+
+      target.iceFrozenUntil = Math.max(
+        target.iceFrozenUntil || 0,
+        Date.now() + item.durationMs
+      );
+      effectResult.freezeDuration = item.durationMs;
+      effectResult.lockedUntil = target.iceFrozenUntil;
+      effectResult.message = `${userPlayer.nickname}님의 [${item.name}]이 ${target.nickname}님을 ${item.durationMs / 1000}초간 늦췄습니다! ${item.icon}`;
+      return effectResult;
+    }
+
+    return { ...effectResult, success: false, message: '지원하지 않는 전용 아이템입니다.' };
   }
 
   /**
@@ -216,4 +351,4 @@ class GameEngine {
   }
 }
 
-module.exports = { GameEngine, ITEMS, isCorrectAnswer, normalizeShortAnswer };
+module.exports = { GameEngine, ITEMS, ITEM_DROP_RATE, isCorrectAnswer, normalizeShortAnswer };

@@ -23,11 +23,21 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
   const [freezeTimeLeft, setFreezeTimeLeft] = useState(0);
   const [isIceFrozen, setIsIceFrozen] = useState(false);
   const [consecutiveWrong, setConsecutiveWrong] = useState(0);
+  const [specialGuardUntil, setSpecialGuardUntil] = useState(0);
 
   const questionStartTimeRef = useRef(0);
   const timerRef = useRef(null);
   const raceCountdownTimerRef = useRef(null);
   const cooldownTimerRef = useRef(null);
+  const guardTimerRef = useRef(null);
+
+  const updateSpecialGuard = (guardUntil = 0) => {
+    clearTimeout(guardTimerRef.current);
+    setSpecialGuardUntil(guardUntil);
+    if (guardUntil > Date.now()) {
+      guardTimerRef.current = setTimeout(() => setSpecialGuardUntil(0), guardUntil - Date.now());
+    }
+  };
 
   const stopCooldownTimer = () => {
     clearInterval(cooldownTimerRef.current);
@@ -62,6 +72,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
     setLeaderboard(snapshot.leaderboard || []);
     setItemSlots(snapshot.itemSlots || []);
     setConsecutiveWrong(snapshot.consecutiveWrong || 0);
+    updateSpecialGuard(snapshot.specialGuardUntil || 0);
     if (Number.isFinite(snapshot.remainingSec)) setRemainingSec(snapshot.remainingSec);
 
     if (snapshot.lockedUntil > Date.now()) {
@@ -183,15 +194,41 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       sounds.playItem();
       setTimeout(() => setItemAlert(null), 3000);
 
-      if (effect.targetId === socket.id && effect.type === 'ICE_BOMB') {
-        startCooldownTimer(effect.lockedUntil || Date.now() + (effect.freezeDuration || 4000), 'ICE_BOMB');
+      if (effect.targetId === socket.id && effect.freezeDuration && !effect.blocked) {
+        startCooldownTimer(effect.lockedUntil || Date.now() + effect.freezeDuration, 'ICE_BOMB');
+      }
+
+      if (effect.userId === socket.id && effect.recoveryApplied) {
+        if (effect.lockedUntil > Date.now()) {
+          startCooldownTimer(effect.lockedUntil, 'PENALTY');
+        } else {
+          stopCooldownTimer();
+        }
+      }
+
+      if (effect.userId === socket.id && effect.guardUntil) {
+        updateSpecialGuard(effect.guardUntil);
+      }
+
+      if (effect.targetId === socket.id && effect.blocked) {
+        updateSpecialGuard(0);
       }
     });
 
     socket.on('player_state_sync', applyPlayerSnapshot);
 
-    socket.on('item_slots_updated', ({ itemSlots: slots }) => {
+    socket.on('item_slots_updated', ({
+      itemSlots: slots,
+      lockedUntil = 0,
+      lockType = 'PENALTY',
+      consecutiveWrong: wrongs,
+      specialGuardUntil: guardUntil = 0
+    }) => {
       setItemSlots(slots || []);
+      if (Number.isFinite(wrongs)) setConsecutiveWrong(wrongs);
+      if (lockedUntil > Date.now()) startCooldownTimer(lockedUntil, lockType);
+      else stopCooldownTimer();
+      updateSpecialGuard(guardUntil);
     });
 
     socket.on('player_race_finished', () => {
@@ -220,6 +257,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
       setTimeLeft(20);
       setItemSlots([]);
       stopCooldownTimer();
+      updateSpecialGuard(0);
       setConsecutiveWrong(0);
       setRemainingSec(null);
       setRaceEndReason(null);
@@ -228,6 +266,7 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
 
     return () => {
       clearInterval(raceCountdownTimerRef.current);
+      clearTimeout(guardTimerRef.current);
       socket.off('game_starting_countdown');
       socket.off('new_question_received');
       socket.off('answer_result_feedback');
@@ -342,7 +381,8 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
   };
 
   const handleUseItem = (slotIndex) => {
-    if (freezeTimeLeft > 0) return;
+    const item = itemSlots[slotIndex];
+    if (!item || (freezeTimeLeft > 0 && item.effectType !== 'RECOVERY')) return;
     socket.emit('player_use_item', {
       pin,
       slotIndex
@@ -391,6 +431,9 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
             <span className="text-xs text-yellow-400 font-bold font-['Jua']">
               {leaderboard.find(p => p.id === socket.id)?.score?.toLocaleString() || 0}점
             </span>
+            {specialGuardUntil > Date.now() && (
+              <span className="ml-2 text-[10px] text-cyan-300 font-bold">🛡️ 방어막</span>
+            )}
           </div>
         </div>
 
@@ -398,7 +441,8 @@ export default function PlayerScreen({ socket, pin, playerInfo, resumeState = nu
         <ItemSlots
           itemSlots={itemSlots}
           onUseItem={handleUseItem}
-          disabled={freezeTimeLeft > 0 || gameState !== 'RACING'}
+          disabled={gameState !== 'RACING'}
+          locked={freezeTimeLeft > 0}
         />
       </div>
 

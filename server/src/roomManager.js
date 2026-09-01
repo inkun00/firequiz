@@ -76,6 +76,7 @@ class Room {
       itemSlots: [],
       freezeUntil: 0,
       iceFrozenUntil: 0,
+      specialGuardUntil: 0,
       isBot: false,
       progress: 0,
       shuffledQuestions: shuffledQuestions,
@@ -148,6 +149,7 @@ class Room {
       nextQuestionInMs: Math.max(0, (player.nextQuestionAt || 0) - now),
       itemSlots: player.itemSlots,
       consecutiveWrong: player.consecutiveWrong,
+      specialGuardUntil: player.specialGuardUntil || 0,
       lockedUntil,
       lockType: player.iceFrozenUntil > now ? 'ICE_BOMB' : lockedUntil > now ? 'PENALTY' : null,
       remainingSec: this.status === 'RACING'
@@ -227,6 +229,7 @@ class Room {
         itemSlots: [],
         freezeUntil: 0,
         iceFrozenUntil: 0,
+        specialGuardUntil: 0,
         isBot: true,
         progress: 0,
         shuffledQuestions: shuffled,
@@ -264,6 +267,7 @@ class Room {
       player.itemSlots = [];
       player.freezeUntil = 0;
       player.iceFrozenUntil = 0;
+      player.specialGuardUntil = 0;
       player.progress = 0;
       player.shuffledQuestions = [...this.questions].sort(() => Math.random() - 0.5);
       player.currentQuestion = null;
@@ -384,6 +388,37 @@ class Room {
         lockType: player.iceFrozenUntil > Date.now() ? 'ICE_BOMB' : null
       });
     }
+  }
+
+  usePlayerItem(socketId, slotIndex, io) {
+    const player = this.players.get(socketId);
+    if (!player) return { success: false, message: '플레이어를 찾을 수 없습니다.' };
+
+    const effect = this.gameEngine.useItem(player, slotIndex);
+
+    // 회복형 아이템의 잠금 단축량을 실제 다음 문제 대기에도 동일하게 반영합니다.
+    if (
+      effect.success &&
+      effect.recoveryApplied &&
+      player.currentQuestion &&
+      player.answeredQuestionId === player.currentQuestion.id &&
+      player.nextQuestionTimer
+    ) {
+      const now = Date.now();
+      const recoveryDelayMs = Math.max(250, (effect.lockedUntil || 0) - now);
+      if (player.nextQuestionAt > now + recoveryDelayMs) {
+        clearTimeout(player.nextQuestionTimer);
+        player.nextQuestionAt = now + recoveryDelayMs;
+        player.nextQuestionTimer = setTimeout(() => {
+          player.nextQuestionTimer = null;
+          player.nextQuestionAt = 0;
+          if (this.status === 'RACING') this.sendNextQuestionToPlayer(player, io);
+        }, recoveryDelayMs);
+        effect.nextQuestionInMs = recoveryDelayMs;
+      }
+    }
+
+    return effect;
   }
 
   handlePlayerAnswer(socketId, questionId, selectedAnswer, timeSpentMs, io) {

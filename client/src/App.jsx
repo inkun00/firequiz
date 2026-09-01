@@ -4,6 +4,11 @@ import { Flame, Users, ArrowRight, Sparkles } from 'lucide-react';
 import HostScreen from './components/HostScreen';
 import PlayerScreen from './components/PlayerScreen';
 import { AVATAR_OPTIONS, DEFAULT_AVATAR, getAvatarName } from './data/avatarOptions';
+import {
+  formatSpecialItemDropRate,
+  getCharacterSpecialItem,
+  getSpecialItemRarity
+} from './data/characterSpecialItems';
 
 const SOCKET_URL = import.meta.env.VITE_SOCKET_URL
   || (import.meta.env.DEV ? 'http://localhost:4000' : window.location.origin);
@@ -56,6 +61,7 @@ export default function App() {
   const [isConnected, setIsConnected] = useState(socket.connected);
   const [resumeState, setResumeState] = useState(null);
   const resumeRequestedForSocketRef = useRef(null);
+  const selectedSpecialItem = getCharacterSpecialItem(selectedAvatar);
 
   useEffect(() => {
     const requestSavedSession = () => {
@@ -229,34 +235,58 @@ export default function App() {
                 <span className="truncate text-xs font-bold text-yellow-300">{getAvatarName(selectedAvatar)}</span>
               </div>
               <div className="grid max-h-72 grid-cols-5 gap-2 overflow-y-auto px-1 py-1 scrollbar-thin">
-                {AVATAR_OPTIONS.map((avatar) => (
-                  <button
-                    type="button"
-                    key={avatar.id}
-                    onClick={() => setSelectedAvatar(avatar.src)}
-                    aria-label={`${avatar.name} 선택`}
-                    aria-pressed={selectedAvatar === avatar.src}
-                    title={avatar.name}
-                    className={`relative aspect-square overflow-hidden rounded-xl transition-all ${
-                      selectedAvatar === avatar.src
-                        ? 'scale-105 border-2 border-yellow-300 ring-2 ring-yellow-400/40'
-                        : 'border border-slate-700 opacity-80 hover:border-cyan-400 hover:opacity-100'
-                    }`}
-                  >
-                    <img
-                      src={avatar.src}
-                      alt=""
-                      className="h-full w-full object-cover object-top"
-                      loading="lazy"
-                    />
-                    {selectedAvatar === avatar.src && (
-                      <span className="absolute bottom-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-yellow-300 text-xs font-black text-slate-950 shadow-lg">
-                        ✓
-                      </span>
-                    )}
-                  </button>
-                ))}
+                {AVATAR_OPTIONS.map((avatar) => {
+                  const specialItem = getCharacterSpecialItem(avatar.src);
+                  return (
+                    <button
+                      type="button"
+                      key={avatar.id}
+                      onClick={() => setSelectedAvatar(avatar.src)}
+                      aria-label={`${avatar.name} 선택, ${specialItem?.name || '전용 아이템 없음'}`}
+                      aria-pressed={selectedAvatar === avatar.src}
+                      title={`${avatar.name} · ${specialItem?.name}: ${specialItem?.desc}`}
+                      className={`relative aspect-square overflow-hidden rounded-xl transition-all ${
+                        selectedAvatar === avatar.src
+                          ? 'scale-105 border-2 border-yellow-300 ring-2 ring-yellow-400/40'
+                          : 'border border-slate-700 opacity-80 hover:border-cyan-400 hover:opacity-100'
+                      }`}
+                    >
+                      <img
+                        src={avatar.src}
+                        alt=""
+                        className="h-full w-full object-cover object-top"
+                        loading="lazy"
+                      />
+                      {specialItem && (
+                        <span className="absolute left-0.5 top-0.5 rounded-md bg-slate-950/85 px-1 text-[8px] font-black text-cyan-200">
+                          {specialItem.icon} {formatSpecialItemDropRate(specialItem.dropRate)}
+                        </span>
+                      )}
+                      {selectedAvatar === avatar.src && (
+                        <span className="absolute bottom-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-yellow-300 text-xs font-black text-slate-950 shadow-lg">
+                          ✓
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
+              {selectedSpecialItem && (
+                <div className={`mt-3 rounded-2xl border border-cyan-400/40 bg-gradient-to-r ${selectedSpecialItem.color} p-[1px]`}>
+                  <div className="rounded-2xl bg-slate-950/95 px-3 py-2.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="font-black text-yellow-200">
+                        {selectedSpecialItem.icon} {selectedSpecialItem.name}
+                      </span>
+                      <span className="shrink-0 rounded-full bg-cyan-950 px-2 py-1 text-[10px] font-black text-cyan-200">
+                        정답마다 {formatSpecialItemDropRate(selectedSpecialItem.dropRate)} · {getSpecialItemRarity(selectedSpecialItem.dropRate)}
+                      </span>
+                    </div>
+                    <p className="mt-1 text-xs leading-relaxed text-gray-300">{selectedSpecialItem.desc}</p>
+                    <p className="mt-1 text-[10px] text-gray-500">효과가 강할수록 전용 아이템 출현 확률이 낮습니다.</p>
+                  </div>
+                </div>
+              )}
             </div>
 
             <button

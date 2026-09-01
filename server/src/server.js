@@ -161,16 +161,23 @@ io.on('connection', (socket) => {
   });
 
   // 7. 플레이어: 아이템 사용
-  socket.on('player_use_item', ({ pin, slotIndex, targetPlayerId }) => {
+  socket.on('player_use_item', ({ pin, slotIndex }) => {
     const room = roomManager.getRoom(pin);
     if (!room || room.status !== 'RACING') return;
 
     const player = room.players.get(socket.id);
     if (!player) return;
 
-    const effect = room.gameEngine.useItem(player, slotIndex, targetPlayerId);
+    const effect = room.usePlayerItem(socket.id, slotIndex, io);
     io.to(pin).emit('item_effect_broadcast', effect);
-    socket.emit('item_slots_updated', { itemSlots: player.itemSlots, score: player.score });
+    socket.emit('item_slots_updated', {
+      itemSlots: player.itemSlots,
+      score: player.score,
+      lockedUntil: Math.max(player.freezeUntil || 0, player.iceFrozenUntil || 0),
+      lockType: player.iceFrozenUntil > Date.now() ? 'ICE_BOMB' : 'PENALTY',
+      consecutiveWrong: player.consecutiveWrong,
+      specialGuardUntil: player.specialGuardUntil || 0
+    });
   });
 
   // 8. 호스트: 강제 레이스 종료
