@@ -26,11 +26,12 @@ function rotateChoices(correct, distractors, seed) {
   return { options, answerIndex };
 }
 
-function addMultipleChoice(target, item, question, correct, distractors, variant) {
+function addMultipleChoice(target, item, question, correct, distractors, variant, conceptId) {
   const id = target.length + 1;
   const { options, answerIndex } = rotateChoices(correct, distractors, id + variant);
   target.push({
     id,
+    conceptId,
     type: 'multiple-choice',
     part: item.part,
     category: item.category,
@@ -59,14 +60,16 @@ function buildDataset() {
 
   const multipleChoice = [];
   concepts.forEach((item, conceptIndex) => {
-    addMultipleChoice(multipleChoice, item, item.directQuestion, item.answer, item.distractors, conceptIndex);
+    const conceptId = conceptIndex + 1;
+    addMultipleChoice(multipleChoice, item, item.directQuestion, item.answer, item.distractors, conceptIndex, conceptId);
     addMultipleChoice(
       multipleChoice,
       item,
       `자료를 읽고 질문에 답하세요. ${item.clue} 질문: ${item.directQuestion}`,
       item.answer,
       item.distractors,
-      conceptIndex + 1
+      conceptIndex + 1,
+      conceptId
     );
     addMultipleChoice(
       multipleChoice,
@@ -74,7 +77,8 @@ function buildDataset() {
       `${item.category} 근거 적용 문제입니다. ${item.directQuestion} 판단 근거: ${item.clue}`,
       item.answer,
       item.distractors,
-      conceptIndex + 2
+      conceptIndex + 2,
+      conceptId
     );
     addMultipleChoice(
       multipleChoice,
@@ -82,12 +86,14 @@ function buildDataset() {
       item.scenarioQuestion,
       item.scenarioAnswer,
       item.scenarioDistractors,
-      conceptIndex + 3
+      conceptIndex + 3,
+      conceptId
     );
   });
 
   const shortAnswer = concepts.map((item, index) => ({
     id: multipleChoice.length + index + 1,
+    conceptId: index + 1,
     type: 'short-answer',
     part: item.part,
     category: item.category,
@@ -113,6 +119,9 @@ function validateDataset(dataset) {
 
   dataset.forEach((item, index) => {
     if (item.id !== index + 1) throw new Error(`ID 순서 오류: ${item.id}`);
+    if (!Number.isInteger(item.conceptId) || item.conceptId < 1 || item.conceptId > 100) {
+      throw new Error(`개념 ID 오류: ${item.id}`);
+    }
     if (!item.question || !item.explanation || !item.sourcePages?.length) {
       throw new Error(`필수 필드 누락: ${item.id}`);
     }
@@ -131,6 +140,14 @@ function validateDataset(dataset) {
   const normalizedQuestions = dataset.map((item) => normalize(item.question));
   if (new Set(normalizedQuestions).size !== dataset.length) {
     throw new Error('중복된 문제 문장이 있습니다.');
+  }
+
+  const conceptCounts = dataset.reduce((counts, item) => {
+    counts.set(item.conceptId, (counts.get(item.conceptId) || 0) + 1);
+    return counts;
+  }, new Map());
+  if (conceptCounts.size !== 100 || [...conceptCounts.values()].some(count => count !== 5)) {
+    throw new Error('각 핵심 개념은 정확히 5개 변형 문항을 가져야 합니다.');
   }
 }
 

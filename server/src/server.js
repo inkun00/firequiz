@@ -43,7 +43,10 @@ io.on('connection', (socket) => {
     const room = roomManager.createRoom(socket.id);
     socket.join(room.pin);
     console.log(`[Race Room Created] PIN: ${room.pin}`);
-    socket.emit('room_created', { pin: room.pin, totalQuestions: room.questions.length });
+    socket.emit('room_created', {
+      pin: room.pin,
+      totalQuestions: new Set(room.questions.map(question => question.conceptId)).size
+    });
   });
 
   // 2. 플레이어 방 입장

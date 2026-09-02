@@ -3,6 +3,7 @@
  */
 const quizData = require('./quizData');
 const { GameEngine } = require('./gameEngine');
+const { createConceptQuestionDeck } = require('./questionDeck');
 const { randomUUID } = require('crypto');
 
 const QUESTION_TIME_LIMIT_SEC = 20;
@@ -57,7 +58,12 @@ class Room {
       return { success: false, message: '방 인원(최대 30명)이 가득 찼습니다.' };
     }
 
-    const shuffledQuestions = [...this.questions].sort(() => Math.random() - 0.5);
+    const questionVariantSeed = Math.floor(Math.random() * 5);
+    const questionVariantRound = 0;
+    const shuffledQuestions = createConceptQuestionDeck(this.questions, {
+      variantSeed: questionVariantSeed,
+      variantRound: questionVariantRound
+    });
     const normalizedAvatar = normalizeAvatarPath(avatar);
 
     const player = {
@@ -79,6 +85,8 @@ class Room {
       specialGuardUntil: 0,
       isBot: false,
       progress: 0,
+      questionVariantSeed,
+      questionVariantRound,
       shuffledQuestions: shuffledQuestions,
       currentQuestion: null,
       questionStartTime: 0,
@@ -211,7 +219,12 @@ class Room {
       const name = BOT_NAMES[i % BOT_NAMES.length];
       const botIndex = this.players.size;
       const avatar = AVATARS[botIndex % AVATARS.length];
-      const shuffled = [...this.questions].sort(() => Math.random() - 0.5);
+      const questionVariantSeed = Math.floor(Math.random() * 5);
+      const questionVariantRound = 0;
+      const shuffled = createConceptQuestionDeck(this.questions, {
+        variantSeed: questionVariantSeed,
+        variantRound: questionVariantRound
+      });
 
       const botPlayer = {
         id: botId,
@@ -232,6 +245,8 @@ class Room {
         specialGuardUntil: 0,
         isBot: true,
         progress: 0,
+        questionVariantSeed,
+        questionVariantRound,
         shuffledQuestions: shuffled,
         currentQuestion: null,
         questionStartTime: 0,
@@ -269,7 +284,11 @@ class Room {
       player.iceFrozenUntil = 0;
       player.specialGuardUntil = 0;
       player.progress = 0;
-      player.shuffledQuestions = [...this.questions].sort(() => Math.random() - 0.5);
+      player.questionVariantRound = (player.questionVariantRound || 0) + 1;
+      player.shuffledQuestions = createConceptQuestionDeck(this.questions, {
+        variantSeed: player.questionVariantSeed || 0,
+        variantRound: player.questionVariantRound
+      });
       player.currentQuestion = null;
       player.questionStartTime = 0;
       player.isFinished = false;
@@ -345,7 +364,7 @@ class Room {
       });
 
       const allFinished = Array.from(this.players.values()).every(
-        p => p.isFinished || p.progress >= this.questions.length
+        p => p.isFinished || p.progress >= p.shuffledQuestions.length
       );
       if (allFinished) {
         this.endRace(io, 'ALL_FINISHED');

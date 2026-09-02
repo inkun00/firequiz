@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "conceptId": 1,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -20,6 +21,7 @@
   },
   {
     "id": 2,
+    "conceptId": 1,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -39,6 +41,7 @@
   },
   {
     "id": 3,
+    "conceptId": 1,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -58,6 +61,7 @@
   },
   {
     "id": 4,
+    "conceptId": 1,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -77,6 +81,7 @@
   },
   {
     "id": 5,
+    "conceptId": 2,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -96,6 +101,7 @@
   },
   {
     "id": 6,
+    "conceptId": 2,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -115,6 +121,7 @@
   },
   {
     "id": 7,
+    "conceptId": 2,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -134,6 +141,7 @@
   },
   {
     "id": 8,
+    "conceptId": 2,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -153,6 +161,7 @@
   },
   {
     "id": 9,
+    "conceptId": 3,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -172,6 +181,7 @@
   },
   {
     "id": 10,
+    "conceptId": 3,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -191,6 +201,7 @@
   },
   {
     "id": 11,
+    "conceptId": 3,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -210,6 +221,7 @@
   },
   {
     "id": 12,
+    "conceptId": 3,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -229,6 +241,7 @@
   },
   {
     "id": 13,
+    "conceptId": 4,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -248,6 +261,7 @@
   },
   {
     "id": 14,
+    "conceptId": 4,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -267,6 +281,7 @@
   },
   {
     "id": 15,
+    "conceptId": 4,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -286,6 +301,7 @@
   },
   {
     "id": 16,
+    "conceptId": 4,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -305,6 +321,7 @@
   },
   {
     "id": 17,
+    "conceptId": 5,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "화재의 뜻",
@@ -324,6 +341,7 @@
   },
   {
     "id": 18,
+    "conceptId": 5,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "화재의 뜻",
@@ -343,6 +361,7 @@
   },
   {
     "id": 19,
+    "conceptId": 5,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "화재의 뜻",
@@ -362,6 +381,7 @@
   },
   {
     "id": 20,
+    "conceptId": 5,
     "type": "multiple-choice",
     "part": "Part 01. '불'이란?",
     "category": "화재의 뜻",
@@ -381,6 +401,7 @@
   },
   {
     "id": 21,
+    "conceptId": 6,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "부주의",
@@ -400,6 +421,7 @@
   },
   {
     "id": 22,
+    "conceptId": 6,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "부주의",
@@ -419,6 +441,7 @@
   },
   {
     "id": 23,
+    "conceptId": 6,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "부주의",
@@ -438,6 +461,7 @@
   },
   {
     "id": 24,
+    "conceptId": 6,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "부주의",
@@ -457,6 +481,7 @@
   },
   {
     "id": 25,
+    "conceptId": 7,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -476,6 +501,7 @@
   },
   {
     "id": 26,
+    "conceptId": 7,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -495,6 +521,7 @@
   },
   {
     "id": 27,
+    "conceptId": 7,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -514,6 +541,7 @@
   },
   {
     "id": 28,
+    "conceptId": 7,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -533,6 +561,7 @@
   },
   {
     "id": 29,
+    "conceptId": 8,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -552,6 +581,7 @@
   },
   {
     "id": 30,
+    "conceptId": 8,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -571,6 +601,7 @@
   },
   {
     "id": 31,
+    "conceptId": 8,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -590,6 +621,7 @@
   },
   {
     "id": 32,
+    "conceptId": 8,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -609,6 +641,7 @@
   },
   {
     "id": 33,
+    "conceptId": 9,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -628,6 +661,7 @@
   },
   {
     "id": 34,
+    "conceptId": 9,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -647,6 +681,7 @@
   },
   {
     "id": 35,
+    "conceptId": 9,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -666,6 +701,7 @@
   },
   {
     "id": 36,
+    "conceptId": 9,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -685,6 +721,7 @@
   },
   {
     "id": 37,
+    "conceptId": 10,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -704,6 +741,7 @@
   },
   {
     "id": 38,
+    "conceptId": 10,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -723,6 +761,7 @@
   },
   {
     "id": 39,
+    "conceptId": 10,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -742,6 +781,7 @@
   },
   {
     "id": 40,
+    "conceptId": 10,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -761,6 +801,7 @@
   },
   {
     "id": 41,
+    "conceptId": 11,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -780,6 +821,7 @@
   },
   {
     "id": 42,
+    "conceptId": 11,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -799,6 +841,7 @@
   },
   {
     "id": 43,
+    "conceptId": 11,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -818,6 +861,7 @@
   },
   {
     "id": 44,
+    "conceptId": 11,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -837,6 +881,7 @@
   },
   {
     "id": 45,
+    "conceptId": 12,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "감전",
@@ -856,6 +901,7 @@
   },
   {
     "id": 46,
+    "conceptId": 12,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "감전",
@@ -875,6 +921,7 @@
   },
   {
     "id": 47,
+    "conceptId": 12,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "감전",
@@ -894,6 +941,7 @@
   },
   {
     "id": 48,
+    "conceptId": 12,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "감전",
@@ -913,6 +961,7 @@
   },
   {
     "id": 49,
+    "conceptId": 13,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -932,6 +981,7 @@
   },
   {
     "id": 50,
+    "conceptId": 13,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -951,6 +1001,7 @@
   },
   {
     "id": 51,
+    "conceptId": 13,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -970,6 +1021,7 @@
   },
   {
     "id": 52,
+    "conceptId": 13,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -989,6 +1041,7 @@
   },
   {
     "id": 53,
+    "conceptId": 14,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1008,6 +1061,7 @@
   },
   {
     "id": 54,
+    "conceptId": 14,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1027,6 +1081,7 @@
   },
   {
     "id": 55,
+    "conceptId": 14,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1046,6 +1101,7 @@
   },
   {
     "id": 56,
+    "conceptId": 14,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1065,6 +1121,7 @@
   },
   {
     "id": 57,
+    "conceptId": 15,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1084,6 +1141,7 @@
   },
   {
     "id": 58,
+    "conceptId": 15,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1103,6 +1161,7 @@
   },
   {
     "id": 59,
+    "conceptId": 15,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1122,6 +1181,7 @@
   },
   {
     "id": 60,
+    "conceptId": 15,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1141,6 +1201,7 @@
   },
   {
     "id": 61,
+    "conceptId": 16,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1160,6 +1221,7 @@
   },
   {
     "id": 62,
+    "conceptId": 16,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1179,6 +1241,7 @@
   },
   {
     "id": 63,
+    "conceptId": 16,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1198,6 +1261,7 @@
   },
   {
     "id": 64,
+    "conceptId": 16,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1217,6 +1281,7 @@
   },
   {
     "id": 65,
+    "conceptId": 17,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1236,6 +1301,7 @@
   },
   {
     "id": 66,
+    "conceptId": 17,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1255,6 +1321,7 @@
   },
   {
     "id": 67,
+    "conceptId": 17,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1274,6 +1341,7 @@
   },
   {
     "id": 68,
+    "conceptId": 17,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1293,6 +1361,7 @@
   },
   {
     "id": 69,
+    "conceptId": 18,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1312,6 +1381,7 @@
   },
   {
     "id": 70,
+    "conceptId": 18,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1331,6 +1401,7 @@
   },
   {
     "id": 71,
+    "conceptId": 18,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1350,6 +1421,7 @@
   },
   {
     "id": 72,
+    "conceptId": 18,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1369,6 +1441,7 @@
   },
   {
     "id": 73,
+    "conceptId": 19,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1388,6 +1461,7 @@
   },
   {
     "id": 74,
+    "conceptId": 19,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1407,6 +1481,7 @@
   },
   {
     "id": 75,
+    "conceptId": 19,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1426,6 +1501,7 @@
   },
   {
     "id": 76,
+    "conceptId": 19,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -1445,6 +1521,7 @@
   },
   {
     "id": 77,
+    "conceptId": 20,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1464,6 +1541,7 @@
   },
   {
     "id": 78,
+    "conceptId": 20,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1483,6 +1561,7 @@
   },
   {
     "id": 79,
+    "conceptId": 20,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1502,6 +1581,7 @@
   },
   {
     "id": 80,
+    "conceptId": 20,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1521,6 +1601,7 @@
   },
   {
     "id": 81,
+    "conceptId": 21,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1540,6 +1621,7 @@
   },
   {
     "id": 82,
+    "conceptId": 21,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1559,6 +1641,7 @@
   },
   {
     "id": 83,
+    "conceptId": 21,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1578,6 +1661,7 @@
   },
   {
     "id": 84,
+    "conceptId": 21,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1597,6 +1681,7 @@
   },
   {
     "id": 85,
+    "conceptId": 22,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1616,6 +1701,7 @@
   },
   {
     "id": 86,
+    "conceptId": 22,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1635,6 +1721,7 @@
   },
   {
     "id": 87,
+    "conceptId": 22,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1654,6 +1741,7 @@
   },
   {
     "id": 88,
+    "conceptId": 22,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -1673,6 +1761,7 @@
   },
   {
     "id": 89,
+    "conceptId": 23,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "불장난",
@@ -1692,6 +1781,7 @@
   },
   {
     "id": 90,
+    "conceptId": 23,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "불장난",
@@ -1711,6 +1801,7 @@
   },
   {
     "id": 91,
+    "conceptId": 23,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "불장난",
@@ -1730,6 +1821,7 @@
   },
   {
     "id": 92,
+    "conceptId": 23,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "불장난",
@@ -1749,6 +1841,7 @@
   },
   {
     "id": 93,
+    "conceptId": 24,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "방화",
@@ -1768,6 +1861,7 @@
   },
   {
     "id": 94,
+    "conceptId": 24,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "방화",
@@ -1787,6 +1881,7 @@
   },
   {
     "id": 95,
+    "conceptId": 24,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "방화",
@@ -1806,6 +1901,7 @@
   },
   {
     "id": 96,
+    "conceptId": 24,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "방화",
@@ -1825,6 +1921,7 @@
   },
   {
     "id": 97,
+    "conceptId": 25,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "담뱃불",
@@ -1844,6 +1941,7 @@
   },
   {
     "id": 98,
+    "conceptId": 25,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "담뱃불",
@@ -1863,6 +1961,7 @@
   },
   {
     "id": 99,
+    "conceptId": 25,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "담뱃불",
@@ -1882,6 +1981,7 @@
   },
   {
     "id": 100,
+    "conceptId": 25,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "담뱃불",
@@ -1901,6 +2001,7 @@
   },
   {
     "id": 101,
+    "conceptId": 26,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "산불",
@@ -1920,6 +2021,7 @@
   },
   {
     "id": 102,
+    "conceptId": 26,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "산불",
@@ -1939,6 +2041,7 @@
   },
   {
     "id": 103,
+    "conceptId": 26,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "산불",
@@ -1958,6 +2061,7 @@
   },
   {
     "id": 104,
+    "conceptId": 26,
     "type": "multiple-choice",
     "part": "Part 02. 화재가 나는 원인",
     "category": "산불",
@@ -1977,6 +2081,7 @@
   },
   {
     "id": 105,
+    "conceptId": 27,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 대응",
@@ -1996,6 +2101,7 @@
   },
   {
     "id": 106,
+    "conceptId": 27,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 대응",
@@ -2015,6 +2121,7 @@
   },
   {
     "id": 107,
+    "conceptId": 27,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 대응",
@@ -2034,6 +2141,7 @@
   },
   {
     "id": 108,
+    "conceptId": 27,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 대응",
@@ -2053,6 +2161,7 @@
   },
   {
     "id": 109,
+    "conceptId": 28,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 소화",
@@ -2072,6 +2181,7 @@
   },
   {
     "id": 110,
+    "conceptId": 28,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 소화",
@@ -2091,6 +2201,7 @@
   },
   {
     "id": 111,
+    "conceptId": 28,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 소화",
@@ -2110,6 +2221,7 @@
   },
   {
     "id": 112,
+    "conceptId": 28,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 소화",
@@ -2129,6 +2241,7 @@
   },
   {
     "id": 113,
+    "conceptId": 29,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2148,6 +2261,7 @@
   },
   {
     "id": 114,
+    "conceptId": 29,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2167,6 +2281,7 @@
   },
   {
     "id": 115,
+    "conceptId": 29,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2186,6 +2301,7 @@
   },
   {
     "id": 116,
+    "conceptId": 29,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2205,6 +2321,7 @@
   },
   {
     "id": 117,
+    "conceptId": 30,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2224,6 +2341,7 @@
   },
   {
     "id": 118,
+    "conceptId": 30,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2243,6 +2361,7 @@
   },
   {
     "id": 119,
+    "conceptId": 30,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2262,6 +2381,7 @@
   },
   {
     "id": 120,
+    "conceptId": 30,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2281,6 +2401,7 @@
   },
   {
     "id": 121,
+    "conceptId": 31,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2300,6 +2421,7 @@
   },
   {
     "id": 122,
+    "conceptId": 31,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2319,6 +2441,7 @@
   },
   {
     "id": 123,
+    "conceptId": 31,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2338,6 +2461,7 @@
   },
   {
     "id": 124,
+    "conceptId": 31,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -2357,6 +2481,7 @@
   },
   {
     "id": 125,
+    "conceptId": 32,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "전기화재",
@@ -2376,6 +2501,7 @@
   },
   {
     "id": 126,
+    "conceptId": 32,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "전기화재",
@@ -2395,6 +2521,7 @@
   },
   {
     "id": 127,
+    "conceptId": 32,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "전기화재",
@@ -2414,6 +2541,7 @@
   },
   {
     "id": 128,
+    "conceptId": 32,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "전기화재",
@@ -2433,6 +2561,7 @@
   },
   {
     "id": 129,
+    "conceptId": 33,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "주방화재",
@@ -2452,6 +2581,7 @@
   },
   {
     "id": 130,
+    "conceptId": 33,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "주방화재",
@@ -2471,6 +2601,7 @@
   },
   {
     "id": 131,
+    "conceptId": 33,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "주방화재",
@@ -2490,6 +2621,7 @@
   },
   {
     "id": 132,
+    "conceptId": 33,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "주방화재",
@@ -2509,6 +2641,7 @@
   },
   {
     "id": 133,
+    "conceptId": 34,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2528,6 +2661,7 @@
   },
   {
     "id": 134,
+    "conceptId": 34,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2547,6 +2681,7 @@
   },
   {
     "id": 135,
+    "conceptId": 34,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2566,6 +2701,7 @@
   },
   {
     "id": 136,
+    "conceptId": 34,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2585,6 +2721,7 @@
   },
   {
     "id": 137,
+    "conceptId": 35,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2604,6 +2741,7 @@
   },
   {
     "id": 138,
+    "conceptId": 35,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2623,6 +2761,7 @@
   },
   {
     "id": 139,
+    "conceptId": 35,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2642,6 +2781,7 @@
   },
   {
     "id": 140,
+    "conceptId": 35,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2661,6 +2801,7 @@
   },
   {
     "id": 141,
+    "conceptId": 36,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2680,6 +2821,7 @@
   },
   {
     "id": 142,
+    "conceptId": 36,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2699,6 +2841,7 @@
   },
   {
     "id": 143,
+    "conceptId": 36,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2718,6 +2861,7 @@
   },
   {
     "id": 144,
+    "conceptId": 36,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -2737,6 +2881,7 @@
   },
   {
     "id": 145,
+    "conceptId": 37,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2756,6 +2901,7 @@
   },
   {
     "id": 146,
+    "conceptId": 37,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2775,6 +2921,7 @@
   },
   {
     "id": 147,
+    "conceptId": 37,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2794,6 +2941,7 @@
   },
   {
     "id": 148,
+    "conceptId": 37,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -2813,6 +2961,7 @@
   },
   {
     "id": 149,
+    "conceptId": 38,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "실내 고립",
@@ -2832,6 +2981,7 @@
   },
   {
     "id": 150,
+    "conceptId": 38,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "실내 고립",
@@ -2851,6 +3001,7 @@
   },
   {
     "id": 151,
+    "conceptId": 38,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "실내 고립",
@@ -2870,6 +3021,7 @@
   },
   {
     "id": 152,
+    "conceptId": 38,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "실내 고립",
@@ -2889,6 +3041,7 @@
   },
   {
     "id": 153,
+    "conceptId": 39,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "옷에 붙은 불",
@@ -2908,6 +3061,7 @@
   },
   {
     "id": 154,
+    "conceptId": 39,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "옷에 붙은 불",
@@ -2927,6 +3081,7 @@
   },
   {
     "id": 155,
+    "conceptId": 39,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "옷에 붙은 불",
@@ -2946,6 +3101,7 @@
   },
   {
     "id": 156,
+    "conceptId": 39,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "옷에 붙은 불",
@@ -2965,6 +3121,7 @@
   },
   {
     "id": 157,
+    "conceptId": 40,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "119 신고",
@@ -2984,6 +3141,7 @@
   },
   {
     "id": 158,
+    "conceptId": 40,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "119 신고",
@@ -3003,6 +3161,7 @@
   },
   {
     "id": 159,
+    "conceptId": 40,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "119 신고",
@@ -3022,6 +3181,7 @@
   },
   {
     "id": 160,
+    "conceptId": 40,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "119 신고",
@@ -3041,6 +3201,7 @@
   },
   {
     "id": 161,
+    "conceptId": 41,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "피난계획",
@@ -3060,6 +3221,7 @@
   },
   {
     "id": 162,
+    "conceptId": 41,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "피난계획",
@@ -3079,6 +3241,7 @@
   },
   {
     "id": 163,
+    "conceptId": 41,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "피난계획",
@@ -3098,6 +3261,7 @@
   },
   {
     "id": 164,
+    "conceptId": 41,
     "type": "multiple-choice",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "피난계획",
@@ -3117,6 +3281,7 @@
   },
   {
     "id": 165,
+    "conceptId": 42,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3136,6 +3301,7 @@
   },
   {
     "id": 166,
+    "conceptId": 42,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3155,6 +3321,7 @@
   },
   {
     "id": 167,
+    "conceptId": 42,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3174,6 +3341,7 @@
   },
   {
     "id": 168,
+    "conceptId": 42,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3193,6 +3361,7 @@
   },
   {
     "id": 169,
+    "conceptId": 43,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3212,6 +3381,7 @@
   },
   {
     "id": 170,
+    "conceptId": 43,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3231,6 +3401,7 @@
   },
   {
     "id": 171,
+    "conceptId": 43,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3250,6 +3421,7 @@
   },
   {
     "id": 172,
+    "conceptId": 43,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3269,6 +3441,7 @@
   },
   {
     "id": 173,
+    "conceptId": 44,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3288,6 +3461,7 @@
   },
   {
     "id": 174,
+    "conceptId": 44,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3307,6 +3481,7 @@
   },
   {
     "id": 175,
+    "conceptId": 44,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3326,6 +3501,7 @@
   },
   {
     "id": 176,
+    "conceptId": 44,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -3345,6 +3521,7 @@
   },
   {
     "id": 177,
+    "conceptId": 45,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3364,6 +3541,7 @@
   },
   {
     "id": 178,
+    "conceptId": 45,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3383,6 +3561,7 @@
   },
   {
     "id": 179,
+    "conceptId": 45,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3402,6 +3581,7 @@
   },
   {
     "id": 180,
+    "conceptId": 45,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3421,6 +3601,7 @@
   },
   {
     "id": 181,
+    "conceptId": 46,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3440,6 +3621,7 @@
   },
   {
     "id": 182,
+    "conceptId": 46,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3459,6 +3641,7 @@
   },
   {
     "id": 183,
+    "conceptId": 46,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3478,6 +3661,7 @@
   },
   {
     "id": 184,
+    "conceptId": 46,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3497,6 +3681,7 @@
   },
   {
     "id": 185,
+    "conceptId": 47,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3516,6 +3701,7 @@
   },
   {
     "id": 186,
+    "conceptId": 47,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3535,6 +3721,7 @@
   },
   {
     "id": 187,
+    "conceptId": 47,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3554,6 +3741,7 @@
   },
   {
     "id": 188,
+    "conceptId": 47,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3573,6 +3761,7 @@
   },
   {
     "id": 189,
+    "conceptId": 48,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3592,6 +3781,7 @@
   },
   {
     "id": 190,
+    "conceptId": 48,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3611,6 +3801,7 @@
   },
   {
     "id": 191,
+    "conceptId": 48,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3630,6 +3821,7 @@
   },
   {
     "id": 192,
+    "conceptId": 48,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -3649,6 +3841,7 @@
   },
   {
     "id": 193,
+    "conceptId": 49,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "AED",
@@ -3668,6 +3861,7 @@
   },
   {
     "id": 194,
+    "conceptId": 49,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "AED",
@@ -3687,6 +3881,7 @@
   },
   {
     "id": 195,
+    "conceptId": 49,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "AED",
@@ -3706,6 +3901,7 @@
   },
   {
     "id": 196,
+    "conceptId": 49,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "AED",
@@ -3725,6 +3921,7 @@
   },
   {
     "id": 197,
+    "conceptId": 50,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "압사 예방",
@@ -3744,6 +3941,7 @@
   },
   {
     "id": 198,
+    "conceptId": 50,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "압사 예방",
@@ -3763,6 +3961,7 @@
   },
   {
     "id": 199,
+    "conceptId": 50,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "압사 예방",
@@ -3782,6 +3981,7 @@
   },
   {
     "id": 200,
+    "conceptId": 50,
     "type": "multiple-choice",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "압사 예방",
@@ -3801,6 +4001,7 @@
   },
   {
     "id": 201,
+    "conceptId": 51,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3820,6 +4021,7 @@
   },
   {
     "id": 202,
+    "conceptId": 51,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3839,6 +4041,7 @@
   },
   {
     "id": 203,
+    "conceptId": 51,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3858,6 +4061,7 @@
   },
   {
     "id": 204,
+    "conceptId": 51,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3877,6 +4081,7 @@
   },
   {
     "id": 205,
+    "conceptId": 52,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3896,6 +4101,7 @@
   },
   {
     "id": 206,
+    "conceptId": 52,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3915,6 +4121,7 @@
   },
   {
     "id": 207,
+    "conceptId": 52,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3934,6 +4141,7 @@
   },
   {
     "id": 208,
+    "conceptId": 52,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -3953,6 +4161,7 @@
   },
   {
     "id": 209,
+    "conceptId": 53,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -3972,6 +4181,7 @@
   },
   {
     "id": 210,
+    "conceptId": 53,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -3991,6 +4201,7 @@
   },
   {
     "id": 211,
+    "conceptId": 53,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -4010,6 +4221,7 @@
   },
   {
     "id": 212,
+    "conceptId": 53,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -4029,6 +4241,7 @@
   },
   {
     "id": 213,
+    "conceptId": 54,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -4048,6 +4261,7 @@
   },
   {
     "id": 214,
+    "conceptId": 54,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -4067,6 +4281,7 @@
   },
   {
     "id": 215,
+    "conceptId": 54,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -4086,6 +4301,7 @@
   },
   {
     "id": 216,
+    "conceptId": 54,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -4105,6 +4321,7 @@
   },
   {
     "id": 217,
+    "conceptId": 55,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4124,6 +4341,7 @@
   },
   {
     "id": 218,
+    "conceptId": 55,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4143,6 +4361,7 @@
   },
   {
     "id": 219,
+    "conceptId": 55,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4162,6 +4381,7 @@
   },
   {
     "id": 220,
+    "conceptId": 55,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4181,6 +4401,7 @@
   },
   {
     "id": 221,
+    "conceptId": 56,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4200,6 +4421,7 @@
   },
   {
     "id": 222,
+    "conceptId": 56,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4219,6 +4441,7 @@
   },
   {
     "id": 223,
+    "conceptId": 56,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4238,6 +4461,7 @@
   },
   {
     "id": 224,
+    "conceptId": 56,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -4257,6 +4481,7 @@
   },
   {
     "id": 225,
+    "conceptId": 57,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4276,6 +4501,7 @@
   },
   {
     "id": 226,
+    "conceptId": 57,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4295,6 +4521,7 @@
   },
   {
     "id": 227,
+    "conceptId": 57,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4314,6 +4541,7 @@
   },
   {
     "id": 228,
+    "conceptId": 57,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4333,6 +4561,7 @@
   },
   {
     "id": 229,
+    "conceptId": 58,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4352,6 +4581,7 @@
   },
   {
     "id": 230,
+    "conceptId": 58,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4371,6 +4601,7 @@
   },
   {
     "id": 231,
+    "conceptId": 58,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4390,6 +4621,7 @@
   },
   {
     "id": 232,
+    "conceptId": 58,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4409,6 +4641,7 @@
   },
   {
     "id": 233,
+    "conceptId": 59,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4428,6 +4661,7 @@
   },
   {
     "id": 234,
+    "conceptId": 59,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4447,6 +4681,7 @@
   },
   {
     "id": 235,
+    "conceptId": 59,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4466,6 +4701,7 @@
   },
   {
     "id": 236,
+    "conceptId": 59,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4485,6 +4721,7 @@
   },
   {
     "id": 237,
+    "conceptId": 60,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4504,6 +4741,7 @@
   },
   {
     "id": 238,
+    "conceptId": 60,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4523,6 +4761,7 @@
   },
   {
     "id": 239,
+    "conceptId": 60,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4542,6 +4781,7 @@
   },
   {
     "id": 240,
+    "conceptId": 60,
     "type": "multiple-choice",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -4561,6 +4801,7 @@
   },
   {
     "id": 241,
+    "conceptId": 61,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난계단",
@@ -4580,6 +4821,7 @@
   },
   {
     "id": 242,
+    "conceptId": 61,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난계단",
@@ -4599,6 +4841,7 @@
   },
   {
     "id": 243,
+    "conceptId": 61,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난계단",
@@ -4618,6 +4861,7 @@
   },
   {
     "id": 244,
+    "conceptId": 61,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난계단",
@@ -4637,6 +4881,7 @@
   },
   {
     "id": 245,
+    "conceptId": 62,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4656,6 +4901,7 @@
   },
   {
     "id": 246,
+    "conceptId": 62,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4675,6 +4921,7 @@
   },
   {
     "id": 247,
+    "conceptId": 62,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4694,6 +4941,7 @@
   },
   {
     "id": 248,
+    "conceptId": 62,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4713,6 +4961,7 @@
   },
   {
     "id": 249,
+    "conceptId": 63,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4732,6 +4981,7 @@
   },
   {
     "id": 250,
+    "conceptId": 63,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4751,6 +5001,7 @@
   },
   {
     "id": 251,
+    "conceptId": 63,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4770,6 +5021,7 @@
   },
   {
     "id": 252,
+    "conceptId": 63,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -4789,6 +5041,7 @@
   },
   {
     "id": 253,
+    "conceptId": 64,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "방화문",
@@ -4808,6 +5061,7 @@
   },
   {
     "id": 254,
+    "conceptId": 64,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "방화문",
@@ -4827,6 +5081,7 @@
   },
   {
     "id": 255,
+    "conceptId": 64,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "방화문",
@@ -4846,6 +5101,7 @@
   },
   {
     "id": 256,
+    "conceptId": 64,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "방화문",
@@ -4865,6 +5121,7 @@
   },
   {
     "id": 257,
+    "conceptId": 65,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -4884,6 +5141,7 @@
   },
   {
     "id": 258,
+    "conceptId": 65,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -4903,6 +5161,7 @@
   },
   {
     "id": 259,
+    "conceptId": 65,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -4922,6 +5181,7 @@
   },
   {
     "id": 260,
+    "conceptId": 65,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -4941,6 +5201,7 @@
   },
   {
     "id": 261,
+    "conceptId": 66,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -4960,6 +5221,7 @@
   },
   {
     "id": 262,
+    "conceptId": 66,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -4979,6 +5241,7 @@
   },
   {
     "id": 263,
+    "conceptId": 66,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -4998,6 +5261,7 @@
   },
   {
     "id": 264,
+    "conceptId": 66,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -5017,6 +5281,7 @@
   },
   {
     "id": 265,
+    "conceptId": 67,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -5036,6 +5301,7 @@
   },
   {
     "id": 266,
+    "conceptId": 67,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -5055,6 +5321,7 @@
   },
   {
     "id": 267,
+    "conceptId": 67,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -5074,6 +5341,7 @@
   },
   {
     "id": 268,
+    "conceptId": 67,
     "type": "multiple-choice",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -5093,6 +5361,7 @@
   },
   {
     "id": 269,
+    "conceptId": 68,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "화재 통계",
@@ -5112,6 +5381,7 @@
   },
   {
     "id": 270,
+    "conceptId": 68,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "화재 통계",
@@ -5131,6 +5401,7 @@
   },
   {
     "id": 271,
+    "conceptId": 68,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "화재 통계",
@@ -5150,6 +5421,7 @@
   },
   {
     "id": 272,
+    "conceptId": 68,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "화재 통계",
@@ -5169,6 +5441,7 @@
   },
   {
     "id": 273,
+    "conceptId": 69,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "불조심 기간",
@@ -5188,6 +5461,7 @@
   },
   {
     "id": 274,
+    "conceptId": 69,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "불조심 기간",
@@ -5207,6 +5481,7 @@
   },
   {
     "id": 275,
+    "conceptId": 69,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "불조심 기간",
@@ -5226,6 +5501,7 @@
   },
   {
     "id": 276,
+    "conceptId": 69,
     "type": "multiple-choice",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "불조심 기간",
@@ -5245,6 +5521,7 @@
   },
   {
     "id": 277,
+    "conceptId": 70,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "지하철 화재",
@@ -5264,6 +5541,7 @@
   },
   {
     "id": 278,
+    "conceptId": 70,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "지하철 화재",
@@ -5283,6 +5561,7 @@
   },
   {
     "id": 279,
+    "conceptId": 70,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "지하철 화재",
@@ -5302,6 +5581,7 @@
   },
   {
     "id": 280,
+    "conceptId": 70,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "지하철 화재",
@@ -5321,6 +5601,7 @@
   },
   {
     "id": 281,
+    "conceptId": 71,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 안전",
@@ -5340,6 +5621,7 @@
   },
   {
     "id": 282,
+    "conceptId": 71,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 안전",
@@ -5359,6 +5641,7 @@
   },
   {
     "id": 283,
+    "conceptId": 71,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 안전",
@@ -5378,6 +5661,7 @@
   },
   {
     "id": 284,
+    "conceptId": 71,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 안전",
@@ -5397,6 +5681,7 @@
   },
   {
     "id": 285,
+    "conceptId": 72,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 대피",
@@ -5416,6 +5701,7 @@
   },
   {
     "id": 286,
+    "conceptId": 72,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 대피",
@@ -5435,6 +5721,7 @@
   },
   {
     "id": 287,
+    "conceptId": 72,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 대피",
@@ -5454,6 +5741,7 @@
   },
   {
     "id": 288,
+    "conceptId": 72,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 대피",
@@ -5473,6 +5761,7 @@
   },
   {
     "id": 289,
+    "conceptId": 73,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5492,6 +5781,7 @@
   },
   {
     "id": 290,
+    "conceptId": 73,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5511,6 +5801,7 @@
   },
   {
     "id": 291,
+    "conceptId": 73,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5530,6 +5821,7 @@
   },
   {
     "id": 292,
+    "conceptId": 73,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5549,6 +5841,7 @@
   },
   {
     "id": 293,
+    "conceptId": 74,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5568,6 +5861,7 @@
   },
   {
     "id": 294,
+    "conceptId": 74,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5587,6 +5881,7 @@
   },
   {
     "id": 295,
+    "conceptId": 74,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5606,6 +5901,7 @@
   },
   {
     "id": 296,
+    "conceptId": 74,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5625,6 +5921,7 @@
   },
   {
     "id": 297,
+    "conceptId": 75,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5644,6 +5941,7 @@
   },
   {
     "id": 298,
+    "conceptId": 75,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5663,6 +5961,7 @@
   },
   {
     "id": 299,
+    "conceptId": 75,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5682,6 +5981,7 @@
   },
   {
     "id": 300,
+    "conceptId": 75,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -5701,6 +6001,7 @@
   },
   {
     "id": 301,
+    "conceptId": 76,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5720,6 +6021,7 @@
   },
   {
     "id": 302,
+    "conceptId": 76,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5739,6 +6041,7 @@
   },
   {
     "id": 303,
+    "conceptId": 76,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5758,6 +6061,7 @@
   },
   {
     "id": 304,
+    "conceptId": 76,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5777,6 +6081,7 @@
   },
   {
     "id": 305,
+    "conceptId": 77,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5796,6 +6101,7 @@
   },
   {
     "id": 306,
+    "conceptId": 77,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5815,6 +6121,7 @@
   },
   {
     "id": 307,
+    "conceptId": 77,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5834,6 +6141,7 @@
   },
   {
     "id": 308,
+    "conceptId": 77,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -5853,6 +6161,7 @@
   },
   {
     "id": 309,
+    "conceptId": 78,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이",
@@ -5872,6 +6181,7 @@
   },
   {
     "id": 310,
+    "conceptId": 78,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이",
@@ -5891,6 +6201,7 @@
   },
   {
     "id": 311,
+    "conceptId": 78,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이",
@@ -5910,6 +6221,7 @@
   },
   {
     "id": 312,
+    "conceptId": 78,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이",
@@ -5929,6 +6241,7 @@
   },
   {
     "id": 313,
+    "conceptId": 79,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이 구조",
@@ -5948,6 +6261,7 @@
   },
   {
     "id": 314,
+    "conceptId": 79,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이 구조",
@@ -5967,6 +6281,7 @@
   },
   {
     "id": 315,
+    "conceptId": 79,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이 구조",
@@ -5986,6 +6301,7 @@
   },
   {
     "id": 316,
+    "conceptId": 79,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이 구조",
@@ -6005,6 +6321,7 @@
   },
   {
     "id": 317,
+    "conceptId": 80,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "놀이터",
@@ -6024,6 +6341,7 @@
   },
   {
     "id": 318,
+    "conceptId": 80,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "놀이터",
@@ -6043,6 +6361,7 @@
   },
   {
     "id": 319,
+    "conceptId": 80,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "놀이터",
@@ -6062,6 +6381,7 @@
   },
   {
     "id": 320,
+    "conceptId": 80,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "놀이터",
@@ -6081,6 +6401,7 @@
   },
   {
     "id": 321,
+    "conceptId": 81,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "산불 대피",
@@ -6100,6 +6421,7 @@
   },
   {
     "id": 322,
+    "conceptId": 81,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "산불 대피",
@@ -6119,6 +6441,7 @@
   },
   {
     "id": 323,
+    "conceptId": 81,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "산불 대피",
@@ -6138,6 +6461,7 @@
   },
   {
     "id": 324,
+    "conceptId": 81,
     "type": "multiple-choice",
     "part": "Part 08. 상황별 안전수칙",
     "category": "산불 대피",
@@ -6157,6 +6481,7 @@
   },
   {
     "id": 325,
+    "conceptId": 82,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6176,6 +6501,7 @@
   },
   {
     "id": 326,
+    "conceptId": 82,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6195,6 +6521,7 @@
   },
   {
     "id": 327,
+    "conceptId": 82,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6214,6 +6541,7 @@
   },
   {
     "id": 328,
+    "conceptId": 82,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6233,6 +6561,7 @@
   },
   {
     "id": 329,
+    "conceptId": 83,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6252,6 +6581,7 @@
   },
   {
     "id": 330,
+    "conceptId": 83,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6271,6 +6601,7 @@
   },
   {
     "id": 331,
+    "conceptId": 83,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6290,6 +6621,7 @@
   },
   {
     "id": 332,
+    "conceptId": 83,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -6309,6 +6641,7 @@
   },
   {
     "id": 333,
+    "conceptId": 84,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6328,6 +6661,7 @@
   },
   {
     "id": 334,
+    "conceptId": 84,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6347,6 +6681,7 @@
   },
   {
     "id": 335,
+    "conceptId": 84,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6366,6 +6701,7 @@
   },
   {
     "id": 336,
+    "conceptId": 84,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6385,6 +6721,7 @@
   },
   {
     "id": 337,
+    "conceptId": 85,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6404,6 +6741,7 @@
   },
   {
     "id": 338,
+    "conceptId": 85,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6423,6 +6761,7 @@
   },
   {
     "id": 339,
+    "conceptId": 85,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6442,6 +6781,7 @@
   },
   {
     "id": 340,
+    "conceptId": 85,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -6461,6 +6801,7 @@
   },
   {
     "id": 341,
+    "conceptId": 86,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "태풍",
@@ -6480,6 +6821,7 @@
   },
   {
     "id": 342,
+    "conceptId": 86,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "태풍",
@@ -6499,6 +6841,7 @@
   },
   {
     "id": 343,
+    "conceptId": 86,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "태풍",
@@ -6518,6 +6861,7 @@
   },
   {
     "id": 344,
+    "conceptId": 86,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "태풍",
@@ -6537,6 +6881,7 @@
   },
   {
     "id": 345,
+    "conceptId": 87,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "홍수",
@@ -6556,6 +6901,7 @@
   },
   {
     "id": 346,
+    "conceptId": 87,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "홍수",
@@ -6575,6 +6921,7 @@
   },
   {
     "id": 347,
+    "conceptId": 87,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "홍수",
@@ -6594,6 +6941,7 @@
   },
   {
     "id": 348,
+    "conceptId": 87,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "홍수",
@@ -6613,6 +6961,7 @@
   },
   {
     "id": 349,
+    "conceptId": 88,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "황사",
@@ -6632,6 +6981,7 @@
   },
   {
     "id": 350,
+    "conceptId": 88,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "황사",
@@ -6651,6 +7001,7 @@
   },
   {
     "id": 351,
+    "conceptId": 88,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "황사",
@@ -6670,6 +7021,7 @@
   },
   {
     "id": 352,
+    "conceptId": 88,
     "type": "multiple-choice",
     "part": "Part 09. 자연재난",
     "category": "황사",
@@ -6689,6 +7041,7 @@
   },
   {
     "id": 353,
+    "conceptId": 89,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6708,6 +7061,7 @@
   },
   {
     "id": 354,
+    "conceptId": 89,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6727,6 +7081,7 @@
   },
   {
     "id": 355,
+    "conceptId": 89,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6746,6 +7101,7 @@
   },
   {
     "id": 356,
+    "conceptId": 89,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6765,6 +7121,7 @@
   },
   {
     "id": 357,
+    "conceptId": 90,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6784,6 +7141,7 @@
   },
   {
     "id": 358,
+    "conceptId": 90,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6803,6 +7161,7 @@
   },
   {
     "id": 359,
+    "conceptId": 90,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6822,6 +7181,7 @@
   },
   {
     "id": 360,
+    "conceptId": 90,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -6841,6 +7201,7 @@
   },
   {
     "id": 361,
+    "conceptId": 91,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6860,6 +7221,7 @@
   },
   {
     "id": 362,
+    "conceptId": 91,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6879,6 +7241,7 @@
   },
   {
     "id": 363,
+    "conceptId": 91,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6898,6 +7261,7 @@
   },
   {
     "id": 364,
+    "conceptId": 91,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6917,6 +7281,7 @@
   },
   {
     "id": 365,
+    "conceptId": 92,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6936,6 +7301,7 @@
   },
   {
     "id": 366,
+    "conceptId": 92,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6955,6 +7321,7 @@
   },
   {
     "id": 367,
+    "conceptId": 92,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6974,6 +7341,7 @@
   },
   {
     "id": 368,
+    "conceptId": 92,
     "type": "multiple-choice",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -6993,6 +7361,7 @@
   },
   {
     "id": 369,
+    "conceptId": 93,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "상황 판단",
@@ -7012,6 +7381,7 @@
   },
   {
     "id": 370,
+    "conceptId": 93,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "상황 판단",
@@ -7031,6 +7401,7 @@
   },
   {
     "id": 371,
+    "conceptId": 93,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "상황 판단",
@@ -7050,6 +7421,7 @@
   },
   {
     "id": 372,
+    "conceptId": 93,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "상황 판단",
@@ -7069,6 +7441,7 @@
   },
   {
     "id": 373,
+    "conceptId": 94,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "대피",
@@ -7088,6 +7461,7 @@
   },
   {
     "id": 374,
+    "conceptId": 94,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "대피",
@@ -7107,6 +7481,7 @@
   },
   {
     "id": 375,
+    "conceptId": 94,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "대피",
@@ -7126,6 +7501,7 @@
   },
   {
     "id": 376,
+    "conceptId": 94,
     "type": "multiple-choice",
     "part": "특별편 2. 아파트 화재",
     "category": "대피",
@@ -7145,6 +7521,7 @@
   },
   {
     "id": 377,
+    "conceptId": 95,
     "type": "multiple-choice",
     "part": "특별편 3. 승강기 안전",
     "category": "승강기 고립",
@@ -7164,6 +7541,7 @@
   },
   {
     "id": 378,
+    "conceptId": 95,
     "type": "multiple-choice",
     "part": "특별편 3. 승강기 안전",
     "category": "승강기 고립",
@@ -7183,6 +7561,7 @@
   },
   {
     "id": 379,
+    "conceptId": 95,
     "type": "multiple-choice",
     "part": "특별편 3. 승강기 안전",
     "category": "승강기 고립",
@@ -7202,6 +7581,7 @@
   },
   {
     "id": 380,
+    "conceptId": 95,
     "type": "multiple-choice",
     "part": "특별편 3. 승강기 안전",
     "category": "승강기 고립",
@@ -7221,6 +7601,7 @@
   },
   {
     "id": 381,
+    "conceptId": 96,
     "type": "multiple-choice",
     "part": "특별편 4. 캠핑 안전",
     "category": "캠핑 화재",
@@ -7240,6 +7621,7 @@
   },
   {
     "id": 382,
+    "conceptId": 96,
     "type": "multiple-choice",
     "part": "특별편 4. 캠핑 안전",
     "category": "캠핑 화재",
@@ -7259,6 +7641,7 @@
   },
   {
     "id": 383,
+    "conceptId": 96,
     "type": "multiple-choice",
     "part": "특별편 4. 캠핑 안전",
     "category": "캠핑 화재",
@@ -7278,6 +7661,7 @@
   },
   {
     "id": 384,
+    "conceptId": 96,
     "type": "multiple-choice",
     "part": "특별편 4. 캠핑 안전",
     "category": "캠핑 화재",
@@ -7297,6 +7681,7 @@
   },
   {
     "id": 385,
+    "conceptId": 97,
     "type": "multiple-choice",
     "part": "Part 10. 소방관이 하는 일",
     "category": "소방관",
@@ -7316,6 +7701,7 @@
   },
   {
     "id": 386,
+    "conceptId": 97,
     "type": "multiple-choice",
     "part": "Part 10. 소방관이 하는 일",
     "category": "소방관",
@@ -7335,6 +7721,7 @@
   },
   {
     "id": 387,
+    "conceptId": 97,
     "type": "multiple-choice",
     "part": "Part 10. 소방관이 하는 일",
     "category": "소방관",
@@ -7354,6 +7741,7 @@
   },
   {
     "id": 388,
+    "conceptId": 97,
     "type": "multiple-choice",
     "part": "Part 10. 소방관이 하는 일",
     "category": "소방관",
@@ -7373,6 +7761,7 @@
   },
   {
     "id": 389,
+    "conceptId": 98,
     "type": "multiple-choice",
     "part": "Part 11. 한국화재보험협회",
     "category": "KFPA",
@@ -7392,6 +7781,7 @@
   },
   {
     "id": 390,
+    "conceptId": 98,
     "type": "multiple-choice",
     "part": "Part 11. 한국화재보험협회",
     "category": "KFPA",
@@ -7411,6 +7801,7 @@
   },
   {
     "id": 391,
+    "conceptId": 98,
     "type": "multiple-choice",
     "part": "Part 11. 한국화재보험협회",
     "category": "KFPA",
@@ -7430,6 +7821,7 @@
   },
   {
     "id": 392,
+    "conceptId": 98,
     "type": "multiple-choice",
     "part": "Part 11. 한국화재보험협회",
     "category": "KFPA",
@@ -7449,6 +7841,7 @@
   },
   {
     "id": 393,
+    "conceptId": 99,
     "type": "multiple-choice",
     "part": "Part 12. 보험회사가 하는 일",
     "category": "보험",
@@ -7468,6 +7861,7 @@
   },
   {
     "id": 394,
+    "conceptId": 99,
     "type": "multiple-choice",
     "part": "Part 12. 보험회사가 하는 일",
     "category": "보험",
@@ -7487,6 +7881,7 @@
   },
   {
     "id": 395,
+    "conceptId": 99,
     "type": "multiple-choice",
     "part": "Part 12. 보험회사가 하는 일",
     "category": "보험",
@@ -7506,6 +7901,7 @@
   },
   {
     "id": 396,
+    "conceptId": 99,
     "type": "multiple-choice",
     "part": "Part 12. 보험회사가 하는 일",
     "category": "보험",
@@ -7525,6 +7921,7 @@
   },
   {
     "id": 397,
+    "conceptId": 100,
     "type": "multiple-choice",
     "part": "Part 13. 우리가정 화재안전",
     "category": "화재안전 지도",
@@ -7544,6 +7941,7 @@
   },
   {
     "id": 398,
+    "conceptId": 100,
     "type": "multiple-choice",
     "part": "Part 13. 우리가정 화재안전",
     "category": "화재안전 지도",
@@ -7563,6 +7961,7 @@
   },
   {
     "id": 399,
+    "conceptId": 100,
     "type": "multiple-choice",
     "part": "Part 13. 우리가정 화재안전",
     "category": "화재안전 지도",
@@ -7582,6 +7981,7 @@
   },
   {
     "id": 400,
+    "conceptId": 100,
     "type": "multiple-choice",
     "part": "Part 13. 우리가정 화재안전",
     "category": "화재안전 지도",
@@ -7601,6 +8001,7 @@
   },
   {
     "id": 401,
+    "conceptId": 1,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -7619,6 +8020,7 @@
   },
   {
     "id": 402,
+    "conceptId": 2,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
     "category": "불의 역사",
@@ -7636,6 +8038,7 @@
   },
   {
     "id": 403,
+    "conceptId": 3,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -7652,6 +8055,7 @@
   },
   {
     "id": 404,
+    "conceptId": 4,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
     "category": "불의 원리",
@@ -7669,6 +8073,7 @@
   },
   {
     "id": 405,
+    "conceptId": 5,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
     "category": "화재의 뜻",
@@ -7685,6 +8090,7 @@
   },
   {
     "id": 406,
+    "conceptId": 6,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "부주의",
@@ -7703,6 +8109,7 @@
   },
   {
     "id": 407,
+    "conceptId": 7,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -7719,6 +8126,7 @@
   },
   {
     "id": 408,
+    "conceptId": 8,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -7735,6 +8143,7 @@
   },
   {
     "id": 409,
+    "conceptId": 9,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -7753,6 +8162,7 @@
   },
   {
     "id": 410,
+    "conceptId": 10,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -7770,6 +8180,7 @@
   },
   {
     "id": 411,
+    "conceptId": 11,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "전기",
@@ -7789,6 +8200,7 @@
   },
   {
     "id": 412,
+    "conceptId": 12,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "감전",
@@ -7806,6 +8218,7 @@
   },
   {
     "id": 413,
+    "conceptId": 13,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -7823,6 +8236,7 @@
   },
   {
     "id": 414,
+    "conceptId": 14,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -7840,6 +8254,7 @@
   },
   {
     "id": 415,
+    "conceptId": 15,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -7858,6 +8273,7 @@
   },
   {
     "id": 416,
+    "conceptId": 16,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -7876,6 +8292,7 @@
   },
   {
     "id": 417,
+    "conceptId": 17,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -7893,6 +8310,7 @@
   },
   {
     "id": 418,
+    "conceptId": 18,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -7912,6 +8330,7 @@
   },
   {
     "id": 419,
+    "conceptId": 19,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "가스",
@@ -7930,6 +8349,7 @@
   },
   {
     "id": 420,
+    "conceptId": 20,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -7948,6 +8368,7 @@
   },
   {
     "id": 421,
+    "conceptId": 21,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -7966,6 +8387,7 @@
   },
   {
     "id": 422,
+    "conceptId": 22,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "유류",
@@ -7985,6 +8407,7 @@
   },
   {
     "id": 423,
+    "conceptId": 23,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "불장난",
@@ -8004,6 +8427,7 @@
   },
   {
     "id": 424,
+    "conceptId": 24,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "방화",
@@ -8020,6 +8444,7 @@
   },
   {
     "id": 425,
+    "conceptId": 25,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "담뱃불",
@@ -8036,6 +8461,7 @@
   },
   {
     "id": 426,
+    "conceptId": 26,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
     "category": "산불",
@@ -8053,6 +8479,7 @@
   },
   {
     "id": 427,
+    "conceptId": 27,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 대응",
@@ -8070,6 +8497,7 @@
   },
   {
     "id": 428,
+    "conceptId": 28,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "초기 소화",
@@ -8089,6 +8517,7 @@
   },
   {
     "id": 429,
+    "conceptId": 29,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -8106,6 +8535,7 @@
   },
   {
     "id": 430,
+    "conceptId": 30,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -8123,6 +8553,7 @@
   },
   {
     "id": 431,
+    "conceptId": 31,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "소화 원리",
@@ -8140,6 +8571,7 @@
   },
   {
     "id": 432,
+    "conceptId": 32,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "전기화재",
@@ -8158,6 +8590,7 @@
   },
   {
     "id": 433,
+    "conceptId": 33,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "주방화재",
@@ -8177,6 +8610,7 @@
   },
   {
     "id": 434,
+    "conceptId": 34,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -8196,6 +8630,7 @@
   },
   {
     "id": 435,
+    "conceptId": 35,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -8213,6 +8648,7 @@
   },
   {
     "id": 436,
+    "conceptId": 36,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "연기 대피",
@@ -8231,6 +8667,7 @@
   },
   {
     "id": 437,
+    "conceptId": 37,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "대피",
@@ -8250,6 +8687,7 @@
   },
   {
     "id": 438,
+    "conceptId": 38,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "실내 고립",
@@ -8270,6 +8708,7 @@
   },
   {
     "id": 439,
+    "conceptId": 39,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "옷에 붙은 불",
@@ -8290,6 +8729,7 @@
   },
   {
     "id": 440,
+    "conceptId": 40,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "119 신고",
@@ -8307,6 +8747,7 @@
   },
   {
     "id": 441,
+    "conceptId": 41,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
     "category": "피난계획",
@@ -8325,6 +8766,7 @@
   },
   {
     "id": 442,
+    "conceptId": 42,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -8344,6 +8786,7 @@
   },
   {
     "id": 443,
+    "conceptId": 43,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -8362,6 +8805,7 @@
   },
   {
     "id": 444,
+    "conceptId": 44,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "화상",
@@ -8380,6 +8824,7 @@
   },
   {
     "id": 445,
+    "conceptId": 45,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -8399,6 +8844,7 @@
   },
   {
     "id": 446,
+    "conceptId": 46,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -8418,6 +8864,7 @@
   },
   {
     "id": 447,
+    "conceptId": 47,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -8437,6 +8884,7 @@
   },
   {
     "id": 448,
+    "conceptId": 48,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "심폐소생술",
@@ -8456,6 +8904,7 @@
   },
   {
     "id": 449,
+    "conceptId": 49,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "AED",
@@ -8473,6 +8922,7 @@
   },
   {
     "id": 450,
+    "conceptId": 50,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
     "category": "압사 예방",
@@ -8492,6 +8942,7 @@
   },
   {
     "id": 451,
+    "conceptId": 51,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -8511,6 +8962,7 @@
   },
   {
     "id": 452,
+    "conceptId": 52,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "주택용 소방시설",
@@ -8530,6 +8982,7 @@
   },
   {
     "id": 453,
+    "conceptId": 53,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -8546,6 +8999,7 @@
   },
   {
     "id": 454,
+    "conceptId": 54,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "경보설비",
@@ -8562,6 +9016,7 @@
   },
   {
     "id": 455,
+    "conceptId": 55,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -8579,6 +9034,7 @@
   },
   {
     "id": 456,
+    "conceptId": 56,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "소화설비",
@@ -8596,6 +9052,7 @@
   },
   {
     "id": 457,
+    "conceptId": 57,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -8615,6 +9072,7 @@
   },
   {
     "id": 458,
+    "conceptId": 58,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -8633,6 +9091,7 @@
   },
   {
     "id": 459,
+    "conceptId": 59,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -8651,6 +9110,7 @@
   },
   {
     "id": 460,
+    "conceptId": 60,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
     "category": "소화기",
@@ -8668,6 +9128,7 @@
   },
   {
     "id": 461,
+    "conceptId": 61,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
     "category": "피난계단",
@@ -8686,6 +9147,7 @@
   },
   {
     "id": 462,
+    "conceptId": 62,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -8705,6 +9167,7 @@
   },
   {
     "id": 463,
+    "conceptId": 63,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
     "category": "유도등",
@@ -8722,6 +9185,7 @@
   },
   {
     "id": 464,
+    "conceptId": 64,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
     "category": "방화문",
@@ -8738,6 +9202,7 @@
   },
   {
     "id": 465,
+    "conceptId": 65,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -8755,6 +9220,7 @@
   },
   {
     "id": 466,
+    "conceptId": 66,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -8773,6 +9239,7 @@
   },
   {
     "id": 467,
+    "conceptId": 67,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
     "category": "피난기구",
@@ -8789,6 +9256,7 @@
   },
   {
     "id": 468,
+    "conceptId": 68,
     "type": "short-answer",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "화재 통계",
@@ -8808,6 +9276,7 @@
   },
   {
     "id": 469,
+    "conceptId": 69,
     "type": "short-answer",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
     "category": "불조심 기간",
@@ -8825,6 +9294,7 @@
   },
   {
     "id": 470,
+    "conceptId": 70,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "지하철 화재",
@@ -8842,6 +9312,7 @@
   },
   {
     "id": 471,
+    "conceptId": 71,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 안전",
@@ -8861,6 +9332,7 @@
   },
   {
     "id": 472,
+    "conceptId": 72,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "학교 대피",
@@ -8879,6 +9351,7 @@
   },
   {
     "id": 473,
+    "conceptId": 73,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -8898,6 +9371,7 @@
   },
   {
     "id": 474,
+    "conceptId": 74,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -8917,6 +9391,7 @@
   },
   {
     "id": 475,
+    "conceptId": 75,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "가정 안전",
@@ -8936,6 +9411,7 @@
   },
   {
     "id": 476,
+    "conceptId": 76,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -8953,6 +9429,7 @@
   },
   {
     "id": 477,
+    "conceptId": 77,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "건물 붕괴",
@@ -8970,6 +9447,7 @@
   },
   {
     "id": 478,
+    "conceptId": 78,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이",
@@ -8988,6 +9466,7 @@
   },
   {
     "id": 479,
+    "conceptId": 79,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "물놀이 구조",
@@ -9005,6 +9484,7 @@
   },
   {
     "id": 480,
+    "conceptId": 80,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "놀이터",
@@ -9024,6 +9504,7 @@
   },
   {
     "id": 481,
+    "conceptId": 81,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
     "category": "산불 대피",
@@ -9041,6 +9522,7 @@
   },
   {
     "id": 482,
+    "conceptId": 82,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -9057,6 +9539,7 @@
   },
   {
     "id": 483,
+    "conceptId": 83,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
     "category": "지진",
@@ -9074,6 +9557,7 @@
   },
   {
     "id": 484,
+    "conceptId": 84,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -9091,6 +9575,7 @@
   },
   {
     "id": 485,
+    "conceptId": 85,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
     "category": "낙뢰",
@@ -9110,6 +9595,7 @@
   },
   {
     "id": 486,
+    "conceptId": 86,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
     "category": "태풍",
@@ -9126,6 +9612,7 @@
   },
   {
     "id": 487,
+    "conceptId": 87,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
     "category": "홍수",
@@ -9142,6 +9629,7 @@
   },
   {
     "id": 488,
+    "conceptId": 88,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
     "category": "황사",
@@ -9158,6 +9646,7 @@
   },
   {
     "id": 489,
+    "conceptId": 89,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -9175,6 +9664,7 @@
   },
   {
     "id": 490,
+    "conceptId": 90,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
     "category": "기도폐쇄",
@@ -9194,6 +9684,7 @@
   },
   {
     "id": 491,
+    "conceptId": 91,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -9212,6 +9703,7 @@
   },
   {
     "id": 492,
+    "conceptId": 92,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
     "category": "하임리히법",
@@ -9230,6 +9722,7 @@
   },
   {
     "id": 493,
+    "conceptId": 93,
     "type": "short-answer",
     "part": "특별편 2. 아파트 화재",
     "category": "상황 판단",
@@ -9247,6 +9740,7 @@
   },
   {
     "id": 494,
+    "conceptId": 94,
     "type": "short-answer",
     "part": "특별편 2. 아파트 화재",
     "category": "대피",
@@ -9264,6 +9758,7 @@
   },
   {
     "id": 495,
+    "conceptId": 95,
     "type": "short-answer",
     "part": "특별편 3. 승강기 안전",
     "category": "승강기 고립",
@@ -9283,6 +9778,7 @@
   },
   {
     "id": 496,
+    "conceptId": 96,
     "type": "short-answer",
     "part": "특별편 4. 캠핑 안전",
     "category": "캠핑 화재",
@@ -9301,6 +9797,7 @@
   },
   {
     "id": 497,
+    "conceptId": 97,
     "type": "short-answer",
     "part": "Part 10. 소방관이 하는 일",
     "category": "소방관",
@@ -9318,6 +9815,7 @@
   },
   {
     "id": 498,
+    "conceptId": 98,
     "type": "short-answer",
     "part": "Part 11. 한국화재보험협회",
     "category": "KFPA",
@@ -9335,6 +9833,7 @@
   },
   {
     "id": 499,
+    "conceptId": 99,
     "type": "short-answer",
     "part": "Part 12. 보험회사가 하는 일",
     "category": "보험",
@@ -9352,6 +9851,7 @@
   },
   {
     "id": 500,
+    "conceptId": 100,
     "type": "short-answer",
     "part": "Part 13. 우리가정 화재안전",
     "category": "화재안전 지도",
