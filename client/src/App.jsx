@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { lazy, Suspense, useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
-import { Flame, Users, ArrowRight, Sparkles } from 'lucide-react';
+import { BookOpenCheck, Flame, Users, ArrowRight, Sparkles } from 'lucide-react';
 import HostScreen from './components/HostScreen';
 import PlayerScreen from './components/PlayerScreen';
 import { AVATAR_OPTIONS, DEFAULT_AVATAR, getAvatarName } from './data/avatarOptions';
@@ -16,6 +16,8 @@ const SOCKET_URL = import.meta.env.VITE_SOCKET_URL
 const socket = io(SOCKET_URL, {
   transports: ['websocket', 'polling']
 });
+
+const StudyQuiz = lazy(() => import('./components/StudyQuiz'));
 
 const PLAYER_SESSION_COOKIE = 'firequiz_player_session';
 const PLAYER_SESSION_MAX_AGE_SEC = 60 * 60 * 24;
@@ -169,6 +171,18 @@ export default function App() {
     );
   }
 
+  if (role === 'STUDY') {
+    return (
+      <Suspense fallback={(
+        <div className="flex min-h-screen items-center justify-center bg-slate-950 font-black text-emerald-300">
+          핵심 문제를 불러오는 중...
+        </div>
+      )}>
+        <StudyQuiz onExit={() => setRole(null)} />
+      </Suspense>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-red-950 text-white flex flex-col items-center justify-center p-4">
       {/* 연결 상태 */}
@@ -196,6 +210,25 @@ export default function App() {
             ⚠️ {errorMsg}
           </div>
         )}
+
+        {/* 혼자 학습하기 */}
+        <button
+          type="button"
+          onClick={() => setRole('STUDY')}
+          className="group mb-4 w-full rounded-3xl border-2 border-emerald-400/70 bg-gradient-to-br from-emerald-950/95 via-slate-900 to-cyan-950/90 p-5 text-left shadow-[0_18px_45px_rgba(16,185,129,0.18)] transition hover:-translate-y-0.5 hover:border-emerald-300 active:scale-[0.99]"
+        >
+          <div className="flex items-center gap-4">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-emerald-400 text-slate-950 shadow-lg transition group-hover:scale-105">
+              <BookOpenCheck className="h-7 w-7" />
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="mb-1 block text-xs font-black text-emerald-300">혼자 바로 학습 · 로그인/PIN 불필요</span>
+              <span className="block text-xl font-black text-white">가장 중요한 핵심 문제 100</span>
+              <span className="mt-1 block text-xs font-bold text-slate-400">중요도 순 객관식 · 정답과 핵심 해설 즉시 확인</span>
+            </span>
+            <ArrowRight className="h-6 w-6 shrink-0 text-emerald-300 transition group-hover:translate-x-1" />
+          </div>
+        </button>
 
         {/* 학생 입장 폼 */}
         <div className="bg-slate-900/90 border-2 border-slate-700 rounded-3xl p-6 shadow-2xl backdrop-blur-xl mb-4">

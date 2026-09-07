@@ -1,0 +1,1902 @@
+[
+  {
+    "id": 105,
+    "conceptId": 27,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "초기 대응",
+    "question": "불을 발견했을 때 가장 먼저 해야 할 행동은?",
+    "options": [
+      "가구 안에 숨는다.",
+      "아끼는 물건부터 챙긴다.",
+      "아무에게도 말하지 않는다.",
+      "큰 소리로 '불이야!'라고 외쳐 주위에 알린다."
+    ],
+    "answerIndex": 3,
+    "explanation": "불을 발견하면 '불이야!'라고 외치고 비상벨이나 소리가 나는 물건으로 주위에 알려야 합니다.",
+    "sourcePages": [
+      31
+    ],
+    "importanceRank": 1
+  },
+  {
+    "id": 133,
+    "conceptId": 34,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "대피",
+    "question": "화재 때 엘리베이터 대신 이용해야 하는 것은?",
+    "options": [
+      "화물용 승강기",
+      "엘리베이터",
+      "계단이나 비상구",
+      "에스컬레이터"
+    ],
+    "answerIndex": 2,
+    "explanation": "화재 때는 정전과 연기 유입 위험이 있는 엘리베이터를 타지 말고 계단이나 비상구를 이용합니다.",
+    "sourcePages": [
+      35
+    ],
+    "importanceRank": 2
+  },
+  {
+    "id": 137,
+    "conceptId": 35,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "연기 대피",
+    "question": "연기 속에서 자세를 낮춰야 하는 이유는?",
+    "options": [
+      "연기가 바닥에서만 생기기 때문",
+      "바닥이 항상 출구이기 때문",
+      "낮게 걸으면 불이 자동으로 꺼지기 때문",
+      "열과 연기가 위에 모여 아래쪽 공기가 덜 오염되기 때문"
+    ],
+    "answerIndex": 3,
+    "explanation": "연기 대피 때는 젖은 수건이나 옷으로 입과 코를 가리고 자세를 낮춰야 합니다.",
+    "sourcePages": [
+      41
+    ],
+    "importanceRank": 3
+  },
+  {
+    "id": 157,
+    "conceptId": 40,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "119 신고",
+    "question": "119 화재신고 때 위치를 정확히 알리는 방법으로 가장 좋은 것은?",
+    "options": [
+      "주소와 가까운 큰 건물 이름을 또박또박 말한다.",
+      "불이 났다는 말만 하고 끊는다.",
+      "별명만 말한다.",
+      "장난으로 다른 주소를 말한다."
+    ],
+    "answerIndex": 0,
+    "explanation": "안전한 곳에서 119에 신고하며 주소, 가까운 큰 건물, 불이 난 원인과 상황을 또박또박 알립니다.",
+    "sourcePages": [
+      38
+    ],
+    "importanceRank": 4
+  },
+  {
+    "id": 149,
+    "conceptId": 38,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "실내 고립",
+    "question": "화재 때 문손잡이가 뜨거우면 어떻게 해야 하나요?",
+    "options": [
+      "문을 활짝 연다.",
+      "손잡이를 오래 잡고 있는다.",
+      "문을 열지 않는다.",
+      "문에 구멍을 낸다."
+    ],
+    "answerIndex": 2,
+    "explanation": "뜨거운 문은 열지 말고 젖은 수건 등으로 틈을 막은 뒤 창밖에 위치를 알리며 구조를 기다립니다.",
+    "sourcePages": [
+      36
+    ],
+    "importanceRank": 5
+  },
+  {
+    "id": 145,
+    "conceptId": 37,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "대피",
+    "question": "화재 현장에서 밖으로 나올 때 출입문을 닫아야 하는 까닭은?",
+    "options": [
+      "문손잡이를 차갑게 만들기 위해",
+      "불길과 연기가 다른 곳으로 퍼지는 것을 줄이기 위해",
+      "소방차 소리를 막기 위해",
+      "방 안을 더 밝게 만들기 위해"
+    ],
+    "answerIndex": 1,
+    "explanation": "대피할 때 출입문을 닫으면 불길과 연기가 복도나 다른 공간으로 퍼지는 것을 줄일 수 있습니다.",
+    "sourcePages": [
+      35
+    ],
+    "importanceRank": 6
+  },
+  {
+    "id": 549,
+    "conceptId": 138,
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피를 마친 뒤 다시 건물 안으로 들어가면 안 되는 이유는?",
+    "options": [
+      "물건을 찾기 위해",
+      "사진을 찍기 위해",
+      "불과 연기가 다시 퍼질 수 있고 구조를 방해할 수 있어서",
+      "문을 잠그기 위해"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 후에는 안전이 확인될 때까지 건물 안으로 돌아가지 않습니다.",
+    "sourcePages": [
+      126
+    ],
+    "importanceRank": 7
+  },
+  {
+    "id": 153,
+    "conceptId": 39,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "옷에 붙은 불",
+    "question": "옷에 불이 붙었을 때 행동 순서는?",
+    "options": [
+      "뛴다 - 숨는다 - 뛴다",
+      "물을 찾는다 - 계단을 오른다 - 뛴다",
+      "창문을 연다 - 선다 - 달린다",
+      "멈춘다 - 엎드린다 - 구른다"
+    ],
+    "answerIndex": 3,
+    "explanation": "옷에 불이 붙으면 멈추고, 얼굴을 가린 채 엎드린 다음 좌우로 구릅니다.",
+    "sourcePages": [
+      37
+    ],
+    "importanceRank": 8
+  },
+  {
+    "id": 109,
+    "conceptId": 28,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "초기 소화",
+    "question": "어린이가 불을 끄려고 시도할 수 있는 때는 언제인가요?",
+    "options": [
+      "불이 처음 시작된 아주 작은 화재일 때만",
+      "천장까지 불길이 번졌을 때",
+      "연기로 앞이 보이지 않을 때",
+      "대피로가 이미 막혔을 때"
+    ],
+    "answerIndex": 0,
+    "explanation": "초기 작은 불만 안전하게 소화하고, 꺼지지 않거나 커지면 즉시 대피해 119에 신고해야 합니다.",
+    "sourcePages": [
+      32
+    ],
+    "importanceRank": 9
+  },
+  {
+    "id": 125,
+    "conceptId": 32,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "전기화재",
+    "question": "전기화재에 물을 사용하면 안 되는 가장 큰 이유는?",
+    "options": [
+      "전기가 물을 통해 흘러 감전될 수 있기 때문",
+      "물이 전기를 얼리기 때문",
+      "전선이 물에 떠오르기 때문",
+      "물이 산소를 두 배로 만들기 때문"
+    ],
+    "answerIndex": 0,
+    "explanation": "전기화재에는 감전 위험 때문에 물을 사용하면 안 되며 전원을 차단하고 적합한 소화기를 사용해야 합니다.",
+    "sourcePages": [
+      33
+    ],
+    "importanceRank": 10
+  },
+  {
+    "id": 129,
+    "conceptId": 33,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "주방화재",
+    "question": "튀김기름에 불이 붙었을 때 가장 먼저 사용할 소화기는?",
+    "options": [
+      "물 양동이",
+      "K급 소화기",
+      "장난감 물총",
+      "산소통"
+    ],
+    "answerIndex": 1,
+    "explanation": "튀김기름 화재에는 물을 뿌리지 말고 K급 소화기를 사용하며 작은 불은 뚜껑으로 덮고 가스밸브를 잠급니다.",
+    "sourcePages": [
+      34
+    ],
+    "importanceRank": 11
+  },
+  {
+    "id": 69,
+    "conceptId": 18,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "가스",
+    "question": "가스 냄새가 날 때 하면 안 되는 행동은?",
+    "options": [
+      "가스가 새는 곳에서 벗어난다.",
+      "창문과 출입문을 연다.",
+      "전등이나 선풍기 스위치를 켜거나 끈다.",
+      "어른이나 119에 알린다."
+    ],
+    "answerIndex": 2,
+    "explanation": "가스가 샐 때는 전기기구와 불꽃을 사용하지 말고 문을 열어 환기한 뒤 안전한 곳에서 도움을 요청합니다.",
+    "sourcePages": [
+      19
+    ],
+    "importanceRank": 12
+  },
+  {
+    "id": 45,
+    "conceptId": 12,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "감전",
+    "question": "감전된 사람을 발견했을 때 가장 먼저 지켜야 할 원칙은?",
+    "options": [
+      "직접 만지지 말고 전기를 차단한 뒤 도움을 요청한다.",
+      "맨손으로 즉시 끌어당긴다.",
+      "젖은 수건으로 감싼다.",
+      "전기제품을 다시 켜 본다."
+    ],
+    "answerIndex": 0,
+    "explanation": "감전자를 직접 만지지 말고 전원을 차단하며, 필요하면 절연되는 고무장갑이나 나무 막대를 이용하고 119에 신고합니다.",
+    "sourcePages": [
+      14
+    ],
+    "importanceRank": 13
+  },
+  {
+    "id": 165,
+    "conceptId": 42,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "화상",
+    "question": "크지 않은 화상을 입었을 때 흐르는 찬물로 식혀야 하는 시간은?",
+    "options": [
+      "10초",
+      "1분",
+      "20분 이상",
+      "5분"
+    ],
+    "answerIndex": 2,
+    "explanation": "큰 화상이 아니라면 약한 흐르는 찬물로 20분 이상 식히고 의료진의 치료를 받습니다.",
+    "sourcePages": [
+      42
+    ],
+    "importanceRank": 14
+  },
+  {
+    "id": 169,
+    "conceptId": 43,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "화상",
+    "question": "화상 응급처치로 하면 안 되는 행동은?",
+    "options": [
+      "약한 흐르는 찬물로 식힌다.",
+      "깨끗한 거즈로 보호한다.",
+      "필요하면 병원 진료를 받는다.",
+      "얼음을 직접 대거나 물집을 터뜨린다."
+    ],
+    "answerIndex": 3,
+    "explanation": "화상에는 얼음과 약솜을 쓰지 않고 물집을 터뜨리지 않으며 깨끗하게 보호합니다.",
+    "sourcePages": [
+      42
+    ],
+    "importanceRank": 15
+  },
+  {
+    "id": 173,
+    "conceptId": 44,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "화상",
+    "question": "옷을 입은 채 심한 화상을 입었고 옷이 피부에 붙었습니다. 어떻게 해야 하나요?",
+    "options": [
+      "억지로 벗기지 않고 즉시 의료 도움을 받는다.",
+      "붙은 옷을 힘껏 잡아당긴다.",
+      "상처를 거친 수건으로 문지른다.",
+      "물집을 모두 터뜨린다."
+    ],
+    "answerIndex": 0,
+    "explanation": "옷이나 양말을 입은 채 데었으면 먼저 식히고, 심한 화상에서는 붙은 옷을 억지로 벗기지 않습니다.",
+    "sourcePages": [
+      43
+    ],
+    "importanceRank": 16
+  },
+  {
+    "id": 177,
+    "conceptId": 45,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "심폐소생술",
+    "question": "심정지 뒤 뇌손상이 시작될 수 있는 시간은 약 얼마인가요?",
+    "options": [
+      "30분",
+      "4~5분",
+      "2시간",
+      "하루"
+    ],
+    "answerIndex": 1,
+    "explanation": "심정지 후 아무 조치가 없으면 4~5분 안에 뇌손상이 생길 수 있어 초기 대응이 매우 중요합니다.",
+    "sourcePages": [
+      44
+    ],
+    "importanceRank": 17
+  },
+  {
+    "id": 181,
+    "conceptId": 46,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "심폐소생술",
+    "question": "심정지 의심 환자의 호흡은 몇 초 이내로 확인하나요?",
+    "options": [
+      "1분 동안",
+      "5분 동안",
+      "10초 이내",
+      "30분 동안"
+    ],
+    "answerIndex": 2,
+    "explanation": "반응이 없으면 사람을 지목해 119와 AED를 요청하고 호흡을 10초 이내로 확인합니다.",
+    "sourcePages": [
+      44
+    ],
+    "importanceRank": 18
+  },
+  {
+    "id": 185,
+    "conceptId": 47,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "심폐소생술",
+    "question": "가슴압박의 알맞은 깊이와 속도는?",
+    "options": [
+      "약 1cm, 분당 10회",
+      "약 15cm, 분당 20회",
+      "약 2cm, 분당 300회",
+      "약 5cm, 분당 100~120회"
+    ],
+    "answerIndex": 3,
+    "explanation": "가슴압박은 약 5cm 깊이로 분당 100~120회의 속도로 시행합니다.",
+    "sourcePages": [
+      45
+    ],
+    "importanceRank": 19
+  },
+  {
+    "id": 189,
+    "conceptId": 48,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "심폐소생술",
+    "question": "가슴압박과 인공호흡의 횟수 비율은?",
+    "options": [
+      "30:2",
+      "10:1",
+      "20:5",
+      "50:10"
+    ],
+    "answerIndex": 0,
+    "explanation": "심폐소생술은 가슴압박 30회와 인공호흡 2회를 반복하며 인공호흡이 어렵다면 가슴압박을 계속합니다.",
+    "sourcePages": [
+      45
+    ],
+    "importanceRank": 20
+  },
+  {
+    "id": 193,
+    "conceptId": 49,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "AED",
+    "question": "AED 패드 두 장의 올바른 부착 위치는?",
+    "options": [
+      "양쪽 손바닥",
+      "오른쪽 쇄골 아래와 왼쪽 젖꼭지 아래 중간 겨드랑이선",
+      "이마와 발바닥",
+      "배꼽 양옆"
+    ],
+    "answerIndex": 1,
+    "explanation": "AED 분석과 충격 때는 아무도 환자에게 닿지 않아야 하며 충격 후 바로 심폐소생술을 이어갑니다.",
+    "sourcePages": [
+      46
+    ],
+    "importanceRank": 21
+  },
+  {
+    "id": 197,
+    "conceptId": 50,
+    "part": "Part 04. 화상·심폐소생술·압사",
+    "category": "압사 예방",
+    "question": "군중 속 압사 위험을 줄이는 자세로 옳은 것은?",
+    "options": [
+      "앞사람을 세게 민다.",
+      "사람 사이를 비집고 뛴다.",
+      "손을 가슴 앞에 모으고 가방은 앞으로 멘다.",
+      "가방을 뒤로 길게 늘어뜨린다."
+    ],
+    "answerIndex": 2,
+    "explanation": "압사 위험에서는 질서와 간격을 지키고 손을 가슴 앞에 모으며, 넘어지면 몸을 웅크려 중요 부위를 보호합니다.",
+    "sourcePages": [
+      48
+    ],
+    "importanceRank": 22
+  },
+  {
+    "id": 353,
+    "conceptId": 89,
+    "part": "특별편 1. 하임리히법",
+    "category": "기도폐쇄",
+    "question": "음식물이 기도에 걸린 사람에게 나타날 수 있는 모습은?",
+    "options": [
+      "편안하게 노래한다.",
+      "말과 호흡이 어렵고 두 손으로 목을 움켜잡는다.",
+      "평소처럼 깊이 숨 쉰다.",
+      "손으로 발목을 잡는다."
+    ],
+    "answerIndex": 1,
+    "explanation": "기도폐쇄가 의심되면 상태를 확인해 도움을 요청하고 스스로 기침할 수 있으면 계속 기침하도록 합니다.",
+    "sourcePages": [
+      89
+    ],
+    "importanceRank": 23
+  },
+  {
+    "id": 357,
+    "conceptId": 90,
+    "part": "특별편 1. 하임리히법",
+    "category": "기도폐쇄",
+    "question": "완전히 기도가 막힌 환자에게 하임리히법 전 먼저 시행하는 등 두드리기 횟수는?",
+    "options": [
+      "1번",
+      "20번",
+      "5번 정도",
+      "50번"
+    ],
+    "answerIndex": 2,
+    "explanation": "완전 기도폐쇄에는 119를 요청하고 환자를 숙여 등을 5번 정도 두드린 뒤 필요하면 하임리히법을 시행합니다.",
+    "sourcePages": [
+      90
+    ],
+    "importanceRank": 24
+  },
+  {
+    "id": 361,
+    "conceptId": 91,
+    "part": "특별편 1. 하임리히법",
+    "category": "하임리히법",
+    "question": "하임리히법에서 두 손을 두는 위치는?",
+    "options": [
+      "목 앞",
+      "무릎 뒤",
+      "이마 한가운데",
+      "배꼽과 명치 사이의 가운데"
+    ],
+    "answerIndex": 3,
+    "explanation": "하임리히법은 환자 뒤에서 배꼽과 명치 사이를 안쪽과 위쪽으로 빠르게 밀어 올립니다.",
+    "sourcePages": [
+      90
+    ],
+    "importanceRank": 25
+  },
+  {
+    "id": 365,
+    "conceptId": 92,
+    "part": "특별편 1. 하임리히법",
+    "category": "하임리히법",
+    "question": "1세 미만의 아기에게 하면 안 되는 처치는?",
+    "options": [
+      "일반적인 하임리히법",
+      "즉시 어른을 부르기",
+      "119에 신고하기",
+      "상태를 살피기"
+    ],
+    "answerIndex": 0,
+    "explanation": "1세 미만 영아에게 일반 하임리히법을 하지 않으며 환자가 의식을 잃으면 119와 심폐소생술 도움을 요청합니다.",
+    "sourcePages": [
+      93
+    ],
+    "importanceRank": 26
+  },
+  {
+    "id": 369,
+    "conceptId": 93,
+    "part": "특별편 2. 아파트 화재",
+    "category": "상황 판단",
+    "question": "다른 집에서 불이 났지만 우리 집에 연기나 불이 들어오지 않을 때의 행동은?",
+    "options": [
+      "무조건 연기 찬 계단으로 나간다.",
+      "창문과 현관문을 닫고 119와 안내에 따라 실내에서 기다린다.",
+      "현관문을 활짝 열어 둔다.",
+      "엘리베이터를 타고 불난 층으로 간다."
+    ],
+    "answerIndex": 1,
+    "explanation": "아파트 화재에서는 우리 집과 피난로의 연기·불길을 살펴 실내 대기 또는 대피를 결정합니다.",
+    "sourcePages": [
+      94
+    ],
+    "importanceRank": 27
+  },
+  {
+    "id": 373,
+    "conceptId": 94,
+    "part": "특별편 2. 아파트 화재",
+    "category": "대피",
+    "question": "아파트에서 복도와 계단에 불길이나 짙은 연기가 없을 때의 대피 방법은?",
+    "options": [
+      "엘리베이터를 이용한다.",
+      "현관문을 열린 채 둔다.",
+      "입과 코를 가리고 낮은 자세로 계단을 이용한다.",
+      "대피 뒤 물건을 찾으러 돌아간다."
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 가능하면 계단을 이용하고, 어렵다면 대피공간·하향식 피난구·경량칸막이로 이동해 구조를 요청합니다.",
+    "sourcePages": [
+      96
+    ],
+    "importanceRank": 28
+  },
+  {
+    "id": 381,
+    "conceptId": 96,
+    "part": "특별편 4. 캠핑 안전",
+    "category": "캠핑 화재",
+    "question": "밀폐된 텐트 안에서 난로나 화로를 켜면 특히 위험한 이유는?",
+    "options": [
+      "화재와 일산화탄소 중독으로 질식할 수 있어서",
+      "텐트 색이 바뀌어서",
+      "침낭이 자동으로 젖어서",
+      "바람이 완전히 사라져서"
+    ],
+    "answerIndex": 0,
+    "explanation": "밀폐된 텐트에서는 연소기구를 사용하지 말고 잠들기 전 화기를 끄며 충분히 환기합니다.",
+    "sourcePages": [
+      107
+    ],
+    "importanceRank": 29
+  },
+  {
+    "id": 313,
+    "conceptId": 79,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "물놀이 구조",
+    "question": "물에 빠진 사람을 발견한 구조 경험이 없는 사람이 먼저 할 일은?",
+    "options": [
+      "바로 물에 뛰어든다.",
+      "혼자 깊은 곳까지 헤엄친다.",
+      "아무에게도 알리지 않는다.",
+      "어른에게 도움을 요청하고 119나 122에 신고한다."
+    ],
+    "answerIndex": 3,
+    "explanation": "물에 빠진 사람을 보면 119 또는 122에 신고하고 직접 뛰어들지 말며 뜨는 물체나 긴 막대를 이용합니다.",
+    "sourcePages": [
+      74
+    ],
+    "importanceRank": 30
+  },
+  {
+    "id": 321,
+    "conceptId": 81,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "산불 대피",
+    "question": "산행 중 산불을 만났을 때 대피 방향으로 옳은 것은?",
+    "options": [
+      "불길이 향하는 산 정상",
+      "산불 진행 방향에서 벗어나 산불보다 낮은 장소",
+      "바람을 정면으로 맞는 능선",
+      "마른 낙엽이 많은 골짜기"
+    ],
+    "answerIndex": 1,
+    "explanation": "산불은 빠르게 신고하고 작은 불만 안전하게 초기 진화하며 진행 방향을 벗어나 낮은 곳으로 대피합니다.",
+    "sourcePages": [
+      82
+    ],
+    "importanceRank": 31
+  },
+  {
+    "id": 277,
+    "conceptId": 70,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "지하철 화재",
+    "question": "지하철 열차 화재 때 출입문을 수동으로 열기 위해 확인할 장치는?",
+    "options": [
+      "천장의 스프링클러 배관",
+      "창밖의 신호등",
+      "좌석 양옆 아래쪽의 비상콕",
+      "좌석 등받이 단추"
+    ],
+    "answerIndex": 2,
+    "explanation": "지하철 화재 때는 비상용 단추로 알리고, 필요하면 좌석 아래 비상콕을 당겨 문을 연 뒤 안내에 따라 대피합니다.",
+    "sourcePages": [
+      65
+    ],
+    "importanceRank": 32
+  },
+  {
+    "id": 285,
+    "conceptId": 72,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "학교 대피",
+    "question": "학교 화재 대피훈련에서 교실을 나가기 전 올바른 행동은?",
+    "options": [
+      "문 앞에 한 줄로 서서 선생님의 지시를 따른다.",
+      "먼저 나가려고 서로 민다.",
+      "각자 다른 길로 달린다.",
+      "가방을 챙기러 자리로 돌아간다."
+    ],
+    "answerIndex": 0,
+    "explanation": "학교에서는 한 줄로 선생님 지시에 따라 대피하고 안전한 장소에서 인원을 확인하며 절대 교실로 돌아가지 않습니다.",
+    "sourcePages": [
+      67
+    ],
+    "importanceRank": 33
+  },
+  {
+    "id": 305,
+    "conceptId": 77,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "건물 붕괴",
+    "question": "붕괴된 건물에 갇혔을 때 자신의 위치를 알리는 좋은 방법은?",
+    "options": [
+      "계속 큰 고함을 질러 체력을 다 쓴다.",
+      "파이프나 벽을 규칙적으로 두드리거나 호루라기를 분다.",
+      "불을 피워 연기를 낸다.",
+      "휴대전화 배터리를 계속 켜 둔다."
+    ],
+    "answerIndex": 1,
+    "explanation": "갇히면 체력을 아끼고 규칙적인 두드림이나 호루라기로 위치를 알리며 휴대전화는 필요한 때만 사용합니다.",
+    "sourcePages": [
+      71
+    ],
+    "importanceRank": 34
+  },
+  {
+    "id": 301,
+    "conceptId": 76,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "건물 붕괴",
+    "question": "건물이 무너질 때 대피하며 머리를 보호하는 물건으로 알맞은 것은?",
+    "options": [
+      "가방, 방석, 책 같은 단단한 물건",
+      "유리 조각",
+      "불붙은 종이",
+      "깨진 거울"
+    ],
+    "answerIndex": 0,
+    "explanation": "붕괴 징조가 있으면 유리와 가연물을 피하고 단단한 물건으로 머리를 보호하며 침착하게 대피합니다.",
+    "sourcePages": [
+      70
+    ],
+    "importanceRank": 35
+  },
+  {
+    "id": 329,
+    "conceptId": 83,
+    "part": "Part 09. 자연재난",
+    "category": "지진",
+    "question": "지진 때 야외에서 피해야 할 곳은?",
+    "options": [
+      "넓은 운동장 가운데",
+      "건물에서 떨어진 공터",
+      "장애물이 없는 열린 공간",
+      "좁은 길, 담, 유리창과 자판기 가까이"
+    ],
+    "answerIndex": 3,
+    "explanation": "지진 때 야외에서는 건물, 담, 유리창, 자판기, 급경사지를 피하고 열린 곳에서 머리를 보호합니다.",
+    "sourcePages": [
+      84
+    ],
+    "importanceRank": 36
+  },
+  {
+    "id": 337,
+    "conceptId": 85,
+    "part": "Part 09. 자연재난",
+    "category": "낙뢰",
+    "question": "낙뢰가 칠 때 야외에서 가까이하면 안 되는 것은?",
+    "options": [
+      "낮은 자세",
+      "큰 나무, 전신주, 강·호수와 금속제품",
+      "피뢰침이 있는 건물",
+      "넓은 곳에서 몸을 낮추는 행동"
+    ],
+    "answerIndex": 1,
+    "explanation": "낙뢰 때는 높은 물체와 물가, 금속제품을 피하고 건물이 없으면 넓은 곳에서 몸을 낮춥니다.",
+    "sourcePages": [
+      85
+    ],
+    "importanceRank": 37
+  },
+  {
+    "id": 377,
+    "conceptId": 95,
+    "part": "특별편 3. 승강기 안전",
+    "category": "승강기 고립",
+    "question": "승강기가 멈췄을 때 가장 먼저 사용할 장치는?",
+    "options": [
+      "문 강제개방 레버",
+      "천장 탈출구",
+      "승강기 바닥",
+      "비상통화장치(인터폰)"
+    ],
+    "answerIndex": 3,
+    "explanation": "승강기가 멈추면 문을 억지로 열지 말고 인터폰, 휴대전화와 승강기 고유번호로 구조를 요청합니다.",
+    "sourcePages": [
+      100
+    ],
+    "importanceRank": 38
+  },
+  {
+    "id": 201,
+    "conceptId": 51,
+    "part": "Part 05. 소방시설",
+    "category": "주택용 소방시설",
+    "question": "주택용 단독경보형 감지기는 어디마다 설치하나요?",
+    "options": [
+      "건물 밖 한 곳만",
+      "주차장에만",
+      "옥상에만",
+      "구획된 실마다"
+    ],
+    "answerIndex": 3,
+    "explanation": "단독경보형 감지기는 주택의 구획된 실마다 천장에 설치해 화재를 자동으로 알립니다.",
+    "sourcePages": [
+      50
+    ],
+    "importanceRank": 39
+  },
+  {
+    "id": 205,
+    "conceptId": 52,
+    "part": "Part 05. 소방시설",
+    "category": "주택용 소방시설",
+    "question": "주택용 소화기의 설치 기준은?",
+    "options": [
+      "세대별·층별 1개 이상",
+      "아파트 단지 전체에 1개",
+      "도시마다 1개",
+      "지붕 위에만 1개"
+    ],
+    "answerIndex": 0,
+    "explanation": "주택용 소화기는 세대별, 층별로 1개 이상 설치합니다.",
+    "sourcePages": [
+      50
+    ],
+    "importanceRank": 40
+  },
+  {
+    "id": 237,
+    "conceptId": 60,
+    "part": "Part 05. 소방시설",
+    "category": "소화기",
+    "question": "소화기 사용 순서를 바르게 나타낸 것은?",
+    "options": [
+      "불 가까이 옮기기 - 안전핀 뽑기 - 호스를 불로 향하기 - 손잡이 움켜쥐기",
+      "손잡이 놓기 - 안전핀 꽂기 - 뒤돌아 서기 - 물 붓기",
+      "호스 접기 - 바람을 마주 보기 - 안전핀 넣기 - 달리기",
+      "소화기 눕히기 - 위에 물건 올리기 - 문 닫기 - 숨기"
+    ],
+    "answerIndex": 0,
+    "explanation": "소화기는 안전핀을 뽑고 호스를 불쪽으로 향한 뒤 손잡이를 쥐어 빗자루로 쓸 듯 분사합니다.",
+    "sourcePages": [
+      56
+    ],
+    "importanceRank": 41
+  },
+  {
+    "id": 233,
+    "conceptId": 59,
+    "part": "Part 05. 소방시설",
+    "category": "소화기",
+    "question": "소화기 압력게이지 바늘이 초록색을 가리킬 때의 상태는?",
+    "options": [
+      "압력 부족",
+      "압력이 지나치게 높음",
+      "소화약제 없음",
+      "정상"
+    ],
+    "answerIndex": 3,
+    "explanation": "압력게이지의 초록색은 정상, 노란색은 부족, 빨간색은 압력이 지나치게 높음을 뜻합니다.",
+    "sourcePages": [
+      55
+    ],
+    "importanceRank": 42
+  },
+  {
+    "id": 225,
+    "conceptId": 57,
+    "part": "Part 05. 소방시설",
+    "category": "소화기",
+    "question": "ABC급 분말소화기가 끌 수 있는 화재를 바르게 묶은 것은?",
+    "options": [
+      "주방 식용유 화재만",
+      "일반·유류·전기 화재",
+      "금속 화재만",
+      "산불만"
+    ],
+    "answerIndex": 1,
+    "explanation": "ABC급 분말소화기는 일반(A), 유류(B), 전기(C) 화재에 사용할 수 있습니다.",
+    "sourcePages": [
+      54
+    ],
+    "importanceRank": 43
+  },
+  {
+    "id": 229,
+    "conceptId": 58,
+    "part": "Part 05. 소방시설",
+    "category": "소화기",
+    "question": "음식점 주방의 동식물성 식용유 화재에 맞는 소화기는?",
+    "options": [
+      "물소화기만",
+      "D급 금속소화기",
+      "K급 소화기",
+      "산소 소화기"
+    ],
+    "answerIndex": 2,
+    "explanation": "K급은 주방의 동식물성 식용유 화재이며 음식점 등 주방에는 K급 소화기를 설치합니다.",
+    "sourcePages": [
+      54
+    ],
+    "importanceRank": 44
+  },
+  {
+    "id": 209,
+    "conceptId": 53,
+    "part": "Part 05. 소방시설",
+    "category": "경보설비",
+    "question": "감지기와 발신기의 가장 큰 차이는?",
+    "options": [
+      "둘 다 사람이 눌러야만 한다.",
+      "감지기는 자동으로 감지하고 발신기는 사람이 눌러야 한다.",
+      "발신기만 연기를 자동 감지한다.",
+      "감지기는 불을 끄고 발신기는 물을 뿌린다."
+    ],
+    "answerIndex": 1,
+    "explanation": "감지기는 열·연기를 자동 감지하고 발신기는 사람이 직접 눌러 신호를 보냅니다.",
+    "sourcePages": [
+      51
+    ],
+    "importanceRank": 45
+  },
+  {
+    "id": 213,
+    "conceptId": 54,
+    "part": "Part 05. 소방시설",
+    "category": "경보설비",
+    "question": "감지기나 발신기의 화재 신호를 받아 관련 설비를 작동시키는 기계는?",
+    "options": [
+      "완강기",
+      "유도등",
+      "수신기",
+      "공기안전매트"
+    ],
+    "answerIndex": 2,
+    "explanation": "수신기는 감지기와 발신기의 신호를 받아 사람에게 알리고 관련 설비를 작동시킵니다.",
+    "sourcePages": [
+      51
+    ],
+    "importanceRank": 46
+  },
+  {
+    "id": 221,
+    "conceptId": 56,
+    "part": "Part 05. 소방시설",
+    "category": "소화설비",
+    "question": "천장이나 벽에서 자동으로 물을 뿌려 불을 끄는 설비는?",
+    "options": [
+      "스프링클러",
+      "완강기",
+      "유도등",
+      "발신기"
+    ],
+    "answerIndex": 0,
+    "explanation": "스프링클러는 화재를 감지하면 천장이나 벽의 헤드에서 자동으로 물을 뿌리는 소화설비입니다.",
+    "sourcePages": [
+      53
+    ],
+    "importanceRank": 47
+  },
+  {
+    "id": 241,
+    "conceptId": 61,
+    "part": "Part 06. 피난시설",
+    "category": "피난계단",
+    "question": "피난계단에 물건을 쌓아두면 안 되는 이유는?",
+    "options": [
+      "계단이 너무 밝아지기 때문",
+      "화재 때 사람들의 대피를 방해하기 때문",
+      "물건이 자동으로 작아지기 때문",
+      "옥상 문이 넓어지기 때문"
+    ],
+    "answerIndex": 1,
+    "explanation": "피난계단과 비상구는 언제든 사용할 수 있도록 물건 없이 비워 두어야 합니다.",
+    "sourcePages": [
+      58
+    ],
+    "importanceRank": 48
+  },
+  {
+    "id": 253,
+    "conceptId": 64,
+    "part": "Part 06. 피난시설",
+    "category": "방화문",
+    "question": "방화문의 평상시 관리 방법으로 옳은 것은?",
+    "options": [
+      "항상 닫힌 상태를 유지하고 주변에 물건을 두지 않는다.",
+      "받침대로 늘 열어 둔다.",
+      "문 앞에 상자를 쌓는다.",
+      "잠가서 아무도 열지 못하게 한다."
+    ],
+    "answerIndex": 0,
+    "explanation": "방화문은 항상 닫힌 상태를 유지하고 주변을 비워야 불과 연기의 확산을 막을 수 있습니다.",
+    "sourcePages": [
+      60
+    ],
+    "importanceRank": 49
+  },
+  {
+    "id": 245,
+    "conceptId": 62,
+    "part": "Part 06. 피난시설",
+    "category": "유도등",
+    "question": "정전으로 전원이 끊겨도 유도등이 자체 축전지로 작동하는 최소 시간은?",
+    "options": [
+      "20초",
+      "2분",
+      "20분 이상",
+      "5분"
+    ],
+    "answerIndex": 2,
+    "explanation": "유도등은 자체 축전지로 정전 후에도 최소 20분 이상 작동합니다.",
+    "sourcePages": [
+      59
+    ],
+    "importanceRank": 50
+  },
+  {
+    "id": 249,
+    "conceptId": 63,
+    "part": "Part 06. 피난시설",
+    "category": "유도등",
+    "question": "구부러진 복도에서 낮게 엎드렸을 때 보이도록 바닥에서 1m 이하에 설치하는 것은?",
+    "options": [
+      "피난구 유도등",
+      "객석 유도등",
+      "수신기",
+      "통로 유도등"
+    ],
+    "answerIndex": 3,
+    "explanation": "피난구 유도등은 출입구 상단, 통로 유도등은 바닥에서 1m 이하에 설치됩니다.",
+    "sourcePages": [
+      59
+    ],
+    "importanceRank": 51
+  },
+  {
+    "id": 257,
+    "conceptId": 65,
+    "part": "Part 06. 피난시설",
+    "category": "피난기구",
+    "question": "창이나 베란다에서 밖으로 내려가도록 만든 사다리 형태의 피난기구는?",
+    "options": [
+      "스프링클러",
+      "피난사다리",
+      "수신기",
+      "감지기"
+    ],
+    "answerIndex": 1,
+    "explanation": "피난사다리, 미끄럼대, 구조대는 계단으로 나가기 어려울 때 창이나 베란다를 이용하는 피난기구입니다.",
+    "sourcePages": [
+      61
+    ],
+    "importanceRank": 52
+  },
+  {
+    "id": 261,
+    "conceptId": 66,
+    "part": "Part 06. 피난시설",
+    "category": "피난기구",
+    "question": "공기안전매트를 사용할 때 반드시 따라야 하는 것은?",
+    "options": [
+      "친구의 장난 지시",
+      "혼자 판단한 즉시 점프",
+      "소방대원이나 구조대원의 지시",
+      "창문 밖 구경꾼의 손짓"
+    ],
+    "answerIndex": 2,
+    "explanation": "공기안전매트는 구조대가 설치·지휘할 때만 사용하고 어린이가 혼자 뛰어내리면 안 됩니다.",
+    "sourcePages": [
+      62
+    ],
+    "importanceRank": 53
+  },
+  {
+    "id": 265,
+    "conceptId": 67,
+    "part": "Part 06. 피난시설",
+    "category": "피난기구",
+    "question": "벨트를 가슴에 매면 자동으로 내려오는 피난기구는?",
+    "options": [
+      "유도등",
+      "발신기",
+      "스프링클러",
+      "완강기"
+    ],
+    "answerIndex": 3,
+    "explanation": "완강기는 가슴 벨트를 착용하면 속도를 조절해 자동으로 내려오는 피난기구입니다.",
+    "sourcePages": [
+      62
+    ],
+    "importanceRank": 54
+  },
+  {
+    "id": 161,
+    "conceptId": 41,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "피난계획",
+    "question": "피난경로를 계획할 때 원칙적으로 확보해야 하는 방향 수는?",
+    "options": [
+      "1방향만",
+      "2방향",
+      "출구 없는 방향",
+      "엘리베이터 한 방향"
+    ],
+    "answerIndex": 1,
+    "explanation": "피난계획은 하나의 통로가 막힐 상황에 대비해 2방향 피난을 원칙으로 합니다.",
+    "sourcePages": [
+      39
+    ],
+    "importanceRank": 55
+  },
+  {
+    "id": 297,
+    "conceptId": 75,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "가정 안전",
+    "question": "가족 화재 대피계획에 반드시 포함하면 좋은 것은?",
+    "options": [
+      "귀중품을 숨길 장소",
+      "엘리베이터 대기 장소",
+      "불난 집 안의 모임 장소",
+      "집 밖에서 다시 만날 장소"
+    ],
+    "answerIndex": 3,
+    "explanation": "가족과 대피경로를 확인하고 실제로 훈련하며 집 밖의 만남 장소를 정해 둡니다.",
+    "sourcePages": [
+      69
+    ],
+    "importanceRank": 56
+  },
+  {
+    "id": 397,
+    "conceptId": 100,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "화재안전 지도",
+    "question": "가정 화재안전 지도에 표시해야 할 내용으로 옳지 않은 것은?",
+    "options": [
+      "가족의 비밀번호와 통장번호",
+      "화재 위험 장소",
+      "소화기·감지기 위치",
+      "피난동선과 대피 후 만날 장소"
+    ],
+    "answerIndex": 0,
+    "explanation": "가정 화재안전 지도에는 위험 장소, 소방시설, 피난동선과 대피 후 만날 장소를 표시합니다.",
+    "sourcePages": [
+      114
+    ],
+    "importanceRank": 57
+  },
+  {
+    "id": 437,
+    "conceptId": 110,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "화재안전 지도",
+    "question": "가족과 화재안전 지도를 만들 때 함께 정해야 하는 것은?",
+    "options": [
+      "가족의 비밀번호",
+      "장난감 가격",
+      "대피 후 만날 장소",
+      "인터넷 게임 순서"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 후 흩어진 가족이 안전하게 만날 집결 장소를 미리 정해야 합니다.",
+    "sourcePages": [
+      113
+    ],
+    "importanceRank": 58
+  },
+  {
+    "id": 469,
+    "conceptId": 118,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "집에서 화재가 났을 때 미리 알고 있어야 하는 것은?",
+    "options": [
+      "게임 비밀번호",
+      "가구 가격",
+      "대피 경로",
+      "텔레비전 채널"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 경로를 평소 확인하면 화재 때 침착하게 이동할 수 있습니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 59
+  },
+  {
+    "id": 289,
+    "conceptId": 73,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "가정 안전",
+    "question": "난로나 가스레인지와 탈 수 있는 물건 사이의 권장 거리는?",
+    "options": [
+      "약 1cm",
+      "최소 1.2m 이상",
+      "약 10cm",
+      "붙여 놓기"
+    ],
+    "answerIndex": 1,
+    "explanation": "난로와 가스레인지 주변의 가연물은 최소 1.2m 이상 떨어뜨려야 합니다.",
+    "sourcePages": [
+      68
+    ],
+    "importanceRank": 60
+  },
+  {
+    "id": 293,
+    "conceptId": 74,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "가정 안전",
+    "question": "음식을 조리할 때 가장 중요한 화재예방 습관은?",
+    "options": [
+      "불을 켜고 외출한다.",
+      "냄비를 올려둔 채 게임한다.",
+      "조리 중 자리를 비우지 않는다.",
+      "가스밸브를 연 채 잠든다."
+    ],
+    "answerIndex": 2,
+    "explanation": "조리 중에는 자리를 지키고 외출 전 불과 가스밸브가 꺼졌는지 확인합니다.",
+    "sourcePages": [
+      69
+    ],
+    "importanceRank": 61
+  },
+  {
+    "id": 441,
+    "conceptId": 111,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전기선의 피복이 벗겨지거나 손상되었을 때 어떻게 해야 하나요?",
+    "options": [
+      "테이프 없이 계속 사용한다",
+      "물에 담근다",
+      "불 가까이에 둔다",
+      "사용을 중지하고 안전하게 교체·수리한다"
+    ],
+    "answerIndex": 3,
+    "explanation": "전기선이 손상되면 전원을 끄고 전문가에게 수리나 교체를 맡깁니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 62
+  },
+  {
+    "id": 445,
+    "conceptId": 112,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전열제품의 플러그는 콘센트에 어떻게 꽂아야 하나요?",
+    "options": [
+      "여러 콘센트에 나누어 꽂는다",
+      "한 콘센트에 모두 꽂는다",
+      "전선을 꼬아 꽂는다",
+      "물에 적셔 꽂는다"
+    ],
+    "answerIndex": 0,
+    "explanation": "전열제품은 콘센트에 분산해 과부하를 예방합니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 63
+  },
+  {
+    "id": 449,
+    "conceptId": 113,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전기코드를 정리할 때 주의할 점은 무엇인가요?",
+    "options": [
+      "통로 한가운데 둔다",
+      "가구에 눌리거나 사람이 밟지 않게 정리한다",
+      "카펫 아래 깊이 숨긴다",
+      "물에 적신다"
+    ],
+    "answerIndex": 1,
+    "explanation": "전기코드는 눌리거나 밟히지 않도록 안전하게 정리해야 합니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 64
+  },
+  {
+    "id": 453,
+    "conceptId": 114,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "사용하지 않는 전기제품의 코드는 어떻게 해야 하나요?",
+    "options": [
+      "계속 꽂아 둔다",
+      "물에 담근다",
+      "플러그를 뽑아 둔다",
+      "전선을 태운다"
+    ],
+    "answerIndex": 2,
+    "explanation": "사용하지 않는 전기제품은 플러그를 뽑는 습관이 안전합니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 65
+  },
+  {
+    "id": 457,
+    "conceptId": 115,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "커튼과 같은 불에 타기 쉬운 물건은 난방기구에서 얼마나 떨어뜨려야 하나요?",
+    "options": [
+      "1cm",
+      "10cm",
+      "20cm",
+      "1.2m 이상"
+    ],
+    "answerIndex": 3,
+    "explanation": "커튼과 가구 같은 가연물은 난방기구에서 1.2m 이상 떨어뜨립니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 66
+  },
+  {
+    "id": 461,
+    "conceptId": 116,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "음식을 만들 때 지켜야 하는 원칙은 무엇인가요?",
+    "options": [
+      "어른이 곁에 있어야 한다",
+      "자리를 오래 비운다",
+      "가스불을 켜 둔 채 잠든다",
+      "냄비를 통로에 둔다"
+    ],
+    "answerIndex": 0,
+    "explanation": "조리할 때는 어른이 곁을 지키고 자리를 비우지 않아야 합니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 67
+  },
+  {
+    "id": 465,
+    "conceptId": 117,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가스레인지 사용 후 반드시 잠가야 하는 것은?",
+    "options": [
+      "수도꼭지",
+      "중간밸브",
+      "창문 잠금장치만",
+      "텔레비전 리모컨"
+    ],
+    "answerIndex": 1,
+    "explanation": "가스레인지 사용 후에는 점화 스위치와 중간밸브를 모두 확인합니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 68
+  },
+  {
+    "id": 473,
+    "conceptId": 119,
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "외출하기 전에 확인해야 할 안전 항목은?",
+    "options": [
+      "텔레비전 소리만",
+      "장난감 색깔",
+      "창문 장식만",
+      "가스밸브와 전기코드"
+    ],
+    "answerIndex": 3,
+    "explanation": "외출 전 가스밸브와 전기코드·전원을 확인하는 습관이 필요합니다.",
+    "sourcePages": [
+      116
+    ],
+    "importanceRank": 69
+  },
+  {
+    "id": 25,
+    "conceptId": 7,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "전기",
+    "question": "하나의 콘센트에 여러 전기기구를 꽂아 적정 용량을 넘는 상태는?",
+    "options": [
+      "누전",
+      "정전",
+      "환기",
+      "과부하"
+    ],
+    "answerIndex": 3,
+    "explanation": "과부하는 적정 용량을 초과한 상태이며 과열을 일으켜 화재로 이어질 수 있습니다.",
+    "sourcePages": [
+      11
+    ],
+    "importanceRank": 70
+  },
+  {
+    "id": 29,
+    "conceptId": 8,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "전기",
+    "question": "전선이나 전기기구에서 전기가 새는 현상을 무엇이라고 하나요?",
+    "options": [
+      "누전",
+      "과부하",
+      "환기",
+      "방화"
+    ],
+    "answerIndex": 0,
+    "explanation": "누전은 전기가 전선이나 전기기구 밖으로 새는 현상으로 감전과 화재의 원인이 됩니다.",
+    "sourcePages": [
+      11
+    ],
+    "importanceRank": 71
+  },
+  {
+    "id": 33,
+    "conceptId": 9,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "전기",
+    "question": "전기 플러그를 안전하게 뽑는 방법은?",
+    "options": [
+      "젖은 손으로 전깃줄을 잡아당긴다.",
+      "마른 손으로 플러그 몸체를 잡고 뽑는다.",
+      "전깃줄을 세게 비틀어 뽑는다.",
+      "금속 도구로 플러그를 밀어낸다."
+    ],
+    "answerIndex": 1,
+    "explanation": "플러그는 젖은 손이나 전깃줄이 아니라 마른 손으로 몸체를 잡아 뽑아야 합니다.",
+    "sourcePages": [
+      12
+    ],
+    "importanceRank": 72
+  },
+  {
+    "id": 37,
+    "conceptId": 10,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "전기",
+    "question": "콘센트와 플러그 주변의 먼지를 정기적으로 청소해야 하는 까닭은?",
+    "options": [
+      "먼지가 전기를 모두 저장하기 때문",
+      "콘센트 색이 변하기 때문",
+      "전기 스파크가 먼지에 불을 붙일 수 있기 때문",
+      "전기요금이 자동으로 오르기 때문"
+    ],
+    "answerIndex": 2,
+    "explanation": "콘센트, 플러그, 배선 주변의 먼지는 스파크에 착화할 수 있어 정기적으로 제거해야 합니다.",
+    "sourcePages": [
+      12
+    ],
+    "importanceRank": 73
+  },
+  {
+    "id": 41,
+    "conceptId": 11,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "전기",
+    "question": "누전 차단기의 작동 상태는 최소 얼마나 자주 점검해야 하나요?",
+    "options": [
+      "10년에 1회",
+      "고장 난 뒤에만",
+      "이사할 때 한 번만",
+      "매월 1회 이상"
+    ],
+    "answerIndex": 3,
+    "explanation": "누전 차단기는 시험용 버튼으로 매월 1회 이상 점검하고 작동하지 않으면 교체해야 합니다.",
+    "sourcePages": [
+      13
+    ],
+    "importanceRank": 74
+  },
+  {
+    "id": 65,
+    "conceptId": 17,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "가스",
+    "question": "가스 연결 부위의 누출을 평소 안전하게 점검하는 방법은?",
+    "options": [
+      "라이터 불을 가까이 댄다.",
+      "비눗물을 발라 거품이 생기는지 본다.",
+      "성냥으로 이음새를 비춘다.",
+      "전기 스위치를 반복해 켠다."
+    ],
+    "answerIndex": 1,
+    "explanation": "가스 연결부에 비눗물을 발라 거품이 생기면 누출이므로 밸브를 잠그고 점검을 받아야 합니다.",
+    "sourcePages": [
+      17
+    ],
+    "importanceRank": 75
+  },
+  {
+    "id": 73,
+    "conceptId": 19,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "가스",
+    "question": "가스레인지 사용을 마친 뒤 반드시 잠가야 하는 두 곳은?",
+    "options": [
+      "창문과 방문",
+      "수도꼭지와 배수구",
+      "냉장고와 전자레인지",
+      "점화스위치와 중간밸브"
+    ],
+    "answerIndex": 3,
+    "explanation": "가스 사용 후에는 점화스위치를 끄고 중간밸브를 반드시 잠가야 합니다.",
+    "sourcePages": [
+      17
+    ],
+    "importanceRank": 76
+  },
+  {
+    "id": 77,
+    "conceptId": 20,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "유류",
+    "question": "휘발유나 등유 같은 유류의 특징으로 옳은 것은?",
+    "options": [
+      "물보다 가볍고 물과 섞이지 않아 물 위에 뜬다.",
+      "물보다 무거워 항상 가라앉는다.",
+      "물과 만나면 즉시 불연성 물질이 된다.",
+      "유증기는 공기보다 가벼워 천장에만 모인다."
+    ],
+    "answerIndex": 0,
+    "explanation": "유류는 물보다 가볍고 물과 섞이지 않아 물 표면에 뜨므로 물을 뿌리면 화재가 확산될 수 있습니다.",
+    "sourcePages": [
+      21
+    ],
+    "importanceRank": 77
+  },
+  {
+    "id": 81,
+    "conceptId": 21,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "유류",
+    "question": "석유난로에 불이 났을 때 물 대신 사용할 수 있는 방법은?",
+    "options": [
+      "물을 세게 부어 기름을 흘려보낸다.",
+      "소화기를 사용하거나 물에 적신 담요로 완전히 덮는다.",
+      "난로를 들고 달린다.",
+      "창문 밖으로 기름을 붓는다."
+    ],
+    "answerIndex": 1,
+    "explanation": "유류화재에는 물을 사용하지 말고 소화기를 쓰며, 작은 난로 화재는 젖은 담요로 완전히 덮을 수 있습니다.",
+    "sourcePages": [
+      33
+    ],
+    "importanceRank": 78
+  },
+  {
+    "id": 85,
+    "conceptId": 22,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "유류",
+    "question": "난로나 버너에 기름을 보충하는 안전한 때는?",
+    "options": [
+      "불이 세게 타는 중",
+      "기구가 뜨거울 때 즉시",
+      "불을 끄고 조금 기다려 기구가 식은 뒤",
+      "바람이 강하게 부는 중"
+    ],
+    "answerIndex": 2,
+    "explanation": "유류를 보충하거나 옮길 때는 불을 끄고 기구가 식기를 기다려야 합니다.",
+    "sourcePages": [
+      22
+    ],
+    "importanceRank": 79
+  },
+  {
+    "id": 89,
+    "conceptId": 23,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "불장난",
+    "question": "어린이 불장난을 예방하는 태도로 가장 알맞은 것은?",
+    "options": [
+      "친구와 몰래 폭죽을 터뜨린다.",
+      "난로에 종이를 넣어 본다.",
+      "켜 둔 양초를 두고 자리를 비운다.",
+      "라이터와 양초를 장난감처럼 다루지 않고 어른에게 알린다."
+    ],
+    "answerIndex": 3,
+    "explanation": "라이터, 양초, 폭죽, 난로 등으로 하는 불장난은 큰 화재로 번질 수 있어 절대 해서는 안 됩니다.",
+    "sourcePages": [
+      24
+    ],
+    "importanceRank": 80
+  },
+  {
+    "id": 97,
+    "conceptId": 25,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "담뱃불",
+    "question": "담뱃불 화재를 예방하는 행동으로 옳은 것은?",
+    "options": [
+      "불붙은 꽁초를 쓰레기통에 버린다.",
+      "불씨가 완전히 꺼졌는지 확인한 뒤 안전하게 처리한다.",
+      "산속에서 담배를 피운다.",
+      "침대에서 담배를 피우다 잠든다."
+    ],
+    "answerIndex": 1,
+    "explanation": "담뱃불은 작아 보여도 침구, 쓰레기, 산림에 옮겨붙을 수 있어 불씨를 완전히 꺼야 합니다.",
+    "sourcePages": [
+      27
+    ],
+    "importanceRank": 81
+  },
+  {
+    "id": 21,
+    "conceptId": 6,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "부주의",
+    "question": "2021~2025년 화재원인 통계에서 가장 큰 비율을 차지한 원인은?",
+    "options": [
+      "전기적 요인 27.0%",
+      "기계적 요인 10.1%",
+      "부주의 46.5%",
+      "자연적 요인 0.8%"
+    ],
+    "answerIndex": 2,
+    "explanation": "2021~2025년 소방청 통계에서 부주의가 46.5%로 가장 큰 비율을 차지했습니다.",
+    "sourcePages": [
+      10
+    ],
+    "importanceRank": 82
+  },
+  {
+    "id": 13,
+    "conceptId": 4,
+    "part": "Part 01. '불'이란?",
+    "category": "불의 원리",
+    "question": "불의 세 가지 요소를 모두 바르게 묶은 것은 무엇일까요?",
+    "options": [
+      "점화원, 산소, 가연물",
+      "물, 질소, 모래",
+      "연기, 재, 수증기",
+      "소화기, 방화문, 유도등"
+    ],
+    "answerIndex": 0,
+    "explanation": "불의 세 가지 요소는 점화원(열원), 산소(공기), 가연물(연료)입니다.",
+    "sourcePages": [
+      8
+    ],
+    "importanceRank": 83
+  },
+  {
+    "id": 113,
+    "conceptId": 29,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "소화 원리",
+    "question": "물이나 소화약제로 온도를 낮춰 불을 끄는 방법은?",
+    "options": [
+      "제거소화",
+      "냉각소화",
+      "질식소화",
+      "피난유도"
+    ],
+    "answerIndex": 1,
+    "explanation": "냉각소화는 물이나 소화약제로 열을 빼앗아 온도를 낮추는 방법입니다.",
+    "sourcePages": [
+      32
+    ],
+    "importanceRank": 84
+  },
+  {
+    "id": 117,
+    "conceptId": 30,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "소화 원리",
+    "question": "불 주변의 탈 수 있는 물건을 치워 끄는 방법은?",
+    "options": [
+      "냉각소화",
+      "질식소화",
+      "제거소화",
+      "인공호흡"
+    ],
+    "answerIndex": 2,
+    "explanation": "제거소화는 불이 탈 수 있는 가연물을 치우거나 공급을 끊는 방법입니다.",
+    "sourcePages": [
+      32
+    ],
+    "importanceRank": 85
+  },
+  {
+    "id": 121,
+    "conceptId": 31,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "소화 원리",
+    "question": "모래나 담요로 불을 완전히 덮어 산소를 막는 방법은?",
+    "options": [
+      "냉각소화",
+      "제거소화",
+      "응급소화",
+      "질식소화"
+    ],
+    "answerIndex": 3,
+    "explanation": "질식소화는 모래나 담요로 덮어 산소 공급을 막는 방법이며 산소 농도가 약 15% 이하이면 불꽃이 꺼집니다.",
+    "sourcePages": [
+      32
+    ],
+    "importanceRank": 86
+  },
+  {
+    "id": 141,
+    "conceptId": 36,
+    "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
+    "category": "연기 대피",
+    "question": "젖은 수건이 화재 연기 속에서 할 수 없는 일은?",
+    "options": [
+      "일산화탄소를 제거한다.",
+      "연기 입자를 일부 거른다.",
+      "수용성 자극물질 농도를 낮춘다.",
+      "입과 코를 가리는 데 도움을 준다."
+    ],
+    "answerIndex": 0,
+    "explanation": "젖은 수건은 연기 입자와 일부 수용성 자극물질을 줄이지만 일산화탄소는 제거하지 못합니다.",
+    "sourcePages": [
+      41
+    ],
+    "importanceRank": 87
+  },
+  {
+    "id": 281,
+    "conceptId": 71,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "학교 안전",
+    "question": "화학약품에 의한 화상을 입었을 때 올바른 처치는?",
+    "options": [
+      "상처에 연고를 임의로 바른다.",
+      "약품 묻은 옷을 머리 위로 벗긴다.",
+      "씻은 물을 다른 사람 쪽으로 모은다.",
+      "흐르는 찬물로 약품을 모두 씻고 깨끗하고 마른 천으로 덮는다."
+    ],
+    "answerIndex": 3,
+    "explanation": "화학약품 화상은 보호장비를 갖추고 흐르는 찬물로 충분히 씻은 뒤 아무것도 바르지 않고 병원으로 갑니다.",
+    "sourcePages": [
+      66
+    ],
+    "importanceRank": 88
+  },
+  {
+    "id": 309,
+    "conceptId": 78,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "물놀이",
+    "question": "물에 들어가기 전 몸에 물을 적시는 올바른 순서는?",
+    "options": [
+      "가슴 - 얼굴 - 팔 - 다리",
+      "머리 - 가슴 - 얼굴 - 다리",
+      "다리 - 팔 - 얼굴 - 가슴",
+      "얼굴 - 가슴 - 팔 - 다리"
+    ],
+    "answerIndex": 2,
+    "explanation": "물에는 준비운동 후 다리, 팔, 얼굴, 가슴 순서로 적시며 식후 최소 30분은 기다립니다.",
+    "sourcePages": [
+      72
+    ],
+    "importanceRank": 89
+  },
+  {
+    "id": 317,
+    "conceptId": 80,
+    "part": "Part 08. 상황별 안전수칙",
+    "category": "놀이터",
+    "question": "놀이터에서 끈이 달린 옷을 조심해야 하는 이유는?",
+    "options": [
+      "놀이기구에 끈이 끼어 사고가 날 수 있어서",
+      "옷 색이 바랠 수 있어서",
+      "놀이기구가 자동으로 멈춰서",
+      "모래가 너무 부드러워져서"
+    ],
+    "answerIndex": 0,
+    "explanation": "놀이터에서는 신발을 신고, 기구 손잡이를 잡으며 끈 달린 옷과 움직이는 기구에서 뛰어내리는 행동을 피합니다.",
+    "sourcePages": [
+      77
+    ],
+    "importanceRank": 90
+  },
+  {
+    "id": 325,
+    "conceptId": 82,
+    "part": "Part 09. 자연재난",
+    "category": "지진",
+    "question": "지진이란 어떤 현상인가요?",
+    "options": [
+      "강물이 불어나 넘치는 현상",
+      "구름의 전기가 방전되는 현상",
+      "땅속 암반이 갑자기 갈라진 충격으로 땅이 흔들리는 현상",
+      "모래 먼지가 하늘을 덮는 현상"
+    ],
+    "answerIndex": 2,
+    "explanation": "지진은 땅속 암반이 갑자기 갈라지면서 생긴 충격으로 땅이 흔들리는 현상입니다.",
+    "sourcePages": [
+      84
+    ],
+    "importanceRank": 91
+  },
+  {
+    "id": 333,
+    "conceptId": 84,
+    "part": "Part 09. 자연재난",
+    "category": "낙뢰",
+    "question": "낙뢰의 설명으로 옳은 것은?",
+    "options": [
+      "구름과 땅 또는 구름 사이의 전하 차이로 순간 방전되는 현상",
+      "강물이 제방을 넘는 현상",
+      "암반이 갈라져 땅이 흔들리는 현상",
+      "열대 저기압이 발달하는 현상"
+    ],
+    "answerIndex": 0,
+    "explanation": "낙뢰는 전하 차이로 전기가 순간 방전되는 현상이며 피뢰침이 있는 건물로 대피해야 합니다.",
+    "sourcePages": [
+      85
+    ],
+    "importanceRank": 92
+  },
+  {
+    "id": 341,
+    "conceptId": 86,
+    "part": "Part 09. 자연재난",
+    "category": "태풍",
+    "question": "태풍의 특징으로 옳은 것은?",
+    "options": [
+      "땅속 암반이 갈라지는 현상이다.",
+      "작은 모래 먼지만 내리는 현상이다.",
+      "열대 해상에서 발달한 저기압으로 강풍과 집중호우를 동반한다.",
+      "비와 바람이 전혀 없는 고기압이다."
+    ],
+    "answerIndex": 2,
+    "explanation": "태풍 때는 예보를 확인하고 창문을 잠그며 입간판, 축대, 침수도로와 계곡을 피합니다.",
+    "sourcePages": [
+      86
+    ],
+    "importanceRank": 93
+  },
+  {
+    "id": 345,
+    "conceptId": 87,
+    "part": "Part 09. 자연재난",
+    "category": "홍수",
+    "question": "홍수의 뜻은?",
+    "options": [
+      "구름의 전기가 방전되는 현상",
+      "땅속 암반이 갈라지는 현상",
+      "모래 먼지가 대기를 덮는 현상",
+      "강과 하천의 물이 불어 넘치는 현상"
+    ],
+    "answerIndex": 3,
+    "explanation": "홍수 때는 예보와 안내를 확인하고 저지대에서 높은 곳으로 대피하며 흐르는 물에 들어가지 않습니다.",
+    "sourcePages": [
+      87
+    ],
+    "importanceRank": 94
+  },
+  {
+    "id": 349,
+    "conceptId": 88,
+    "part": "Part 09. 자연재난",
+    "category": "황사",
+    "question": "황사는 주로 어디에서 날아온 작은 모래 먼지인가요?",
+    "options": [
+      "중국",
+      "남극 바다",
+      "태평양 해저",
+      "우리 집 욕실"
+    ],
+    "answerIndex": 0,
+    "explanation": "황사 때는 창문을 닫고 외출을 줄이며 마스크와 보호안경을 쓰고 귀가 뒤 씻습니다.",
+    "sourcePages": [
+      88
+    ],
+    "importanceRank": 95
+  },
+  {
+    "id": 57,
+    "conceptId": 15,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "가스",
+    "question": "공기보다 가벼운 LNG 가스 누설 경보기의 알맞은 설치 위치는?",
+    "options": [
+      "바닥에서 30cm 이내",
+      "바닥 아래 땅속",
+      "건물 밖 먼 곳",
+      "천장에서 30cm 이내"
+    ],
+    "answerIndex": 3,
+    "explanation": "LNG는 공기보다 가벼우므로 누설 경보기를 천장에서 30cm 이내에 설치합니다.",
+    "sourcePages": [
+      18
+    ],
+    "importanceRank": 96
+  },
+  {
+    "id": 61,
+    "conceptId": 16,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "가스",
+    "question": "공기보다 무거운 LPG 가스 누설 경보기의 알맞은 설치 위치는?",
+    "options": [
+      "바닥에서 30cm 이내",
+      "천장에서 30cm 이내",
+      "지붕 위",
+      "창문 밖 높은 곳"
+    ],
+    "answerIndex": 0,
+    "explanation": "LPG는 공기보다 무거우므로 누설 경보기를 바닥에서 30cm 이내에 설치합니다.",
+    "sourcePages": [
+      18
+    ],
+    "importanceRank": 97
+  },
+  {
+    "id": 101,
+    "conceptId": 26,
+    "part": "Part 02. 화재가 나는 원인",
+    "category": "산불",
+    "question": "우리나라 산불의 약 60%가 주로 발생하는 계절은?",
+    "options": [
+      "여름",
+      "가을",
+      "봄",
+      "겨울"
+    ],
+    "answerIndex": 2,
+    "explanation": "건조한 봄철에는 산불 위험이 커지며 우리나라 산불의 약 60%가 봄에 발생합니다.",
+    "sourcePages": [
+      28
+    ],
+    "importanceRank": 98
+  },
+  {
+    "id": 9,
+    "conceptId": 3,
+    "part": "Part 01. '불'이란?",
+    "category": "불의 원리",
+    "question": "어떤 물질이 산소와 결합해 열과 빛을 내며 타는 현상을 무엇이라고 하나요?",
+    "options": [
+      "홍수",
+      "낙뢰",
+      "지진",
+      "불"
+    ],
+    "answerIndex": 3,
+    "explanation": "길라잡이는 물질이 산소와 결합하여 열과 빛을 내면서 타는 현상을 불이라고 설명합니다.",
+    "sourcePages": [
+      8
+    ],
+    "importanceRank": 99
+  },
+  {
+    "id": 17,
+    "conceptId": 5,
+    "part": "Part 01. '불'이란?",
+    "category": "화재의 뜻",
+    "question": "길라잡이에서 말하는 '화재'의 뜻으로 가장 알맞은 것은?",
+    "options": [
+      "요리에 알맞게 사용하는 이로운 불",
+      "실수나 고의로 생겨 꺼야 할 필요가 있는 해로운 불",
+      "올림픽에서 안전하게 관리되는 성화",
+      "난방기 안에서 정상적으로 타는 불"
+    ],
+    "answerIndex": 1,
+    "explanation": "실수나 고의로 발생해 사람과 재산을 해치고 꺼야 할 필요가 있는 불을 화재라고 합니다.",
+    "sourcePages": [
+      8
+    ],
+    "importanceRank": 100
+  }
+]
