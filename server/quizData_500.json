@@ -8001,6 +8001,3046 @@
   },
   {
     "id": 401,
+    "conceptId": 101,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "119에 화재를 신고하면 어떤 도움을 받을 수 있나요?",
+    "options": [
+      "택배 배송",
+      "소방·구조·구급 도움",
+      "은행 업무",
+      "기차표 예매"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재나 구조·구급 상황에서는 119에 신고해 소방의 도움을 요청합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 402,
+    "conceptId": 101,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "자료를 읽고 질문에 답하세요. 119는 화재 진압과 구조·구급을 요청하는 긴급 신고 번호입니다. 질문: 119에 화재를 신고하면 어떤 도움을 받을 수 있나요?",
+    "options": [
+      "택배 배송",
+      "은행 업무",
+      "기차표 예매",
+      "소방·구조·구급 도움"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재나 구조·구급 상황에서는 119에 신고해 소방의 도움을 요청합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 403,
+    "conceptId": 101,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관 근거 적용 문제입니다. 119에 화재를 신고하면 어떤 도움을 받을 수 있나요? 판단 근거: 119는 화재 진압과 구조·구급을 요청하는 긴급 신고 번호입니다.",
+    "options": [
+      "택배 배송",
+      "소방·구조·구급 도움",
+      "은행 업무",
+      "기차표 예매"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재나 구조·구급 상황에서는 119에 신고해 소방의 도움을 요청합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 404,
+    "conceptId": 101,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "집에서 연기가 보입니다. 어느 기관에 신고해야 할까요?",
+    "options": [
+      "114",
+      "1122",
+      "1339",
+      "119"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재나 구조·구급 상황에서는 119에 신고해 소방의 도움을 요청합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 405,
+    "conceptId": 102,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관이 화재가 나기 전에 하는 일로 알맞은 것은?",
+    "options": [
+      "불장난하기",
+      "위험한 물건 숨기기",
+      "화재예방 점검과 안전교육",
+      "경보기 끄기"
+    ],
+    "answerIndex": 2,
+    "explanation": "소방관은 진압뿐 아니라 예방 점검과 교육으로 화재를 줄입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 406,
+    "conceptId": 102,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "자료를 읽고 질문에 답하세요. 소방관은 시설을 점검하고 사람들에게 안전한 행동을 교육합니다. 질문: 소방관이 화재가 나기 전에 하는 일로 알맞은 것은?",
+    "options": [
+      "화재예방 점검과 안전교육",
+      "불장난하기",
+      "위험한 물건 숨기기",
+      "경보기 끄기"
+    ],
+    "answerIndex": 0,
+    "explanation": "소방관은 진압뿐 아니라 예방 점검과 교육으로 화재를 줄입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 407,
+    "conceptId": 102,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관 근거 적용 문제입니다. 소방관이 화재가 나기 전에 하는 일로 알맞은 것은? 판단 근거: 소방관은 시설을 점검하고 사람들에게 안전한 행동을 교육합니다.",
+    "options": [
+      "불장난하기",
+      "위험한 물건 숨기기",
+      "화재예방 점검과 안전교육",
+      "경보기 끄기"
+    ],
+    "answerIndex": 2,
+    "explanation": "소방관은 진압뿐 아니라 예방 점검과 교육으로 화재를 줄입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 408,
+    "conceptId": 102,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관이 학교에서 소화기 사용법을 알려 주었습니다. 이것은 어떤 활동인가요?",
+    "options": [
+      "화재예방 교육",
+      "보험 판매",
+      "교통 위반 단속",
+      "기상 예보"
+    ],
+    "answerIndex": 0,
+    "explanation": "소방관은 진압뿐 아니라 예방 점검과 교육으로 화재를 줄입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 409,
+    "conceptId": 103,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관이 화재 현장에서 사람을 구하는 활동은 무엇인가요?",
+    "options": [
+      "물건 판매",
+      "도로 청소",
+      "우편 배달",
+      "인명 구조와 구급"
+    ],
+    "answerIndex": 3,
+    "explanation": "소방관의 현장 업무에는 화재 진압, 인명 구조와 응급 구급이 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 410,
+    "conceptId": 103,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "자료를 읽고 질문에 답하세요. 소방관은 화재 진압과 함께 위험에 빠진 사람을 구조하고 환자를 응급처치합니다. 질문: 소방관이 화재 현장에서 사람을 구하는 활동은 무엇인가요?",
+    "options": [
+      "물건 판매",
+      "인명 구조와 구급",
+      "도로 청소",
+      "우편 배달"
+    ],
+    "answerIndex": 1,
+    "explanation": "소방관의 현장 업무에는 화재 진압, 인명 구조와 응급 구급이 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 411,
+    "conceptId": 103,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관 근거 적용 문제입니다. 소방관이 화재 현장에서 사람을 구하는 활동은 무엇인가요? 판단 근거: 소방관은 화재 진압과 함께 위험에 빠진 사람을 구조하고 환자를 응급처치합니다.",
+    "options": [
+      "물건 판매",
+      "도로 청소",
+      "우편 배달",
+      "인명 구조와 구급"
+    ],
+    "answerIndex": 3,
+    "explanation": "소방관의 현장 업무에는 화재 진압, 인명 구조와 응급 구급이 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 412,
+    "conceptId": 103,
+    "type": "multiple-choice",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "119 구급대가 다친 사람을 병원으로 옮겼습니다. 소방의 어떤 업무인가요?",
+    "options": [
+      "방화",
+      "구조·구급",
+      "보험 가입",
+      "시설 대여"
+    ],
+    "answerIndex": 1,
+    "explanation": "소방관의 현장 업무에는 화재 진압, 인명 구조와 응급 구급이 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 413,
+    "conceptId": 104,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "한국화재보험협회가 학교·병원·시장 등에서 실시하는 일은?",
+    "options": [
+      "화재안전점검",
+      "놀이기구 운영",
+      "음식 배달",
+      "교통 단속"
+    ],
+    "answerIndex": 0,
+    "explanation": "KFPA는 여러 시설의 화재 위험과 소방시설을 점검합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      110
+    ]
+  },
+  {
+    "id": 414,
+    "conceptId": 104,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "자료를 읽고 질문에 답하세요. KFPA는 일정 규모 이상의 건물에서 화재안전 상태를 점검합니다. 질문: 한국화재보험협회가 학교·병원·시장 등에서 실시하는 일은?",
+    "options": [
+      "놀이기구 운영",
+      "음식 배달",
+      "화재안전점검",
+      "교통 단속"
+    ],
+    "answerIndex": 2,
+    "explanation": "KFPA는 여러 시설의 화재 위험과 소방시설을 점검합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      110
+    ]
+  },
+  {
+    "id": 415,
+    "conceptId": 104,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "KFPA 근거 적용 문제입니다. 한국화재보험협회가 학교·병원·시장 등에서 실시하는 일은? 판단 근거: KFPA는 일정 규모 이상의 건물에서 화재안전 상태를 점검합니다.",
+    "options": [
+      "화재안전점검",
+      "놀이기구 운영",
+      "음식 배달",
+      "교통 단속"
+    ],
+    "answerIndex": 0,
+    "explanation": "KFPA는 여러 시설의 화재 위험과 소방시설을 점검합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      110
+    ]
+  },
+  {
+    "id": 416,
+    "conceptId": 104,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "학교 소방시설이 제대로 작동하는지 전문가가 확인했습니다. 어떤 활동인가요?",
+    "options": [
+      "건물 매매",
+      "수업 참관",
+      "화재안전점검",
+      "보험금 즉시 지급"
+    ],
+    "answerIndex": 2,
+    "explanation": "KFPA는 여러 시설의 화재 위험과 소방시설을 점검합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      110
+    ]
+  },
+  {
+    "id": 417,
+    "conceptId": 105,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "한국화재보험협회가 화재 예방을 위해 연구하는 분야는?",
+    "options": [
+      "요리 기술",
+      "화재·방재 기술",
+      "운동 경기",
+      "농작물 재배"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재와 재난을 예방하려면 안전 기술을 연구하고 시험해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 418,
+    "conceptId": 105,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "자료를 읽고 질문에 답하세요. KFPA는 화재와 재난을 줄이는 기술과 안전 자료를 연구합니다. 질문: 한국화재보험협회가 화재 예방을 위해 연구하는 분야는?",
+    "options": [
+      "요리 기술",
+      "운동 경기",
+      "농작물 재배",
+      "화재·방재 기술"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재와 재난을 예방하려면 안전 기술을 연구하고 시험해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 419,
+    "conceptId": 105,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "KFPA 근거 적용 문제입니다. 한국화재보험협회가 화재 예방을 위해 연구하는 분야는? 판단 근거: KFPA는 화재와 재난을 줄이는 기술과 안전 자료를 연구합니다.",
+    "options": [
+      "요리 기술",
+      "화재·방재 기술",
+      "운동 경기",
+      "농작물 재배"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재와 재난을 예방하려면 안전 기술을 연구하고 시험해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 420,
+    "conceptId": 105,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "새로운 방화 재료의 성능을 시험했습니다. KFPA의 어떤 활동과 관련 있나요?",
+    "options": [
+      "관광 안내",
+      "교통 신호 관리",
+      "식품 판매",
+      "방재기술 연구·시험"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재와 재난을 예방하려면 안전 기술을 연구하고 시험해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 421,
+    "conceptId": 106,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "한국화재보험협회가 어린이에게 알려 주는 중요한 내용은?",
+    "options": [
+      "불장난 방법",
+      "불꽃놀이 기술",
+      "화재예방과 안전한 행동",
+      "위험한 실험"
+    ],
+    "answerIndex": 2,
+    "explanation": "화재예방 교육은 어린이가 위험을 알아차리고 올바르게 대피하도록 돕습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 422,
+    "conceptId": 106,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "자료를 읽고 질문에 답하세요. KFPA는 어린이가 화재를 예방하고 안전하게 행동하도록 교육합니다. 질문: 한국화재보험협회가 어린이에게 알려 주는 중요한 내용은?",
+    "options": [
+      "화재예방과 안전한 행동",
+      "불장난 방법",
+      "불꽃놀이 기술",
+      "위험한 실험"
+    ],
+    "answerIndex": 0,
+    "explanation": "화재예방 교육은 어린이가 위험을 알아차리고 올바르게 대피하도록 돕습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 423,
+    "conceptId": 106,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "KFPA 근거 적용 문제입니다. 한국화재보험협회가 어린이에게 알려 주는 중요한 내용은? 판단 근거: KFPA는 어린이가 화재를 예방하고 안전하게 행동하도록 교육합니다.",
+    "options": [
+      "불장난 방법",
+      "불꽃놀이 기술",
+      "화재예방과 안전한 행동",
+      "위험한 실험"
+    ],
+    "answerIndex": 2,
+    "explanation": "화재예방 교육은 어린이가 위험을 알아차리고 올바르게 대피하도록 돕습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 424,
+    "conceptId": 106,
+    "type": "multiple-choice",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "어린이 안전 퀴즈에서 화재 대피 방법을 배웠습니다. 이것은 무엇을 위한 교육인가요?",
+    "options": [
+      "화재예방 안전교육",
+      "방화 훈련",
+      "보험 영업",
+      "소방차 운전"
+    ],
+    "answerIndex": 0,
+    "explanation": "화재예방 교육은 어린이가 위험을 알아차리고 올바르게 대피하도록 돕습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 425,
+    "conceptId": 107,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "건물·자동차·배 사고처럼 재산 피해를 보장하는 보험은 무엇인가요?",
+    "options": [
+      "생명보험만",
+      "여행 안내",
+      "은행 예금",
+      "손해보험"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재보험·자동차보험·해상보험은 손해보험에 해당합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 426,
+    "conceptId": 107,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "자료를 읽고 질문에 답하세요. 손해보험은 재산이나 사고로 생긴 손해를 보상하는 보험입니다. 질문: 건물·자동차·배 사고처럼 재산 피해를 보장하는 보험은 무엇인가요?",
+    "options": [
+      "생명보험만",
+      "손해보험",
+      "여행 안내",
+      "은행 예금"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재보험·자동차보험·해상보험은 손해보험에 해당합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 427,
+    "conceptId": 107,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "보험 근거 적용 문제입니다. 건물·자동차·배 사고처럼 재산 피해를 보장하는 보험은 무엇인가요? 판단 근거: 손해보험은 재산이나 사고로 생긴 손해를 보상하는 보험입니다.",
+    "options": [
+      "생명보험만",
+      "여행 안내",
+      "은행 예금",
+      "손해보험"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재보험·자동차보험·해상보험은 손해보험에 해당합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 428,
+    "conceptId": 107,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "자동차 사고로 수리비가 생겼습니다. 어떤 종류의 보험과 관련 있나요?",
+    "options": [
+      "연금보험",
+      "손해보험",
+      "건강검진",
+      "저축통장"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재보험·자동차보험·해상보험은 손해보험에 해당합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 429,
+    "conceptId": 108,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "생명보험회사가 주로 보장하는 것은 무엇인가요?",
+    "options": [
+      "사람의 생명과 질병·사망에 따른 위험",
+      "건물 벽의 균열만",
+      "자동차 타이어 공기압",
+      "가스레인지 불꽃"
+    ],
+    "answerIndex": 0,
+    "explanation": "생명보험은 사람에게 생길 수 있는 생명·건강 관련 위험을 대비합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 430,
+    "conceptId": 108,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "자료를 읽고 질문에 답하세요. 생명보험은 사람의 생명과 질병, 사망에 따른 경제적 위험을 보장합니다. 질문: 생명보험회사가 주로 보장하는 것은 무엇인가요?",
+    "options": [
+      "건물 벽의 균열만",
+      "자동차 타이어 공기압",
+      "사람의 생명과 질병·사망에 따른 위험",
+      "가스레인지 불꽃"
+    ],
+    "answerIndex": 2,
+    "explanation": "생명보험은 사람에게 생길 수 있는 생명·건강 관련 위험을 대비합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 431,
+    "conceptId": 108,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "보험 근거 적용 문제입니다. 생명보험회사가 주로 보장하는 것은 무엇인가요? 판단 근거: 생명보험은 사람의 생명과 질병, 사망에 따른 경제적 위험을 보장합니다.",
+    "options": [
+      "사람의 생명과 질병·사망에 따른 위험",
+      "건물 벽의 균열만",
+      "자동차 타이어 공기압",
+      "가스레인지 불꽃"
+    ],
+    "answerIndex": 0,
+    "explanation": "생명보험은 사람에게 생길 수 있는 생명·건강 관련 위험을 대비합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 432,
+    "conceptId": 108,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "가족이 질병이나 사고에 대비해 가입한 보험은 어떤 위험을 보장하나요?",
+    "options": [
+      "도로 교통량",
+      "집의 페인트 색",
+      "생명과 건강의 위험",
+      "소화기 무게"
+    ],
+    "answerIndex": 2,
+    "explanation": "생명보험은 사람에게 생길 수 있는 생명·건강 관련 위험을 대비합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 433,
+    "conceptId": 109,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "보험이 필요한 까닭으로 가장 알맞은 것은?",
+    "options": [
+      "사고를 일부러 만들기 위해",
+      "예상하지 못한 큰 피해의 경제적 부담을 줄이기 위해",
+      "불을 더 크게 만들기 위해",
+      "모든 위험을 없애기 위해"
+    ],
+    "answerIndex": 1,
+    "explanation": "보험은 위험을 함께 나누어 갑작스러운 피해의 부담을 줄이는 제도입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 434,
+    "conceptId": 109,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "자료를 읽고 질문에 답하세요. 보험은 사고 자체를 없애는 것이 아니라 피해를 입었을 때 경제적 회복을 돕습니다. 질문: 보험이 필요한 까닭으로 가장 알맞은 것은?",
+    "options": [
+      "사고를 일부러 만들기 위해",
+      "불을 더 크게 만들기 위해",
+      "모든 위험을 없애기 위해",
+      "예상하지 못한 큰 피해의 경제적 부담을 줄이기 위해"
+    ],
+    "answerIndex": 3,
+    "explanation": "보험은 위험을 함께 나누어 갑작스러운 피해의 부담을 줄이는 제도입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 435,
+    "conceptId": 109,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "보험 근거 적용 문제입니다. 보험이 필요한 까닭으로 가장 알맞은 것은? 판단 근거: 보험은 사고 자체를 없애는 것이 아니라 피해를 입었을 때 경제적 회복을 돕습니다.",
+    "options": [
+      "사고를 일부러 만들기 위해",
+      "예상하지 못한 큰 피해의 경제적 부담을 줄이기 위해",
+      "불을 더 크게 만들기 위해",
+      "모든 위험을 없애기 위해"
+    ],
+    "answerIndex": 1,
+    "explanation": "보험은 위험을 함께 나누어 갑작스러운 피해의 부담을 줄이는 제도입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 436,
+    "conceptId": 109,
+    "type": "multiple-choice",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "화재로 집을 수리해야 합니다. 보험이 도움을 주는 까닭은 무엇인가요?",
+    "options": [
+      "화재를 미리 없애서",
+      "소방차를 대신 운전해서",
+      "집을 자동으로 치워서",
+      "피해 복구 비용을 보상받을 수 있어서"
+    ],
+    "answerIndex": 3,
+    "explanation": "보험은 위험을 함께 나누어 갑작스러운 피해의 부담을 줄이는 제도입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 437,
+    "conceptId": 110,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "화재안전 지도",
+    "question": "가족과 화재안전 지도를 만들 때 함께 정해야 하는 것은?",
+    "options": [
+      "가족의 비밀번호",
+      "장난감 가격",
+      "대피 후 만날 장소",
+      "인터넷 게임 순서"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 후 흩어진 가족이 안전하게 만날 집결 장소를 미리 정해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      113
+    ]
+  },
+  {
+    "id": 438,
+    "conceptId": 110,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "화재안전 지도",
+    "question": "자료를 읽고 질문에 답하세요. 화재안전 지도에는 피난경로뿐 아니라 대피 후 가족이 만날 장소도 표시합니다. 질문: 가족과 화재안전 지도를 만들 때 함께 정해야 하는 것은?",
+    "options": [
+      "대피 후 만날 장소",
+      "가족의 비밀번호",
+      "장난감 가격",
+      "인터넷 게임 순서"
+    ],
+    "answerIndex": 0,
+    "explanation": "대피 후 흩어진 가족이 안전하게 만날 집결 장소를 미리 정해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      113
+    ]
+  },
+  {
+    "id": 439,
+    "conceptId": 110,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "화재안전 지도",
+    "question": "화재안전 지도 근거 적용 문제입니다. 가족과 화재안전 지도를 만들 때 함께 정해야 하는 것은? 판단 근거: 화재안전 지도에는 피난경로뿐 아니라 대피 후 가족이 만날 장소도 표시합니다.",
+    "options": [
+      "가족의 비밀번호",
+      "장난감 가격",
+      "대피 후 만날 장소",
+      "인터넷 게임 순서"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 후 흩어진 가족이 안전하게 만날 집결 장소를 미리 정해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      113
+    ]
+  },
+  {
+    "id": 440,
+    "conceptId": 110,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "화재안전 지도",
+    "question": "화재 후 가족이 서로를 찾으려 합니다. 미리 정해 둘 장소는 무엇인가요?",
+    "options": [
+      "대피 후 집결 장소",
+      "불난 방 안",
+      "엘리베이터 안",
+      "주차된 차 안"
+    ],
+    "answerIndex": 0,
+    "explanation": "대피 후 흩어진 가족이 안전하게 만날 집결 장소를 미리 정해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      113
+    ]
+  },
+  {
+    "id": 441,
+    "conceptId": 111,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전기선의 피복이 벗겨지거나 손상되었을 때 어떻게 해야 하나요?",
+    "options": [
+      "테이프 없이 계속 사용한다",
+      "물에 담근다",
+      "불 가까이에 둔다",
+      "사용을 중지하고 안전하게 교체·수리한다"
+    ],
+    "answerIndex": 3,
+    "explanation": "전기선이 손상되면 전원을 끄고 전문가에게 수리나 교체를 맡깁니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 442,
+    "conceptId": 111,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 손상된 전기선은 감전과 화재를 일으킬 수 있으므로 계속 사용하면 안 됩니다. 질문: 전기선의 피복이 벗겨지거나 손상되었을 때 어떻게 해야 하나요?",
+    "options": [
+      "테이프 없이 계속 사용한다",
+      "사용을 중지하고 안전하게 교체·수리한다",
+      "물에 담근다",
+      "불 가까이에 둔다"
+    ],
+    "answerIndex": 1,
+    "explanation": "전기선이 손상되면 전원을 끄고 전문가에게 수리나 교체를 맡깁니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 443,
+    "conceptId": 111,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 전기선의 피복이 벗겨지거나 손상되었을 때 어떻게 해야 하나요? 판단 근거: 손상된 전기선은 감전과 화재를 일으킬 수 있으므로 계속 사용하면 안 됩니다.",
+    "options": [
+      "테이프 없이 계속 사용한다",
+      "물에 담근다",
+      "불 가까이에 둔다",
+      "사용을 중지하고 안전하게 교체·수리한다"
+    ],
+    "answerIndex": 3,
+    "explanation": "전기선이 손상되면 전원을 끄고 전문가에게 수리나 교체를 맡깁니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 444,
+    "conceptId": 111,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전기선의 겉면이 벗겨졌습니다. 가장 안전한 행동은?",
+    "options": [
+      "손으로 만져 확인하기",
+      "사용을 멈추고 수리·교체하기",
+      "젖은 천으로 닦기",
+      "멀티탭에 더 연결하기"
+    ],
+    "answerIndex": 1,
+    "explanation": "전기선이 손상되면 전원을 끄고 전문가에게 수리나 교체를 맡깁니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 445,
+    "conceptId": 112,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전열제품의 플러그는 콘센트에 어떻게 꽂아야 하나요?",
+    "options": [
+      "여러 콘센트에 나누어 꽂는다",
+      "한 콘센트에 모두 꽂는다",
+      "전선을 꼬아 꽂는다",
+      "물에 적셔 꽂는다"
+    ],
+    "answerIndex": 0,
+    "explanation": "전열제품은 콘센트에 분산해 과부하를 예방합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 446,
+    "conceptId": 112,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 전열제품을 한 콘센트에 몰아 꽂으면 과부하로 열이 발생할 수 있습니다. 질문: 전열제품의 플러그는 콘센트에 어떻게 꽂아야 하나요?",
+    "options": [
+      "한 콘센트에 모두 꽂는다",
+      "전선을 꼬아 꽂는다",
+      "여러 콘센트에 나누어 꽂는다",
+      "물에 적셔 꽂는다"
+    ],
+    "answerIndex": 2,
+    "explanation": "전열제품은 콘센트에 분산해 과부하를 예방합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 447,
+    "conceptId": 112,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 전열제품의 플러그는 콘센트에 어떻게 꽂아야 하나요? 판단 근거: 전열제품을 한 콘센트에 몰아 꽂으면 과부하로 열이 발생할 수 있습니다.",
+    "options": [
+      "여러 콘센트에 나누어 꽂는다",
+      "한 콘센트에 모두 꽂는다",
+      "전선을 꼬아 꽂는다",
+      "물에 적셔 꽂는다"
+    ],
+    "answerIndex": 0,
+    "explanation": "전열제품은 콘센트에 분산해 과부하를 예방합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 448,
+    "conceptId": 112,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전기히터와 전기포트를 함께 사용하려 합니다. 안전한 방법은?",
+    "options": [
+      "한 멀티탭에 모두 연결",
+      "플러그를 반쯤 꽂기",
+      "콘센트를 나누어 사용하기",
+      "전선을 감아 두기"
+    ],
+    "answerIndex": 2,
+    "explanation": "전열제품은 콘센트에 분산해 과부하를 예방합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 449,
+    "conceptId": 113,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전기코드를 정리할 때 주의할 점은 무엇인가요?",
+    "options": [
+      "통로 한가운데 둔다",
+      "가구에 눌리거나 사람이 밟지 않게 정리한다",
+      "카펫 아래 깊이 숨긴다",
+      "물에 적신다"
+    ],
+    "answerIndex": 1,
+    "explanation": "전기코드는 눌리거나 밟히지 않도록 안전하게 정리해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 450,
+    "conceptId": 113,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 눌리거나 밟힌 전기코드는 피복이 손상되고 화재 위험이 커집니다. 질문: 전기코드를 정리할 때 주의할 점은 무엇인가요?",
+    "options": [
+      "통로 한가운데 둔다",
+      "카펫 아래 깊이 숨긴다",
+      "물에 적신다",
+      "가구에 눌리거나 사람이 밟지 않게 정리한다"
+    ],
+    "answerIndex": 3,
+    "explanation": "전기코드는 눌리거나 밟히지 않도록 안전하게 정리해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 451,
+    "conceptId": 113,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 전기코드를 정리할 때 주의할 점은 무엇인가요? 판단 근거: 눌리거나 밟힌 전기코드는 피복이 손상되고 화재 위험이 커집니다.",
+    "options": [
+      "통로 한가운데 둔다",
+      "가구에 눌리거나 사람이 밟지 않게 정리한다",
+      "카펫 아래 깊이 숨긴다",
+      "물에 적신다"
+    ],
+    "answerIndex": 1,
+    "explanation": "전기코드는 눌리거나 밟히지 않도록 안전하게 정리해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 452,
+    "conceptId": 113,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "거실 통로에 전기코드가 놓여 있습니다. 어떻게 정리해야 할까요?",
+    "options": [
+      "통로에 그대로 두기",
+      "무거운 가구로 누르기",
+      "매듭을 많이 만들기",
+      "사람이 밟지 않는 곳으로 정리하기"
+    ],
+    "answerIndex": 3,
+    "explanation": "전기코드는 눌리거나 밟히지 않도록 안전하게 정리해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 453,
+    "conceptId": 114,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "사용하지 않는 전기제품의 코드는 어떻게 해야 하나요?",
+    "options": [
+      "계속 꽂아 둔다",
+      "물에 담근다",
+      "플러그를 뽑아 둔다",
+      "전선을 태운다"
+    ],
+    "answerIndex": 2,
+    "explanation": "사용하지 않는 전기제품은 플러그를 뽑는 습관이 안전합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 454,
+    "conceptId": 114,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 사용하지 않는 전기제품은 플러그를 뽑아 대기전력과 화재 위험을 줄입니다. 질문: 사용하지 않는 전기제품의 코드는 어떻게 해야 하나요?",
+    "options": [
+      "플러그를 뽑아 둔다",
+      "계속 꽂아 둔다",
+      "물에 담근다",
+      "전선을 태운다"
+    ],
+    "answerIndex": 0,
+    "explanation": "사용하지 않는 전기제품은 플러그를 뽑는 습관이 안전합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 455,
+    "conceptId": 114,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 사용하지 않는 전기제품의 코드는 어떻게 해야 하나요? 판단 근거: 사용하지 않는 전기제품은 플러그를 뽑아 대기전력과 화재 위험을 줄입니다.",
+    "options": [
+      "계속 꽂아 둔다",
+      "물에 담근다",
+      "플러그를 뽑아 둔다",
+      "전선을 태운다"
+    ],
+    "answerIndex": 2,
+    "explanation": "사용하지 않는 전기제품은 플러그를 뽑는 습관이 안전합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 456,
+    "conceptId": 114,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "외출하기 전 사용하지 않는 전기제품을 발견했습니다. 어떻게 할까요?",
+    "options": [
+      "플러그 뽑기",
+      "전원을 더 켜기",
+      "코드를 잡아당겨 끊기",
+      "불꽃으로 확인하기"
+    ],
+    "answerIndex": 0,
+    "explanation": "사용하지 않는 전기제품은 플러그를 뽑는 습관이 안전합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 457,
+    "conceptId": 115,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "커튼과 같은 불에 타기 쉬운 물건은 난방기구에서 얼마나 떨어뜨려야 하나요?",
+    "options": [
+      "1cm",
+      "10cm",
+      "20cm",
+      "1.2m 이상"
+    ],
+    "answerIndex": 3,
+    "explanation": "커튼과 가구 같은 가연물은 난방기구에서 1.2m 이상 떨어뜨립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 458,
+    "conceptId": 115,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 커튼 등 가연물은 난방기구와 충분히 떨어져 있어야 합니다. 질문: 커튼과 같은 불에 타기 쉬운 물건은 난방기구에서 얼마나 떨어뜨려야 하나요?",
+    "options": [
+      "1cm",
+      "1.2m 이상",
+      "10cm",
+      "20cm"
+    ],
+    "answerIndex": 1,
+    "explanation": "커튼과 가구 같은 가연물은 난방기구에서 1.2m 이상 떨어뜨립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 459,
+    "conceptId": 115,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 커튼과 같은 불에 타기 쉬운 물건은 난방기구에서 얼마나 떨어뜨려야 하나요? 판단 근거: 커튼 등 가연물은 난방기구와 충분히 떨어져 있어야 합니다.",
+    "options": [
+      "1cm",
+      "10cm",
+      "20cm",
+      "1.2m 이상"
+    ],
+    "answerIndex": 3,
+    "explanation": "커튼과 가구 같은 가연물은 난방기구에서 1.2m 이상 떨어뜨립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 460,
+    "conceptId": 115,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "난방기구 옆에 커튼이 있습니다. 어느 정도 거리를 확보해야 할까요?",
+    "options": [
+      "바로 붙이기",
+      "1.2m 이상 떨어뜨리기",
+      "5cm만 띄우기",
+      "난방기 위에 걸기"
+    ],
+    "answerIndex": 1,
+    "explanation": "커튼과 가구 같은 가연물은 난방기구에서 1.2m 이상 떨어뜨립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 461,
+    "conceptId": 116,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "음식을 만들 때 지켜야 하는 원칙은 무엇인가요?",
+    "options": [
+      "어른이 곁에 있어야 한다",
+      "자리를 오래 비운다",
+      "가스불을 켜 둔 채 잠든다",
+      "냄비를 통로에 둔다"
+    ],
+    "answerIndex": 0,
+    "explanation": "조리할 때는 어른이 곁을 지키고 자리를 비우지 않아야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 462,
+    "conceptId": 116,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 조리 중 자리를 비우면 음식물이 타거나 불이 주변으로 번질 수 있습니다. 질문: 음식을 만들 때 지켜야 하는 원칙은 무엇인가요?",
+    "options": [
+      "자리를 오래 비운다",
+      "가스불을 켜 둔 채 잠든다",
+      "어른이 곁에 있어야 한다",
+      "냄비를 통로에 둔다"
+    ],
+    "answerIndex": 2,
+    "explanation": "조리할 때는 어른이 곁을 지키고 자리를 비우지 않아야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 463,
+    "conceptId": 116,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 음식을 만들 때 지켜야 하는 원칙은 무엇인가요? 판단 근거: 조리 중 자리를 비우면 음식물이 타거나 불이 주변으로 번질 수 있습니다.",
+    "options": [
+      "어른이 곁에 있어야 한다",
+      "자리를 오래 비운다",
+      "가스불을 켜 둔 채 잠든다",
+      "냄비를 통로에 둔다"
+    ],
+    "answerIndex": 0,
+    "explanation": "조리할 때는 어른이 곁을 지키고 자리를 비우지 않아야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 464,
+    "conceptId": 116,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가스레인지에서 요리하는 동안 보호자가 자리를 비우려 합니다. 어떻게 해야 할까요?",
+    "options": [
+      "불을 켜 둔 채 외출",
+      "냄비를 옮기지 않기",
+      "불을 끄거나 어른이 곁을 지키기",
+      "환풍기를 끄기"
+    ],
+    "answerIndex": 2,
+    "explanation": "조리할 때는 어른이 곁을 지키고 자리를 비우지 않아야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 465,
+    "conceptId": 117,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가스레인지 사용 후 반드시 잠가야 하는 것은?",
+    "options": [
+      "수도꼭지",
+      "중간밸브",
+      "창문 잠금장치만",
+      "텔레비전 리모컨"
+    ],
+    "answerIndex": 1,
+    "explanation": "가스레인지 사용 후에는 점화 스위치와 중간밸브를 모두 확인합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 466,
+    "conceptId": 117,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 점화 스위치를 끈 뒤에도 가스 중간밸브를 잠가야 가스 누출을 예방할 수 있습니다. 질문: 가스레인지 사용 후 반드시 잠가야 하는 것은?",
+    "options": [
+      "수도꼭지",
+      "창문 잠금장치만",
+      "텔레비전 리모컨",
+      "중간밸브"
+    ],
+    "answerIndex": 3,
+    "explanation": "가스레인지 사용 후에는 점화 스위치와 중간밸브를 모두 확인합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 467,
+    "conceptId": 117,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 가스레인지 사용 후 반드시 잠가야 하는 것은? 판단 근거: 점화 스위치를 끈 뒤에도 가스 중간밸브를 잠가야 가스 누출을 예방할 수 있습니다.",
+    "options": [
+      "수도꼭지",
+      "중간밸브",
+      "창문 잠금장치만",
+      "텔레비전 리모컨"
+    ],
+    "answerIndex": 1,
+    "explanation": "가스레인지 사용 후에는 점화 스위치와 중간밸브를 모두 확인합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 468,
+    "conceptId": 117,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "요리를 끝낸 뒤 불꽃은 껐습니다. 무엇을 추가로 확인해야 할까요?",
+    "options": [
+      "가스밸브 열기",
+      "불꽃 다시 켜기",
+      "창문 닫고 잠들기",
+      "가스 중간밸브 잠그기"
+    ],
+    "answerIndex": 3,
+    "explanation": "가스레인지 사용 후에는 점화 스위치와 중간밸브를 모두 확인합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 469,
+    "conceptId": 118,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "집에서 화재가 났을 때 미리 알고 있어야 하는 것은?",
+    "options": [
+      "게임 비밀번호",
+      "가구 가격",
+      "대피 경로",
+      "텔레비전 채널"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 경로를 평소 확인하면 화재 때 침착하게 이동할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 470,
+    "conceptId": 118,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 화재 때 연기와 정전으로 길을 잃지 않도록 평소 대피 경로를 알아둡니다. 질문: 집에서 화재가 났을 때 미리 알고 있어야 하는 것은?",
+    "options": [
+      "대피 경로",
+      "게임 비밀번호",
+      "가구 가격",
+      "텔레비전 채널"
+    ],
+    "answerIndex": 0,
+    "explanation": "대피 경로를 평소 확인하면 화재 때 침착하게 이동할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 471,
+    "conceptId": 118,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 집에서 화재가 났을 때 미리 알고 있어야 하는 것은? 판단 근거: 화재 때 연기와 정전으로 길을 잃지 않도록 평소 대피 경로를 알아둡니다.",
+    "options": [
+      "게임 비밀번호",
+      "가구 가격",
+      "대피 경로",
+      "텔레비전 채널"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 경로를 평소 확인하면 화재 때 침착하게 이동할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 472,
+    "conceptId": 118,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "현관 쪽에 연기가 가득합니다. 평소 무엇을 알고 있어야 다른 길로 나갈 수 있을까요?",
+    "options": [
+      "대체 대피 경로",
+      "엘리베이터 운행표",
+      "가구 배치 가격표",
+      "주차 요금"
+    ],
+    "answerIndex": 0,
+    "explanation": "대피 경로를 평소 확인하면 화재 때 침착하게 이동할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 473,
+    "conceptId": 119,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "외출하기 전에 확인해야 할 안전 항목은?",
+    "options": [
+      "텔레비전 소리만",
+      "장난감 색깔",
+      "창문 장식만",
+      "가스밸브와 전기코드"
+    ],
+    "answerIndex": 3,
+    "explanation": "외출 전 가스밸브와 전기코드·전원을 확인하는 습관이 필요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 474,
+    "conceptId": 119,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "자료를 읽고 질문에 답하세요. 외출 전 가스밸브와 전기제품의 전원을 확인하면 화재 위험을 줄일 수 있습니다. 질문: 외출하기 전에 확인해야 할 안전 항목은?",
+    "options": [
+      "텔레비전 소리만",
+      "가스밸브와 전기코드",
+      "장난감 색깔",
+      "창문 장식만"
+    ],
+    "answerIndex": 1,
+    "explanation": "외출 전 가스밸브와 전기코드·전원을 확인하는 습관이 필요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 475,
+    "conceptId": 119,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가정 체크리스트 근거 적용 문제입니다. 외출하기 전에 확인해야 할 안전 항목은? 판단 근거: 외출 전 가스밸브와 전기제품의 전원을 확인하면 화재 위험을 줄일 수 있습니다.",
+    "options": [
+      "텔레비전 소리만",
+      "장난감 색깔",
+      "창문 장식만",
+      "가스밸브와 전기코드"
+    ],
+    "answerIndex": 3,
+    "explanation": "외출 전 가스밸브와 전기코드·전원을 확인하는 습관이 필요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 476,
+    "conceptId": 119,
+    "type": "multiple-choice",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가족이 집을 비우려 합니다. 마지막으로 무엇을 확인해야 할까요?",
+    "options": [
+      "불을 더 켜기",
+      "가스와 전기 상태",
+      "전기코드를 물에 담그기",
+      "가스밸브 열기"
+    ],
+    "answerIndex": 1,
+    "explanation": "외출 전 가스밸브와 전기코드·전원을 확인하는 습관이 필요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 477,
+    "conceptId": 120,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "씨랜드 청소년 수련원 화재에서 배울 수 있는 교훈은?",
+    "options": [
+      "숙박시설의 안전관리와 대피 준비가 중요하다",
+      "비상구를 잠근다",
+      "화재경보기를 끈다",
+      "아이들을 방에 남긴다"
+    ],
+    "answerIndex": 0,
+    "explanation": "숙박시설에서는 안전관리와 대피로 확인이 생명을 지킵니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 478,
+    "conceptId": 120,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "자료를 읽고 질문에 답하세요. 대형 화재사례는 안전관리와 신속한 대피의 중요성을 알려 줍니다. 질문: 씨랜드 청소년 수련원 화재에서 배울 수 있는 교훈은?",
+    "options": [
+      "비상구를 잠근다",
+      "화재경보기를 끈다",
+      "숙박시설의 안전관리와 대피 준비가 중요하다",
+      "아이들을 방에 남긴다"
+    ],
+    "answerIndex": 2,
+    "explanation": "숙박시설에서는 안전관리와 대피로 확인이 생명을 지킵니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 479,
+    "conceptId": 120,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "화재사례 근거 적용 문제입니다. 씨랜드 청소년 수련원 화재에서 배울 수 있는 교훈은? 판단 근거: 대형 화재사례는 안전관리와 신속한 대피의 중요성을 알려 줍니다.",
+    "options": [
+      "숙박시설의 안전관리와 대피 준비가 중요하다",
+      "비상구를 잠근다",
+      "화재경보기를 끈다",
+      "아이들을 방에 남긴다"
+    ],
+    "answerIndex": 0,
+    "explanation": "숙박시설에서는 안전관리와 대피로 확인이 생명을 지킵니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 480,
+    "conceptId": 120,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "수련원에 도착한 어린이들이 먼저 확인해야 할 것은?",
+    "options": [
+      "불꽃놀이 장소",
+      "잠금장치만",
+      "비상구와 대피로",
+      "가구 배치"
+    ],
+    "answerIndex": 2,
+    "explanation": "숙박시설에서는 안전관리와 대피로 확인이 생명을 지킵니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 481,
+    "conceptId": 121,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "천안 초등학교 축구부 합숙소 화재 사례가 알려 주는 것은?",
+    "options": [
+      "숙소의 비상구를 막아도 된다",
+      "잠자는 공간의 화재 예방과 대피 관리가 필요하다",
+      "밤에는 경보기를 꺼 둔다",
+      "어린이는 대피 연습을 하지 않는다"
+    ],
+    "answerIndex": 1,
+    "explanation": "숙박·합숙 공간은 야간 화재에 대비한 대피 관리가 중요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 482,
+    "conceptId": 121,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "자료를 읽고 질문에 답하세요. 잠자는 동안 불이 나면 발견과 대피가 늦어질 수 있어 평소 준비가 필요합니다. 질문: 천안 초등학교 축구부 합숙소 화재 사례가 알려 주는 것은?",
+    "options": [
+      "숙소의 비상구를 막아도 된다",
+      "밤에는 경보기를 꺼 둔다",
+      "어린이는 대피 연습을 하지 않는다",
+      "잠자는 공간의 화재 예방과 대피 관리가 필요하다"
+    ],
+    "answerIndex": 3,
+    "explanation": "숙박·합숙 공간은 야간 화재에 대비한 대피 관리가 중요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 483,
+    "conceptId": 121,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "화재사례 근거 적용 문제입니다. 천안 초등학교 축구부 합숙소 화재 사례가 알려 주는 것은? 판단 근거: 잠자는 동안 불이 나면 발견과 대피가 늦어질 수 있어 평소 준비가 필요합니다.",
+    "options": [
+      "숙소의 비상구를 막아도 된다",
+      "잠자는 공간의 화재 예방과 대피 관리가 필요하다",
+      "밤에는 경보기를 꺼 둔다",
+      "어린이는 대피 연습을 하지 않는다"
+    ],
+    "answerIndex": 1,
+    "explanation": "숙박·합숙 공간은 야간 화재에 대비한 대피 관리가 중요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 484,
+    "conceptId": 121,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "합숙소에서 밤에 화재가 발생할 수 있습니다. 어떤 준비가 필요할까요?",
+    "options": [
+      "문을 잠그고 기다리기",
+      "창문을 막기",
+      "경보기 끄기",
+      "비상구 확인과 대피 연습"
+    ],
+    "answerIndex": 3,
+    "explanation": "숙박·합숙 공간은 야간 화재에 대비한 대피 관리가 중요합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 485,
+    "conceptId": 122,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "대구지하철 화재 사례에서 지하철 이용자가 기억해야 할 것은?",
+    "options": [
+      "열차 안에 계속 머문다",
+      "반대 선로로 달린다",
+      "승무원 안내에 따라 침착하게 대피한다",
+      "엘리베이터를 찾는다"
+    ],
+    "answerIndex": 2,
+    "explanation": "지하철 화재에서는 질서를 지키고 안내에 따라 대피해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 486,
+    "conceptId": 122,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "자료를 읽고 질문에 답하세요. 지하철 화재에서는 연기와 전기 위험이 있어 승무원과 역무원의 안내가 중요합니다. 질문: 대구지하철 화재 사례에서 지하철 이용자가 기억해야 할 것은?",
+    "options": [
+      "승무원 안내에 따라 침착하게 대피한다",
+      "열차 안에 계속 머문다",
+      "반대 선로로 달린다",
+      "엘리베이터를 찾는다"
+    ],
+    "answerIndex": 0,
+    "explanation": "지하철 화재에서는 질서를 지키고 안내에 따라 대피해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 487,
+    "conceptId": 122,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "화재사례 근거 적용 문제입니다. 대구지하철 화재 사례에서 지하철 이용자가 기억해야 할 것은? 판단 근거: 지하철 화재에서는 연기와 전기 위험이 있어 승무원과 역무원의 안내가 중요합니다.",
+    "options": [
+      "열차 안에 계속 머문다",
+      "반대 선로로 달린다",
+      "승무원 안내에 따라 침착하게 대피한다",
+      "엘리베이터를 찾는다"
+    ],
+    "answerIndex": 2,
+    "explanation": "지하철 화재에서는 질서를 지키고 안내에 따라 대피해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 488,
+    "conceptId": 122,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "지하철 안에 연기가 들어옵니다. 승객은 어떻게 해야 할까요?",
+    "options": [
+      "안내에 따라 안전한 방향으로 대피하기",
+      "선로로 혼자 뛰기",
+      "불을 구경하기",
+      "문을 다시 잠그기"
+    ],
+    "answerIndex": 0,
+    "explanation": "지하철 화재에서는 질서를 지키고 안내에 따라 대피해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 489,
+    "conceptId": 123,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "밀양 세종병원 화재 사례에서 병원 화재의 중요한 원칙은?",
+    "options": [
+      "환자를 두고 문을 잠근다",
+      "엘리베이터만 이용한다",
+      "대피로를 물건으로 막는다",
+      "환자와 보호자를 신속하게 대피시킨다"
+    ],
+    "answerIndex": 3,
+    "explanation": "병원 화재는 환자 상태를 고려한 신속하고 조직적인 대피가 핵심입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 490,
+    "conceptId": 123,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "자료를 읽고 질문에 답하세요. 병원은 거동이 불편한 사람이 많아 평소 대피 계획과 도움 인력이 필요합니다. 질문: 밀양 세종병원 화재 사례에서 병원 화재의 중요한 원칙은?",
+    "options": [
+      "환자를 두고 문을 잠근다",
+      "환자와 보호자를 신속하게 대피시킨다",
+      "엘리베이터만 이용한다",
+      "대피로를 물건으로 막는다"
+    ],
+    "answerIndex": 1,
+    "explanation": "병원 화재는 환자 상태를 고려한 신속하고 조직적인 대피가 핵심입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 491,
+    "conceptId": 123,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "화재사례 근거 적용 문제입니다. 밀양 세종병원 화재 사례에서 병원 화재의 중요한 원칙은? 판단 근거: 병원은 거동이 불편한 사람이 많아 평소 대피 계획과 도움 인력이 필요합니다.",
+    "options": [
+      "환자를 두고 문을 잠근다",
+      "엘리베이터만 이용한다",
+      "대피로를 물건으로 막는다",
+      "환자와 보호자를 신속하게 대피시킨다"
+    ],
+    "answerIndex": 3,
+    "explanation": "병원 화재는 환자 상태를 고려한 신속하고 조직적인 대피가 핵심입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 492,
+    "conceptId": 123,
+    "type": "multiple-choice",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "병원 화재가 발생했습니다. 직원이 가장 먼저 해야 할 일은?",
+    "options": [
+      "환자에게 혼자 나가라 하기",
+      "환자 대피를 돕고 119에 신고하기",
+      "문을 잠그기",
+      "전원을 모두 끄지 않기"
+    ],
+    "answerIndex": 1,
+    "explanation": "병원 화재는 환자 상태를 고려한 신속하고 조직적인 대피가 핵심입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 493,
+    "conceptId": 124,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "불조심 포스터가 전하려는 가장 중요한 메시지는?",
+    "options": [
+      "생활 속 화재예방",
+      "불장난 권장",
+      "화재 구경",
+      "경보기 제거"
+    ],
+    "answerIndex": 0,
+    "explanation": "포스터는 일상에서 화재를 예방하고 안전습관을 실천하자는 뜻을 담습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 494,
+    "conceptId": 124,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "자료를 읽고 질문에 답하세요. 포스터와 표어는 생활 속에서 화재를 예방하자는 메시지를 전합니다. 질문: 불조심 포스터가 전하려는 가장 중요한 메시지는?",
+    "options": [
+      "불장난 권장",
+      "화재 구경",
+      "생활 속 화재예방",
+      "경보기 제거"
+    ],
+    "answerIndex": 2,
+    "explanation": "포스터는 일상에서 화재를 예방하고 안전습관을 실천하자는 뜻을 담습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 495,
+    "conceptId": 124,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "불조심 표어 근거 적용 문제입니다. 불조심 포스터가 전하려는 가장 중요한 메시지는? 판단 근거: 포스터와 표어는 생활 속에서 화재를 예방하자는 메시지를 전합니다.",
+    "options": [
+      "생활 속 화재예방",
+      "불장난 권장",
+      "화재 구경",
+      "경보기 제거"
+    ],
+    "answerIndex": 0,
+    "explanation": "포스터는 일상에서 화재를 예방하고 안전습관을 실천하자는 뜻을 담습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 496,
+    "conceptId": 124,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "가족이 포스터를 보고 집에서 실천할 행동은?",
+    "options": [
+      "불꽃을 가까이 보기",
+      "가스밸브 열기",
+      "화재 위험을 살피고 예방하기",
+      "담배꽁초 모으기"
+    ],
+    "answerIndex": 2,
+    "explanation": "포스터는 일상에서 화재를 예방하고 안전습관을 실천하자는 뜻을 담습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 497,
+    "conceptId": 125,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "“살펴봐요 숨은 불씨, 다시 봐요 꺼진 불씨”가 강조하는 행동은?",
+    "options": [
+      "불씨를 방치한다",
+      "불씨를 끝까지 확인한다",
+      "불씨를 이불에 숨긴다",
+      "불씨를 장난감으로 삼는다"
+    ],
+    "answerIndex": 1,
+    "explanation": "남은 불씨를 다시 확인하고 완전히 끄는 것이 화재 예방입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 498,
+    "conceptId": 125,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "자료를 읽고 질문에 답하세요. 꺼진 것처럼 보여도 남은 불씨가 다시 불이 될 수 있으므로 확인해야 합니다. 질문: “살펴봐요 숨은 불씨, 다시 봐요 꺼진 불씨”가 강조하는 행동은?",
+    "options": [
+      "불씨를 방치한다",
+      "불씨를 이불에 숨긴다",
+      "불씨를 장난감으로 삼는다",
+      "불씨를 끝까지 확인한다"
+    ],
+    "answerIndex": 3,
+    "explanation": "남은 불씨를 다시 확인하고 완전히 끄는 것이 화재 예방입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 499,
+    "conceptId": 125,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "불조심 표어 근거 적용 문제입니다. “살펴봐요 숨은 불씨, 다시 봐요 꺼진 불씨”가 강조하는 행동은? 판단 근거: 꺼진 것처럼 보여도 남은 불씨가 다시 불이 될 수 있으므로 확인해야 합니다.",
+    "options": [
+      "불씨를 방치한다",
+      "불씨를 끝까지 확인한다",
+      "불씨를 이불에 숨긴다",
+      "불씨를 장난감으로 삼는다"
+    ],
+    "answerIndex": 1,
+    "explanation": "남은 불씨를 다시 확인하고 완전히 끄는 것이 화재 예방입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 500,
+    "conceptId": 125,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "캠핑 후 모닥불을 껐습니다. 무엇을 더 해야 할까요?",
+    "options": [
+      "바로 자리를 떠나기",
+      "불씨에 종이 덮기",
+      "바람을 세게 보내기",
+      "불씨가 완전히 꺼졌는지 확인하기"
+    ],
+    "answerIndex": 3,
+    "explanation": "남은 불씨를 다시 확인하고 완전히 끄는 것이 화재 예방입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 501,
+    "conceptId": 126,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "“부주의한 나의 부캐 불캐 OUT”이라는 표어가 경고하는 것은?",
+    "options": [
+      "정확한 대피",
+      "안전한 점검",
+      "부주의로 인한 화재",
+      "소화기 교육"
+    ],
+    "answerIndex": 2,
+    "explanation": "부주의한 행동을 줄이는 것이 화재 예방의 출발점입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 502,
+    "conceptId": 126,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "자료를 읽고 질문에 답하세요. 부주의는 화재의 주요 원인이므로 생활 속 실수를 줄여야 합니다. 질문: “부주의한 나의 부캐 불캐 OUT”이라는 표어가 경고하는 것은?",
+    "options": [
+      "부주의로 인한 화재",
+      "정확한 대피",
+      "안전한 점검",
+      "소화기 교육"
+    ],
+    "answerIndex": 0,
+    "explanation": "부주의한 행동을 줄이는 것이 화재 예방의 출발점입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 503,
+    "conceptId": 126,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "불조심 표어 근거 적용 문제입니다. “부주의한 나의 부캐 불캐 OUT”이라는 표어가 경고하는 것은? 판단 근거: 부주의는 화재의 주요 원인이므로 생활 속 실수를 줄여야 합니다.",
+    "options": [
+      "정확한 대피",
+      "안전한 점검",
+      "부주의로 인한 화재",
+      "소화기 교육"
+    ],
+    "answerIndex": 2,
+    "explanation": "부주의한 행동을 줄이는 것이 화재 예방의 출발점입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 504,
+    "conceptId": 126,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "요리 중 자리를 비우려는 행동은 어떤 위험을 만들까요?",
+    "options": [
+      "부주의 화재",
+      "안전한 예방",
+      "정확한 신고",
+      "대피 연습"
+    ],
+    "answerIndex": 0,
+    "explanation": "부주의한 행동을 줄이는 것이 화재 예방의 출발점입니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 505,
+    "conceptId": 127,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "“화재, 그 시작은 나일 수도 있습니다”가 알려 주는 책임은?",
+    "options": [
+      "다른 사람에게만 맡기는 것",
+      "경보기를 끄는 것",
+      "불을 구경하는 것",
+      "나부터 화재예방을 실천하는 책임"
+    ],
+    "answerIndex": 3,
+    "explanation": "모두가 자신의 행동을 점검할 때 화재를 예방할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 506,
+    "conceptId": 127,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "자료를 읽고 질문에 답하세요. 화재 예방은 다른 사람의 일이 아니라 나의 안전 행동에서 시작됩니다. 질문: “화재, 그 시작은 나일 수도 있습니다”가 알려 주는 책임은?",
+    "options": [
+      "다른 사람에게만 맡기는 것",
+      "나부터 화재예방을 실천하는 책임",
+      "경보기를 끄는 것",
+      "불을 구경하는 것"
+    ],
+    "answerIndex": 1,
+    "explanation": "모두가 자신의 행동을 점검할 때 화재를 예방할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 507,
+    "conceptId": 127,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "불조심 표어 근거 적용 문제입니다. “화재, 그 시작은 나일 수도 있습니다”가 알려 주는 책임은? 판단 근거: 화재 예방은 다른 사람의 일이 아니라 나의 안전 행동에서 시작됩니다.",
+    "options": [
+      "다른 사람에게만 맡기는 것",
+      "경보기를 끄는 것",
+      "불을 구경하는 것",
+      "나부터 화재예방을 실천하는 책임"
+    ],
+    "answerIndex": 3,
+    "explanation": "모두가 자신의 행동을 점검할 때 화재를 예방할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 508,
+    "conceptId": 127,
+    "type": "multiple-choice",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "집에서 화재예방을 시작하려면 무엇을 해야 할까요?",
+    "options": [
+      "위험을 숨기기",
+      "전기·가스·불씨를 스스로 확인하기",
+      "대피로 막기",
+      "불을 켜 둔 채 외출"
+    ],
+    "answerIndex": 1,
+    "explanation": "모두가 자신의 행동을 점검할 때 화재를 예방할 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 509,
+    "conceptId": 128,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "화재를 발견했을 때 가장 먼저 해야 할 일은?",
+    "options": [
+      "주변에 큰 소리로 알리고 경보를 울린다",
+      "조용히 숨는다",
+      "사진을 찍는다",
+      "짐을 챙긴다"
+    ],
+    "answerIndex": 0,
+    "explanation": "화재를 발견하면 즉시 주변에 알리고 비상벨을 눌러야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      120
+    ]
+  },
+  {
+    "id": 510,
+    "conceptId": 128,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "자료를 읽고 질문에 답하세요. 화재를 알리는 소리와 경보는 주변 사람들이 대피할 시간을 줍니다. 질문: 화재를 발견했을 때 가장 먼저 해야 할 일은?",
+    "options": [
+      "조용히 숨는다",
+      "사진을 찍는다",
+      "주변에 큰 소리로 알리고 경보를 울린다",
+      "짐을 챙긴다"
+    ],
+    "answerIndex": 2,
+    "explanation": "화재를 발견하면 즉시 주변에 알리고 비상벨을 눌러야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      120
+    ]
+  },
+  {
+    "id": 511,
+    "conceptId": 128,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피요령 근거 적용 문제입니다. 화재를 발견했을 때 가장 먼저 해야 할 일은? 판단 근거: 화재를 알리는 소리와 경보는 주변 사람들이 대피할 시간을 줍니다.",
+    "options": [
+      "주변에 큰 소리로 알리고 경보를 울린다",
+      "조용히 숨는다",
+      "사진을 찍는다",
+      "짐을 챙긴다"
+    ],
+    "answerIndex": 0,
+    "explanation": "화재를 발견하면 즉시 주변에 알리고 비상벨을 눌러야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      120
+    ]
+  },
+  {
+    "id": 512,
+    "conceptId": 128,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "학교에서 연기가 보입니다. 가장 먼저 할 행동은?",
+    "options": [
+      "교실 문을 잠그기",
+      "친구를 찾으러 불 쪽으로 가기",
+      "“불이야”라고 알리고 비상벨을 누르기",
+      "짐을 정리하기"
+    ],
+    "answerIndex": 2,
+    "explanation": "화재를 발견하면 즉시 주변에 알리고 비상벨을 눌러야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      120
+    ]
+  },
+  {
+    "id": 513,
+    "conceptId": 129,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "화재 대피 때 엘리베이터를 타면 안 되는 이유는?",
+    "options": [
+      "계단이 항상 미끄러워서",
+      "정전·연기 때문에 갇히거나 위험해질 수 있어서",
+      "엘리베이터가 너무 빨라서",
+      "문이 예뻐서"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재 대피 때는 엘리베이터를 피하고 비상계단을 이용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 514,
+    "conceptId": 129,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "자료를 읽고 질문에 답하세요. 화재 때 엘리베이터는 멈추거나 연기가 들어올 수 있으므로 계단을 이용합니다. 질문: 화재 대피 때 엘리베이터를 타면 안 되는 이유는?",
+    "options": [
+      "계단이 항상 미끄러워서",
+      "엘리베이터가 너무 빨라서",
+      "문이 예뻐서",
+      "정전·연기 때문에 갇히거나 위험해질 수 있어서"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재 대피 때는 엘리베이터를 피하고 비상계단을 이용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 515,
+    "conceptId": 129,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피요령 근거 적용 문제입니다. 화재 대피 때 엘리베이터를 타면 안 되는 이유는? 판단 근거: 화재 때 엘리베이터는 멈추거나 연기가 들어올 수 있으므로 계단을 이용합니다.",
+    "options": [
+      "계단이 항상 미끄러워서",
+      "정전·연기 때문에 갇히거나 위험해질 수 있어서",
+      "엘리베이터가 너무 빨라서",
+      "문이 예뻐서"
+    ],
+    "answerIndex": 1,
+    "explanation": "화재 대피 때는 엘리베이터를 피하고 비상계단을 이용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 516,
+    "conceptId": 129,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "아파트에서 화재 경보가 울렸습니다. 어느 길로 내려가야 할까요?",
+    "options": [
+      "엘리베이터",
+      "옥상 난간",
+      "창밖",
+      "비상계단"
+    ],
+    "answerIndex": 3,
+    "explanation": "화재 대피 때는 엘리베이터를 피하고 비상계단을 이용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 517,
+    "conceptId": 130,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "연기가 있는 복도를 지날 때의 자세는?",
+    "options": [
+      "똑바로 서서 달린다",
+      "연기 위로 뛰어오른다",
+      "낮은 자세로 이동한다",
+      "창문에 매달린다"
+    ],
+    "answerIndex": 2,
+    "explanation": "연기 속에서는 몸을 낮추고 젖은 수건 등으로 코와 입을 보호합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 518,
+    "conceptId": 130,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "자료를 읽고 질문에 답하세요. 연기는 위로 올라가므로 낮은 자세가 비교적 깨끗한 공기를 마시는 데 도움이 됩니다. 질문: 연기가 있는 복도를 지날 때의 자세는?",
+    "options": [
+      "낮은 자세로 이동한다",
+      "똑바로 서서 달린다",
+      "연기 위로 뛰어오른다",
+      "창문에 매달린다"
+    ],
+    "answerIndex": 0,
+    "explanation": "연기 속에서는 몸을 낮추고 젖은 수건 등으로 코와 입을 보호합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 519,
+    "conceptId": 130,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피요령 근거 적용 문제입니다. 연기가 있는 복도를 지날 때의 자세는? 판단 근거: 연기는 위로 올라가므로 낮은 자세가 비교적 깨끗한 공기를 마시는 데 도움이 됩니다.",
+    "options": [
+      "똑바로 서서 달린다",
+      "연기 위로 뛰어오른다",
+      "낮은 자세로 이동한다",
+      "창문에 매달린다"
+    ],
+    "answerIndex": 2,
+    "explanation": "연기 속에서는 몸을 낮추고 젖은 수건 등으로 코와 입을 보호합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 520,
+    "conceptId": 130,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "복도 위쪽에 연기가 가득합니다. 어떻게 이동해야 할까요?",
+    "options": [
+      "몸을 낮추고 이동하기",
+      "높이 점프하기",
+      "문을 모두 열기",
+      "연기 속에서 빠르게 회전하기"
+    ],
+    "answerIndex": 0,
+    "explanation": "연기 속에서는 몸을 낮추고 젖은 수건 등으로 코와 입을 보호합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 521,
+    "conceptId": 131,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피할 때 지나온 문은 어떻게 해야 하나요?",
+    "options": [
+      "활짝 열어 둔다",
+      "잠근다",
+      "가구로 막는다",
+      "닫고 나온다"
+    ],
+    "answerIndex": 3,
+    "explanation": "대피하며 문을 닫으면 불과 연기의 확산을 늦출 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 522,
+    "conceptId": 131,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "자료를 읽고 질문에 답하세요. 문을 닫으면 불과 연기가 퍼지는 속도를 늦출 수 있습니다. 질문: 대피할 때 지나온 문은 어떻게 해야 하나요?",
+    "options": [
+      "활짝 열어 둔다",
+      "닫고 나온다",
+      "잠근다",
+      "가구로 막는다"
+    ],
+    "answerIndex": 1,
+    "explanation": "대피하며 문을 닫으면 불과 연기의 확산을 늦출 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 523,
+    "conceptId": 131,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피요령 근거 적용 문제입니다. 대피할 때 지나온 문은 어떻게 해야 하나요? 판단 근거: 문을 닫으면 불과 연기가 퍼지는 속도를 늦출 수 있습니다.",
+    "options": [
+      "활짝 열어 둔다",
+      "잠근다",
+      "가구로 막는다",
+      "닫고 나온다"
+    ],
+    "answerIndex": 3,
+    "explanation": "대피하며 문을 닫으면 불과 연기의 확산을 늦출 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 524,
+    "conceptId": 131,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "방에서 나온 뒤 뒤쪽 문을 어떻게 해야 할까요?",
+    "options": [
+      "문을 열어 둔 채 돌아가기",
+      "문을 닫고 대피하기",
+      "문을 잠그고 열쇠 찾기",
+      "문 앞에 물건 놓기"
+    ],
+    "answerIndex": 1,
+    "explanation": "대피하며 문을 닫으면 불과 연기의 확산을 늦출 수 있습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 525,
+    "conceptId": 132,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "119 신고",
+    "question": "119에 신고할 때 반드시 알려야 하는 내용은?",
+    "options": [
+      "불이 난 장소와 상황",
+      "가족의 취미",
+      "좋아하는 음식",
+      "게임 점수"
+    ],
+    "answerIndex": 0,
+    "explanation": "119 신고에서는 위치와 화재 상황을 정확히 전달해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 526,
+    "conceptId": 132,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "119 신고",
+    "question": "자료를 읽고 질문에 답하세요. 소방대가 빨리 도착하려면 정확한 주소와 불의 상황을 알려야 합니다. 질문: 119에 신고할 때 반드시 알려야 하는 내용은?",
+    "options": [
+      "가족의 취미",
+      "좋아하는 음식",
+      "불이 난 장소와 상황",
+      "게임 점수"
+    ],
+    "answerIndex": 2,
+    "explanation": "119 신고에서는 위치와 화재 상황을 정확히 전달해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 527,
+    "conceptId": 132,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "119 신고",
+    "question": "119 신고 근거 적용 문제입니다. 119에 신고할 때 반드시 알려야 하는 내용은? 판단 근거: 소방대가 빨리 도착하려면 정확한 주소와 불의 상황을 알려야 합니다.",
+    "options": [
+      "불이 난 장소와 상황",
+      "가족의 취미",
+      "좋아하는 음식",
+      "게임 점수"
+    ],
+    "answerIndex": 0,
+    "explanation": "119 신고에서는 위치와 화재 상황을 정확히 전달해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 528,
+    "conceptId": 132,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "119 신고",
+    "question": "전화로 신고할 때 주소가 잘 생각나지 않습니다. 무엇을 설명해야 할까요?",
+    "options": [
+      "전화기를 끄기",
+      "사진만 보내기",
+      "건물 이름·주소와 불의 상황",
+      "아무 말 없이 기다리기"
+    ],
+    "answerIndex": 2,
+    "explanation": "119 신고에서는 위치와 화재 상황을 정확히 전달해야 합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 529,
+    "conceptId": 133,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "화재 때 대피 방향을 알려 주는 표시는 무엇인가요?",
+    "options": [
+      "광고판",
+      "피난 유도등과 피난안내도",
+      "주차요금표",
+      "장난감 표지"
+    ],
+    "answerIndex": 1,
+    "explanation": "대피할 때는 피난 유도등과 피난안내도를 따라갑니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      122
+    ]
+  },
+  {
+    "id": 530,
+    "conceptId": 133,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "자료를 읽고 질문에 답하세요. 피난 유도등과 안내도는 안전한 출구와 이동 방향을 알려 줍니다. 질문: 화재 때 대피 방향을 알려 주는 표시는 무엇인가요?",
+    "options": [
+      "광고판",
+      "주차요금표",
+      "장난감 표지",
+      "피난 유도등과 피난안내도"
+    ],
+    "answerIndex": 3,
+    "explanation": "대피할 때는 피난 유도등과 피난안내도를 따라갑니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      122
+    ]
+  },
+  {
+    "id": 531,
+    "conceptId": 133,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피요령 근거 적용 문제입니다. 화재 때 대피 방향을 알려 주는 표시는 무엇인가요? 판단 근거: 피난 유도등과 안내도는 안전한 출구와 이동 방향을 알려 줍니다.",
+    "options": [
+      "광고판",
+      "피난 유도등과 피난안내도",
+      "주차요금표",
+      "장난감 표지"
+    ],
+    "answerIndex": 1,
+    "explanation": "대피할 때는 피난 유도등과 피난안내도를 따라갑니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      122
+    ]
+  },
+  {
+    "id": 532,
+    "conceptId": 133,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "연기로 출구가 잘 보이지 않습니다. 어떤 표시를 따라가야 할까요?",
+    "options": [
+      "광고 조명",
+      "엘리베이터 숫자",
+      "매장 간판",
+      "피난 유도등"
+    ],
+    "answerIndex": 3,
+    "explanation": "대피할 때는 피난 유도등과 피난안내도를 따라갑니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      122
+    ]
+  },
+  {
+    "id": 533,
+    "conceptId": 134,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "옥내소화전은 어떤 시설인가요?",
+    "options": [
+      "사람을 태우는 승강기",
+      "전기를 저장하는 장치",
+      "건물 안에서 물을 뿌려 초기 화재를 끄는 시설",
+      "공기를 넣는 장치"
+    ],
+    "answerIndex": 2,
+    "explanation": "옥내소화전은 건물 안 초기 화재를 소화하는 데 사용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 534,
+    "conceptId": 134,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "자료를 읽고 질문에 답하세요. 옥내소화전은 호스와 밸브를 이용해 건물 안의 불을 끄는 소방시설입니다. 질문: 옥내소화전은 어떤 시설인가요?",
+    "options": [
+      "건물 안에서 물을 뿌려 초기 화재를 끄는 시설",
+      "사람을 태우는 승강기",
+      "전기를 저장하는 장치",
+      "공기를 넣는 장치"
+    ],
+    "answerIndex": 0,
+    "explanation": "옥내소화전은 건물 안 초기 화재를 소화하는 데 사용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 535,
+    "conceptId": 134,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "소방시설 근거 적용 문제입니다. 옥내소화전은 어떤 시설인가요? 판단 근거: 옥내소화전은 호스와 밸브를 이용해 건물 안의 불을 끄는 소방시설입니다.",
+    "options": [
+      "사람을 태우는 승강기",
+      "전기를 저장하는 장치",
+      "건물 안에서 물을 뿌려 초기 화재를 끄는 시설",
+      "공기를 넣는 장치"
+    ],
+    "answerIndex": 2,
+    "explanation": "옥내소화전은 건물 안 초기 화재를 소화하는 데 사용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 536,
+    "conceptId": 134,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "복도에서 작은 불이 났습니다. 옥내소화전은 무엇에 사용하는 시설인가요?",
+    "options": [
+      "초기 화재 소화",
+      "대피방향 표시",
+      "음식 조리",
+      "엘리베이터 호출"
+    ],
+    "answerIndex": 0,
+    "explanation": "옥내소화전은 건물 안 초기 화재를 소화하는 데 사용합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 537,
+    "conceptId": 135,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "스프링클러는 언제 물을 뿌리나요?",
+    "options": [
+      "항상 물을 뿌린다",
+      "사람이 박수를 칠 때",
+      "전등을 켤 때",
+      "화재의 열을 감지했을 때"
+    ],
+    "answerIndex": 3,
+    "explanation": "스프링클러는 화재의 열을 감지하면 자동으로 물을 방사합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 538,
+    "conceptId": 135,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "자료를 읽고 질문에 답하세요. 스프링클러는 열을 감지한 헤드가 작동해 화재를 자동으로 진압합니다. 질문: 스프링클러는 언제 물을 뿌리나요?",
+    "options": [
+      "항상 물을 뿌린다",
+      "화재의 열을 감지했을 때",
+      "사람이 박수를 칠 때",
+      "전등을 켤 때"
+    ],
+    "answerIndex": 1,
+    "explanation": "스프링클러는 화재의 열을 감지하면 자동으로 물을 방사합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 539,
+    "conceptId": 135,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "소방시설 근거 적용 문제입니다. 스프링클러는 언제 물을 뿌리나요? 판단 근거: 스프링클러는 열을 감지한 헤드가 작동해 화재를 자동으로 진압합니다.",
+    "options": [
+      "항상 물을 뿌린다",
+      "사람이 박수를 칠 때",
+      "전등을 켤 때",
+      "화재의 열을 감지했을 때"
+    ],
+    "answerIndex": 3,
+    "explanation": "스프링클러는 화재의 열을 감지하면 자동으로 물을 방사합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 540,
+    "conceptId": 135,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "천장 스프링클러 주변의 온도가 올라갔습니다. 어떤 일이 일어날 수 있나요?",
+    "options": [
+      "경보가 꺼진다",
+      "스프링클러가 작동해 물을 뿌린다",
+      "엘리베이터가 열린다",
+      "창문이 잠긴다"
+    ],
+    "answerIndex": 1,
+    "explanation": "스프링클러는 화재의 열을 감지하면 자동으로 물을 방사합니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 541,
+    "conceptId": 136,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "감지기의 역할은 무엇인가요?",
+    "options": [
+      "연기나 열을 감지해 화재를 알리는 것",
+      "불을 직접 끄는 것",
+      "문을 잠그는 것",
+      "물을 저장하는 것"
+    ],
+    "answerIndex": 0,
+    "explanation": "감지기는 연기와 열을 감지해 사람에게 화재를 알립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 542,
+    "conceptId": 136,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "자료를 읽고 질문에 답하세요. 감지기는 연기나 열의 변화를 알아차리고 경보가 울리도록 합니다. 질문: 감지기의 역할은 무엇인가요?",
+    "options": [
+      "불을 직접 끄는 것",
+      "문을 잠그는 것",
+      "연기나 열을 감지해 화재를 알리는 것",
+      "물을 저장하는 것"
+    ],
+    "answerIndex": 2,
+    "explanation": "감지기는 연기와 열을 감지해 사람에게 화재를 알립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 543,
+    "conceptId": 136,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "소방시설 근거 적용 문제입니다. 감지기의 역할은 무엇인가요? 판단 근거: 감지기는 연기나 열의 변화를 알아차리고 경보가 울리도록 합니다.",
+    "options": [
+      "연기나 열을 감지해 화재를 알리는 것",
+      "불을 직접 끄는 것",
+      "문을 잠그는 것",
+      "물을 저장하는 것"
+    ],
+    "answerIndex": 0,
+    "explanation": "감지기는 연기와 열을 감지해 사람에게 화재를 알립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 544,
+    "conceptId": 136,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "집 안에서 연기가 발생했습니다. 감지기가 하는 일은?",
+    "options": [
+      "연기를 모두 없애기",
+      "소화약제 뿌리기",
+      "화재 신호를 알리기",
+      "창문 닫기"
+    ],
+    "answerIndex": 2,
+    "explanation": "감지기는 연기와 열을 감지해 사람에게 화재를 알립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 545,
+    "conceptId": 137,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "옥내소화전을 사용할 때 물을 내보내는 장치는?",
+    "options": [
+      "책상과 의자",
+      "호스와 관창",
+      "경보기와 감지기만",
+      "승강기 버튼"
+    ],
+    "answerIndex": 1,
+    "explanation": "옥내소화전은 호스와 관창으로 불에 물을 뿌립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      124
+    ]
+  },
+  {
+    "id": 546,
+    "conceptId": 137,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "자료를 읽고 질문에 답하세요. 옥내소화전은 호스를 꺼내 관창을 잡고 밸브를 열어 물을 방사합니다. 질문: 옥내소화전을 사용할 때 물을 내보내는 장치는?",
+    "options": [
+      "책상과 의자",
+      "경보기와 감지기만",
+      "승강기 버튼",
+      "호스와 관창"
+    ],
+    "answerIndex": 3,
+    "explanation": "옥내소화전은 호스와 관창으로 불에 물을 뿌립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      124
+    ]
+  },
+  {
+    "id": 547,
+    "conceptId": 137,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "소방시설 근거 적용 문제입니다. 옥내소화전을 사용할 때 물을 내보내는 장치는? 판단 근거: 옥내소화전은 호스를 꺼내 관창을 잡고 밸브를 열어 물을 방사합니다.",
+    "options": [
+      "책상과 의자",
+      "호스와 관창",
+      "경보기와 감지기만",
+      "승강기 버튼"
+    ],
+    "answerIndex": 1,
+    "explanation": "옥내소화전은 호스와 관창으로 불에 물을 뿌립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      124
+    ]
+  },
+  {
+    "id": 548,
+    "conceptId": 137,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "옥내소화전함을 열었습니다. 불 쪽으로 물을 보내는 장치는 무엇인가요?",
+    "options": [
+      "유도등",
+      "감지기",
+      "방화문",
+      "호스와 관창"
+    ],
+    "answerIndex": 3,
+    "explanation": "옥내소화전은 호스와 관창으로 불에 물을 뿌립니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      124
+    ]
+  },
+  {
+    "id": 549,
+    "conceptId": 138,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피를 마친 뒤 다시 건물 안으로 들어가면 안 되는 이유는?",
+    "options": [
+      "물건을 찾기 위해",
+      "사진을 찍기 위해",
+      "불과 연기가 다시 퍼질 수 있고 구조를 방해할 수 있어서",
+      "문을 잠그기 위해"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 후에는 안전이 확인될 때까지 건물 안으로 돌아가지 않습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      126
+    ]
+  },
+  {
+    "id": 550,
+    "conceptId": 138,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "자료를 읽고 질문에 답하세요. 밖으로 나온 뒤에는 소방관이 안전을 확인할 때까지 건물에 다시 들어가지 않습니다. 질문: 대피를 마친 뒤 다시 건물 안으로 들어가면 안 되는 이유는?",
+    "options": [
+      "불과 연기가 다시 퍼질 수 있고 구조를 방해할 수 있어서",
+      "물건을 찾기 위해",
+      "사진을 찍기 위해",
+      "문을 잠그기 위해"
+    ],
+    "answerIndex": 0,
+    "explanation": "대피 후에는 안전이 확인될 때까지 건물 안으로 돌아가지 않습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      126
+    ]
+  },
+  {
+    "id": 551,
+    "conceptId": 138,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피요령 근거 적용 문제입니다. 대피를 마친 뒤 다시 건물 안으로 들어가면 안 되는 이유는? 판단 근거: 밖으로 나온 뒤에는 소방관이 안전을 확인할 때까지 건물에 다시 들어가지 않습니다.",
+    "options": [
+      "물건을 찾기 위해",
+      "사진을 찍기 위해",
+      "불과 연기가 다시 퍼질 수 있고 구조를 방해할 수 있어서",
+      "문을 잠그기 위해"
+    ],
+    "answerIndex": 2,
+    "explanation": "대피 후에는 안전이 확인될 때까지 건물 안으로 돌아가지 않습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      126
+    ]
+  },
+  {
+    "id": 552,
+    "conceptId": 138,
+    "type": "multiple-choice",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "휴대전화를 두고 나왔습니다. 어떻게 해야 할까요?",
+    "options": [
+      "다시 들어가지 않고 소방관에게 알리기",
+      "혼자 다시 들어가기",
+      "창문으로 들어가기",
+      "친구와 몰래 들어가기"
+    ],
+    "answerIndex": 0,
+    "explanation": "대피 후에는 안전이 확인될 때까지 건물 안으로 돌아가지 않습니다.",
+    "timeLimit": 20,
+    "sourcePages": [
+      126
+    ]
+  },
+  {
+    "id": 553,
     "conceptId": 1,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
@@ -8019,7 +11059,7 @@
     ]
   },
   {
-    "id": 402,
+    "id": 554,
     "conceptId": 2,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
@@ -8037,7 +11077,7 @@
     ]
   },
   {
-    "id": 403,
+    "id": 555,
     "conceptId": 3,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
@@ -8054,7 +11094,7 @@
     ]
   },
   {
-    "id": 404,
+    "id": 556,
     "conceptId": 4,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
@@ -8072,7 +11112,7 @@
     ]
   },
   {
-    "id": 405,
+    "id": 557,
     "conceptId": 5,
     "type": "short-answer",
     "part": "Part 01. '불'이란?",
@@ -8089,7 +11129,7 @@
     ]
   },
   {
-    "id": 406,
+    "id": 558,
     "conceptId": 6,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8108,7 +11148,7 @@
     ]
   },
   {
-    "id": 407,
+    "id": 559,
     "conceptId": 7,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8125,7 +11165,7 @@
     ]
   },
   {
-    "id": 408,
+    "id": 560,
     "conceptId": 8,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8142,7 +11182,7 @@
     ]
   },
   {
-    "id": 409,
+    "id": 561,
     "conceptId": 9,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8161,7 +11201,7 @@
     ]
   },
   {
-    "id": 410,
+    "id": 562,
     "conceptId": 10,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8179,7 +11219,7 @@
     ]
   },
   {
-    "id": 411,
+    "id": 563,
     "conceptId": 11,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8199,7 +11239,7 @@
     ]
   },
   {
-    "id": 412,
+    "id": 564,
     "conceptId": 12,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8217,7 +11257,7 @@
     ]
   },
   {
-    "id": 413,
+    "id": 565,
     "conceptId": 13,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8235,7 +11275,7 @@
     ]
   },
   {
-    "id": 414,
+    "id": 566,
     "conceptId": 14,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8253,7 +11293,7 @@
     ]
   },
   {
-    "id": 415,
+    "id": 567,
     "conceptId": 15,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8272,7 +11312,7 @@
     ]
   },
   {
-    "id": 416,
+    "id": 568,
     "conceptId": 16,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8291,7 +11331,7 @@
     ]
   },
   {
-    "id": 417,
+    "id": 569,
     "conceptId": 17,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8309,7 +11349,7 @@
     ]
   },
   {
-    "id": 418,
+    "id": 570,
     "conceptId": 18,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8329,7 +11369,7 @@
     ]
   },
   {
-    "id": 419,
+    "id": 571,
     "conceptId": 19,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8348,7 +11388,7 @@
     ]
   },
   {
-    "id": 420,
+    "id": 572,
     "conceptId": 20,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8367,7 +11407,7 @@
     ]
   },
   {
-    "id": 421,
+    "id": 573,
     "conceptId": 21,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8386,7 +11426,7 @@
     ]
   },
   {
-    "id": 422,
+    "id": 574,
     "conceptId": 22,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8406,7 +11446,7 @@
     ]
   },
   {
-    "id": 423,
+    "id": 575,
     "conceptId": 23,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8426,7 +11466,7 @@
     ]
   },
   {
-    "id": 424,
+    "id": 576,
     "conceptId": 24,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8443,7 +11483,7 @@
     ]
   },
   {
-    "id": 425,
+    "id": 577,
     "conceptId": 25,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8460,7 +11500,7 @@
     ]
   },
   {
-    "id": 426,
+    "id": 578,
     "conceptId": 26,
     "type": "short-answer",
     "part": "Part 02. 화재가 나는 원인",
@@ -8478,7 +11518,7 @@
     ]
   },
   {
-    "id": 427,
+    "id": 579,
     "conceptId": 27,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8496,7 +11536,7 @@
     ]
   },
   {
-    "id": 428,
+    "id": 580,
     "conceptId": 28,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8516,7 +11556,7 @@
     ]
   },
   {
-    "id": 429,
+    "id": 581,
     "conceptId": 29,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8534,7 +11574,7 @@
     ]
   },
   {
-    "id": 430,
+    "id": 582,
     "conceptId": 30,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8552,7 +11592,7 @@
     ]
   },
   {
-    "id": 431,
+    "id": 583,
     "conceptId": 31,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8570,7 +11610,7 @@
     ]
   },
   {
-    "id": 432,
+    "id": 584,
     "conceptId": 32,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8589,7 +11629,7 @@
     ]
   },
   {
-    "id": 433,
+    "id": 585,
     "conceptId": 33,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8609,7 +11649,7 @@
     ]
   },
   {
-    "id": 434,
+    "id": 586,
     "conceptId": 34,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8629,7 +11669,7 @@
     ]
   },
   {
-    "id": 435,
+    "id": 587,
     "conceptId": 35,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8647,7 +11687,7 @@
     ]
   },
   {
-    "id": 436,
+    "id": 588,
     "conceptId": 36,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8666,7 +11706,7 @@
     ]
   },
   {
-    "id": 437,
+    "id": 589,
     "conceptId": 37,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8686,7 +11726,7 @@
     ]
   },
   {
-    "id": 438,
+    "id": 590,
     "conceptId": 38,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8707,7 +11747,7 @@
     ]
   },
   {
-    "id": 439,
+    "id": 591,
     "conceptId": 39,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8728,7 +11768,7 @@
     ]
   },
   {
-    "id": 440,
+    "id": 592,
     "conceptId": 40,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8746,7 +11786,7 @@
     ]
   },
   {
-    "id": 441,
+    "id": 593,
     "conceptId": 41,
     "type": "short-answer",
     "part": "Part 03. 화재가 났어요. 어떻게 할까요?",
@@ -8765,7 +11805,7 @@
     ]
   },
   {
-    "id": 442,
+    "id": 594,
     "conceptId": 42,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8785,7 +11825,7 @@
     ]
   },
   {
-    "id": 443,
+    "id": 595,
     "conceptId": 43,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8804,7 +11844,7 @@
     ]
   },
   {
-    "id": 444,
+    "id": 596,
     "conceptId": 44,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8823,7 +11863,7 @@
     ]
   },
   {
-    "id": 445,
+    "id": 597,
     "conceptId": 45,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8843,7 +11883,7 @@
     ]
   },
   {
-    "id": 446,
+    "id": 598,
     "conceptId": 46,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8863,7 +11903,7 @@
     ]
   },
   {
-    "id": 447,
+    "id": 599,
     "conceptId": 47,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8883,7 +11923,7 @@
     ]
   },
   {
-    "id": 448,
+    "id": 600,
     "conceptId": 48,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8903,7 +11943,7 @@
     ]
   },
   {
-    "id": 449,
+    "id": 601,
     "conceptId": 49,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8921,7 +11961,7 @@
     ]
   },
   {
-    "id": 450,
+    "id": 602,
     "conceptId": 50,
     "type": "short-answer",
     "part": "Part 04. 화상·심폐소생술·압사",
@@ -8941,7 +11981,7 @@
     ]
   },
   {
-    "id": 451,
+    "id": 603,
     "conceptId": 51,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -8961,7 +12001,7 @@
     ]
   },
   {
-    "id": 452,
+    "id": 604,
     "conceptId": 52,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -8981,7 +12021,7 @@
     ]
   },
   {
-    "id": 453,
+    "id": 605,
     "conceptId": 53,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -8998,7 +12038,7 @@
     ]
   },
   {
-    "id": 454,
+    "id": 606,
     "conceptId": 54,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -9015,7 +12055,7 @@
     ]
   },
   {
-    "id": 455,
+    "id": 607,
     "conceptId": 55,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -9033,7 +12073,7 @@
     ]
   },
   {
-    "id": 456,
+    "id": 608,
     "conceptId": 56,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -9051,7 +12091,7 @@
     ]
   },
   {
-    "id": 457,
+    "id": 609,
     "conceptId": 57,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -9071,7 +12111,7 @@
     ]
   },
   {
-    "id": 458,
+    "id": 610,
     "conceptId": 58,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -9090,7 +12130,7 @@
     ]
   },
   {
-    "id": 459,
+    "id": 611,
     "conceptId": 59,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -9109,7 +12149,7 @@
     ]
   },
   {
-    "id": 460,
+    "id": 612,
     "conceptId": 60,
     "type": "short-answer",
     "part": "Part 05. 소방시설",
@@ -9127,7 +12167,7 @@
     ]
   },
   {
-    "id": 461,
+    "id": 613,
     "conceptId": 61,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
@@ -9146,7 +12186,7 @@
     ]
   },
   {
-    "id": 462,
+    "id": 614,
     "conceptId": 62,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
@@ -9166,7 +12206,7 @@
     ]
   },
   {
-    "id": 463,
+    "id": 615,
     "conceptId": 63,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
@@ -9184,7 +12224,7 @@
     ]
   },
   {
-    "id": 464,
+    "id": 616,
     "conceptId": 64,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
@@ -9201,7 +12241,7 @@
     ]
   },
   {
-    "id": 465,
+    "id": 617,
     "conceptId": 65,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
@@ -9219,7 +12259,7 @@
     ]
   },
   {
-    "id": 466,
+    "id": 618,
     "conceptId": 66,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
@@ -9238,7 +12278,7 @@
     ]
   },
   {
-    "id": 467,
+    "id": 619,
     "conceptId": 67,
     "type": "short-answer",
     "part": "Part 06. 피난시설",
@@ -9255,7 +12295,7 @@
     ]
   },
   {
-    "id": 468,
+    "id": 620,
     "conceptId": 68,
     "type": "short-answer",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
@@ -9275,7 +12315,7 @@
     ]
   },
   {
-    "id": 469,
+    "id": 621,
     "conceptId": 69,
     "type": "short-answer",
     "part": "Part 07. 화재는 언제 많이 일어날까요?",
@@ -9293,7 +12333,7 @@
     ]
   },
   {
-    "id": 470,
+    "id": 622,
     "conceptId": 70,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9311,7 +12351,7 @@
     ]
   },
   {
-    "id": 471,
+    "id": 623,
     "conceptId": 71,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9331,7 +12371,7 @@
     ]
   },
   {
-    "id": 472,
+    "id": 624,
     "conceptId": 72,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9350,7 +12390,7 @@
     ]
   },
   {
-    "id": 473,
+    "id": 625,
     "conceptId": 73,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9370,7 +12410,7 @@
     ]
   },
   {
-    "id": 474,
+    "id": 626,
     "conceptId": 74,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9390,7 +12430,7 @@
     ]
   },
   {
-    "id": 475,
+    "id": 627,
     "conceptId": 75,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9410,7 +12450,7 @@
     ]
   },
   {
-    "id": 476,
+    "id": 628,
     "conceptId": 76,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9428,7 +12468,7 @@
     ]
   },
   {
-    "id": 477,
+    "id": 629,
     "conceptId": 77,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9446,7 +12486,7 @@
     ]
   },
   {
-    "id": 478,
+    "id": 630,
     "conceptId": 78,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9465,7 +12505,7 @@
     ]
   },
   {
-    "id": 479,
+    "id": 631,
     "conceptId": 79,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9483,7 +12523,7 @@
     ]
   },
   {
-    "id": 480,
+    "id": 632,
     "conceptId": 80,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9503,7 +12543,7 @@
     ]
   },
   {
-    "id": 481,
+    "id": 633,
     "conceptId": 81,
     "type": "short-answer",
     "part": "Part 08. 상황별 안전수칙",
@@ -9521,7 +12561,7 @@
     ]
   },
   {
-    "id": 482,
+    "id": 634,
     "conceptId": 82,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
@@ -9538,7 +12578,7 @@
     ]
   },
   {
-    "id": 483,
+    "id": 635,
     "conceptId": 83,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
@@ -9556,7 +12596,7 @@
     ]
   },
   {
-    "id": 484,
+    "id": 636,
     "conceptId": 84,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
@@ -9574,7 +12614,7 @@
     ]
   },
   {
-    "id": 485,
+    "id": 637,
     "conceptId": 85,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
@@ -9594,7 +12634,7 @@
     ]
   },
   {
-    "id": 486,
+    "id": 638,
     "conceptId": 86,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
@@ -9611,7 +12651,7 @@
     ]
   },
   {
-    "id": 487,
+    "id": 639,
     "conceptId": 87,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
@@ -9628,7 +12668,7 @@
     ]
   },
   {
-    "id": 488,
+    "id": 640,
     "conceptId": 88,
     "type": "short-answer",
     "part": "Part 09. 자연재난",
@@ -9645,7 +12685,7 @@
     ]
   },
   {
-    "id": 489,
+    "id": 641,
     "conceptId": 89,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
@@ -9663,7 +12703,7 @@
     ]
   },
   {
-    "id": 490,
+    "id": 642,
     "conceptId": 90,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
@@ -9683,7 +12723,7 @@
     ]
   },
   {
-    "id": 491,
+    "id": 643,
     "conceptId": 91,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
@@ -9702,7 +12742,7 @@
     ]
   },
   {
-    "id": 492,
+    "id": 644,
     "conceptId": 92,
     "type": "short-answer",
     "part": "특별편 1. 하임리히법",
@@ -9721,7 +12761,7 @@
     ]
   },
   {
-    "id": 493,
+    "id": 645,
     "conceptId": 93,
     "type": "short-answer",
     "part": "특별편 2. 아파트 화재",
@@ -9739,7 +12779,7 @@
     ]
   },
   {
-    "id": 494,
+    "id": 646,
     "conceptId": 94,
     "type": "short-answer",
     "part": "특별편 2. 아파트 화재",
@@ -9757,7 +12797,7 @@
     ]
   },
   {
-    "id": 495,
+    "id": 647,
     "conceptId": 95,
     "type": "short-answer",
     "part": "특별편 3. 승강기 안전",
@@ -9777,7 +12817,7 @@
     ]
   },
   {
-    "id": 496,
+    "id": 648,
     "conceptId": 96,
     "type": "short-answer",
     "part": "특별편 4. 캠핑 안전",
@@ -9796,7 +12836,7 @@
     ]
   },
   {
-    "id": 497,
+    "id": 649,
     "conceptId": 97,
     "type": "short-answer",
     "part": "Part 10. 소방관이 하는 일",
@@ -9814,7 +12854,7 @@
     ]
   },
   {
-    "id": 498,
+    "id": 650,
     "conceptId": 98,
     "type": "short-answer",
     "part": "Part 11. 한국화재보험협회",
@@ -9832,7 +12872,7 @@
     ]
   },
   {
-    "id": 499,
+    "id": 651,
     "conceptId": 99,
     "type": "short-answer",
     "part": "Part 12. 보험회사가 하는 일",
@@ -9850,7 +12890,7 @@
     ]
   },
   {
-    "id": 500,
+    "id": 652,
     "conceptId": 100,
     "type": "short-answer",
     "part": "Part 13. 우리가정 화재안전",
@@ -9867,6 +12907,716 @@
     "timeLimit": 30,
     "sourcePages": [
       114
+    ]
+  },
+  {
+    "id": 653,
+    "conceptId": 101,
+    "type": "short-answer",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "화재·구조·구급 신고 번호를 쓰세요.",
+    "answer": "119",
+    "acceptedAnswers": [
+      "119",
+      "일일구"
+    ],
+    "explanation": "화재나 구조·구급 상황에서는 119에 신고해 소방의 도움을 요청합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 654,
+    "conceptId": 102,
+    "type": "short-answer",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관이 불이 나기 전에 하는 활동 한 가지를 쓰세요.",
+    "answer": "화재예방",
+    "acceptedAnswers": [
+      "화재예방",
+      "안전교육",
+      "점검"
+    ],
+    "explanation": "소방관은 진압뿐 아니라 예방 점검과 교육으로 화재를 줄입니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 655,
+    "conceptId": 103,
+    "type": "short-answer",
+    "part": "Part 10. 소방관이 하는 일",
+    "category": "소방관",
+    "question": "소방관의 사람 구조 활동을 쓰세요.",
+    "answer": "인명 구조",
+    "acceptedAnswers": [
+      "인명 구조",
+      "구조",
+      "구급"
+    ],
+    "explanation": "소방관의 현장 업무에는 화재 진압, 인명 구조와 응급 구급이 있습니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      109
+    ]
+  },
+  {
+    "id": 656,
+    "conceptId": 104,
+    "type": "short-answer",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "KFPA가 건물에서 하는 점검을 쓰세요.",
+    "answer": "화재안전점검",
+    "acceptedAnswers": [
+      "화재안전점검",
+      "안전점검",
+      "화재 점검"
+    ],
+    "explanation": "KFPA는 여러 시설의 화재 위험과 소방시설을 점검합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      110
+    ]
+  },
+  {
+    "id": 657,
+    "conceptId": 105,
+    "type": "short-answer",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "KFPA가 화재 예방을 위해 연구하는 기술을 쓰세요.",
+    "answer": "방재기술",
+    "acceptedAnswers": [
+      "방재기술",
+      "화재안전 기술",
+      "방재 연구"
+    ],
+    "explanation": "화재와 재난을 예방하려면 안전 기술을 연구하고 시험해야 합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 658,
+    "conceptId": 106,
+    "type": "short-answer",
+    "part": "Part 11. 한국화재보험협회",
+    "category": "KFPA",
+    "question": "어린이에게 가르치는 화재 안전 내용을 쓰세요.",
+    "answer": "화재예방",
+    "acceptedAnswers": [
+      "화재예방",
+      "안전한 행동",
+      "대피요령"
+    ],
+    "explanation": "화재예방 교육은 어린이가 위험을 알아차리고 올바르게 대피하도록 돕습니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      111
+    ]
+  },
+  {
+    "id": 659,
+    "conceptId": 107,
+    "type": "short-answer",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "재산 피해를 보장하는 보험의 종류를 쓰세요.",
+    "answer": "손해보험",
+    "acceptedAnswers": [
+      "손해보험"
+    ],
+    "explanation": "화재보험·자동차보험·해상보험은 손해보험에 해당합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 660,
+    "conceptId": 108,
+    "type": "short-answer",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "생명보험이 보장하는 대상을 쓰세요.",
+    "answer": "생명",
+    "acceptedAnswers": [
+      "생명",
+      "질병",
+      "사망 위험"
+    ],
+    "explanation": "생명보험은 사람에게 생길 수 있는 생명·건강 관련 위험을 대비합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 661,
+    "conceptId": 109,
+    "type": "short-answer",
+    "part": "Part 12. 보험회사가 하는 일",
+    "category": "보험",
+    "question": "보험의 목적을 쓰세요.",
+    "answer": "피해 보상",
+    "acceptedAnswers": [
+      "피해 보상",
+      "경제적 회복",
+      "위험 대비"
+    ],
+    "explanation": "보험은 위험을 함께 나누어 갑작스러운 피해의 부담을 줄이는 제도입니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      112
+    ]
+  },
+  {
+    "id": 662,
+    "conceptId": 110,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "화재안전 지도",
+    "question": "화재 대피 후 가족이 만날 장소를 무엇이라고 하나요?",
+    "answer": "집결 장소",
+    "acceptedAnswers": [
+      "집결 장소",
+      "만날 장소",
+      "대피 장소"
+    ],
+    "explanation": "대피 후 흩어진 가족이 안전하게 만날 집결 장소를 미리 정해야 합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      113
+    ]
+  },
+  {
+    "id": 663,
+    "conceptId": 111,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "손상된 전기선에 취할 행동을 쓰세요.",
+    "answer": "사용 중지",
+    "acceptedAnswers": [
+      "사용 중지",
+      "교체",
+      "수리"
+    ],
+    "explanation": "전기선이 손상되면 전원을 끄고 전문가에게 수리나 교체를 맡깁니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 664,
+    "conceptId": 112,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전열제품 플러그를 꽂는 안전한 방법을 쓰세요.",
+    "answer": "분산해서 꽂기",
+    "acceptedAnswers": [
+      "분산해서 꽂기",
+      "나누어 꽂기"
+    ],
+    "explanation": "전열제품은 콘센트에 분산해 과부하를 예방합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 665,
+    "conceptId": 113,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "전기코드를 정리할 때 피해야 할 상태를 쓰세요.",
+    "answer": "눌림",
+    "acceptedAnswers": [
+      "눌림",
+      "밟힘",
+      "통로에 놓기"
+    ],
+    "explanation": "전기코드는 눌리거나 밟히지 않도록 안전하게 정리해야 합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 666,
+    "conceptId": 114,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "사용하지 않는 전기제품에 할 행동을 쓰세요.",
+    "answer": "플러그 뽑기",
+    "acceptedAnswers": [
+      "플러그 뽑기",
+      "전원 차단"
+    ],
+    "explanation": "사용하지 않는 전기제품은 플러그를 뽑는 습관이 안전합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 667,
+    "conceptId": 115,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "난방기구와 가연물 사이의 안전거리를 쓰세요.",
+    "answer": "1.2m",
+    "acceptedAnswers": [
+      "1.2m",
+      "1.2미터",
+      "120cm"
+    ],
+    "explanation": "커튼과 가구 같은 가연물은 난방기구에서 1.2m 이상 떨어뜨립니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 668,
+    "conceptId": 116,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "조리 중 자리를 지켜야 하는 사람을 쓰세요.",
+    "answer": "어른",
+    "acceptedAnswers": [
+      "어른",
+      "보호자"
+    ],
+    "explanation": "조리할 때는 어른이 곁을 지키고 자리를 비우지 않아야 합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 669,
+    "conceptId": 117,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "가스레인지 사용 후 잠가야 하는 밸브를 쓰세요.",
+    "answer": "중간밸브",
+    "acceptedAnswers": [
+      "중간밸브",
+      "가스 중간밸브"
+    ],
+    "explanation": "가스레인지 사용 후에는 점화 스위치와 중간밸브를 모두 확인합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 670,
+    "conceptId": 118,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "화재 때 안전하게 나가기 위해 미리 확인할 길을 쓰세요.",
+    "answer": "대피 경로",
+    "acceptedAnswers": [
+      "대피 경로",
+      "피난 경로",
+      "대피로"
+    ],
+    "explanation": "대피 경로를 평소 확인하면 화재 때 침착하게 이동할 수 있습니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 671,
+    "conceptId": 119,
+    "type": "short-answer",
+    "part": "Part 13. 우리가정 화재안전",
+    "category": "가정 체크리스트",
+    "question": "외출 전 점검할 두 가지 안전 항목을 쓰세요.",
+    "answer": "가스밸브",
+    "acceptedAnswers": [
+      "가스밸브",
+      "전기코드",
+      "전기"
+    ],
+    "explanation": "외출 전 가스밸브와 전기코드·전원을 확인하는 습관이 필요합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      116
+    ]
+  },
+  {
+    "id": 672,
+    "conceptId": 120,
+    "type": "short-answer",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "씨랜드 화재에서 배울 안전 교훈을 쓰세요.",
+    "answer": "안전관리",
+    "acceptedAnswers": [
+      "안전관리",
+      "대피 준비",
+      "비상구 확인"
+    ],
+    "explanation": "숙박시설에서는 안전관리와 대피로 확인이 생명을 지킵니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 673,
+    "conceptId": 121,
+    "type": "short-answer",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "합숙소에서 필요한 화재 안전 준비를 쓰세요.",
+    "answer": "비상구 확인",
+    "acceptedAnswers": [
+      "비상구 확인",
+      "대피 연습",
+      "화재 예방"
+    ],
+    "explanation": "숙박·합숙 공간은 야간 화재에 대비한 대피 관리가 중요합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 674,
+    "conceptId": 122,
+    "type": "short-answer",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "지하철 화재 때 따라야 할 안내를 쓰세요.",
+    "answer": "승무원 안내",
+    "acceptedAnswers": [
+      "승무원 안내",
+      "역무원 안내",
+      "대피 안내"
+    ],
+    "explanation": "지하철 화재에서는 질서를 지키고 안내에 따라 대피해야 합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 675,
+    "conceptId": 123,
+    "type": "short-answer",
+    "part": "Part 14. 대형 화재사례",
+    "category": "화재사례",
+    "question": "병원 화재에서 우선해야 할 행동을 쓰세요.",
+    "answer": "환자 대피",
+    "acceptedAnswers": [
+      "환자 대피",
+      "신속한 대피",
+      "119 신고"
+    ],
+    "explanation": "병원 화재는 환자 상태를 고려한 신속하고 조직적인 대피가 핵심입니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      117
+    ]
+  },
+  {
+    "id": 676,
+    "conceptId": 124,
+    "type": "short-answer",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "불조심 포스터의 핵심 메시지를 쓰세요.",
+    "answer": "화재예방",
+    "acceptedAnswers": [
+      "화재예방",
+      "불조심",
+      "안전"
+    ],
+    "explanation": "포스터는 일상에서 화재를 예방하고 안전습관을 실천하자는 뜻을 담습니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 677,
+    "conceptId": 125,
+    "type": "short-answer",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "꺼진 불씨를 확인하는 행동을 쓰세요.",
+    "answer": "확인",
+    "acceptedAnswers": [
+      "확인",
+      "완전히 끄기",
+      "불씨 점검"
+    ],
+    "explanation": "남은 불씨를 다시 확인하고 완전히 끄는 것이 화재 예방입니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 678,
+    "conceptId": 126,
+    "type": "short-answer",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "표어가 경고하는 화재 원인을 쓰세요.",
+    "answer": "부주의",
+    "acceptedAnswers": [
+      "부주의",
+      "부주의 화재",
+      "실수"
+    ],
+    "explanation": "부주의한 행동을 줄이는 것이 화재 예방의 출발점입니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 679,
+    "conceptId": 127,
+    "type": "short-answer",
+    "part": "Part 15. 불조심 포스터",
+    "category": "불조심 표어",
+    "question": "화재 예방을 시작할 사람을 쓰세요.",
+    "answer": "나",
+    "acceptedAnswers": [
+      "나",
+      "우리 모두",
+      "각자"
+    ],
+    "explanation": "모두가 자신의 행동을 점검할 때 화재를 예방할 수 있습니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      118
+    ]
+  },
+  {
+    "id": 680,
+    "conceptId": 128,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "화재를 발견했을 때 외칠 말을 쓰세요.",
+    "answer": "불이야",
+    "acceptedAnswers": [
+      "불이야",
+      "화재야"
+    ],
+    "explanation": "화재를 발견하면 즉시 주변에 알리고 비상벨을 눌러야 합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      120
+    ]
+  },
+  {
+    "id": 681,
+    "conceptId": 129,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "화재 때 이용해야 하는 이동 통로를 쓰세요.",
+    "answer": "비상계단",
+    "acceptedAnswers": [
+      "비상계단",
+      "계단"
+    ],
+    "explanation": "화재 대피 때는 엘리베이터를 피하고 비상계단을 이용합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 682,
+    "conceptId": 130,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "연기 속에서 취할 자세를 쓰세요.",
+    "answer": "낮은 자세",
+    "acceptedAnswers": [
+      "낮은 자세",
+      "몸을 낮추기",
+      "엎드려 이동"
+    ],
+    "explanation": "연기 속에서는 몸을 낮추고 젖은 수건 등으로 코와 입을 보호합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 683,
+    "conceptId": 131,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피할 때 문을 어떻게 해야 하는지 쓰세요.",
+    "answer": "닫기",
+    "acceptedAnswers": [
+      "닫기",
+      "문 닫기"
+    ],
+    "explanation": "대피하며 문을 닫으면 불과 연기의 확산을 늦출 수 있습니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 684,
+    "conceptId": 132,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "119 신고",
+    "question": "119 신고 때 알려야 할 장소 정보를 쓰세요.",
+    "answer": "주소",
+    "acceptedAnswers": [
+      "주소",
+      "위치",
+      "장소"
+    ],
+    "explanation": "119 신고에서는 위치와 화재 상황을 정확히 전달해야 합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      121
+    ]
+  },
+  {
+    "id": 685,
+    "conceptId": 133,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피 방향을 알려 주는 표시를 쓰세요.",
+    "answer": "유도등",
+    "acceptedAnswers": [
+      "유도등",
+      "피난 유도등",
+      "피난안내도"
+    ],
+    "explanation": "대피할 때는 피난 유도등과 피난안내도를 따라갑니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      122
+    ]
+  },
+  {
+    "id": 686,
+    "conceptId": 134,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "옥내소화전의 용도를 쓰세요.",
+    "answer": "초기 소화",
+    "acceptedAnswers": [
+      "초기 소화",
+      "화재 진압",
+      "불 끄기"
+    ],
+    "explanation": "옥내소화전은 건물 안 초기 화재를 소화하는 데 사용합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 687,
+    "conceptId": 135,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "스프링클러가 작동하는 조건을 쓰세요.",
+    "answer": "열 감지",
+    "acceptedAnswers": [
+      "열 감지",
+      "화재 열",
+      "온도 상승"
+    ],
+    "explanation": "스프링클러는 화재의 열을 감지하면 자동으로 물을 방사합니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 688,
+    "conceptId": 136,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "감지기가 감지하는 것을 쓰세요.",
+    "answer": "연기",
+    "acceptedAnswers": [
+      "연기",
+      "열",
+      "화재"
+    ],
+    "explanation": "감지기는 연기와 열을 감지해 사람에게 화재를 알립니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      123
+    ]
+  },
+  {
+    "id": 689,
+    "conceptId": 137,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "소방시설",
+    "question": "옥내소화전에서 물을 보내는 도구를 쓰세요.",
+    "answer": "호스",
+    "acceptedAnswers": [
+      "호스",
+      "관창"
+    ],
+    "explanation": "옥내소화전은 호스와 관창으로 불에 물을 뿌립니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      124
+    ]
+  },
+  {
+    "id": 690,
+    "conceptId": 138,
+    "type": "short-answer",
+    "part": "Part 16. 만화로 알아보는 대피방법",
+    "category": "대피요령",
+    "question": "대피 후 지켜야 할 원칙을 쓰세요.",
+    "answer": "재진입 금지",
+    "acceptedAnswers": [
+      "재진입 금지",
+      "다시 들어가지 않기"
+    ],
+    "explanation": "대피 후에는 안전이 확인될 때까지 건물 안으로 돌아가지 않습니다.",
+    "timeLimit": 30,
+    "sourcePages": [
+      126
     ]
   }
 ]

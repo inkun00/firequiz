@@ -1,7 +1,6 @@
 /**
- * 2026년 『불조심 길라잡이』 기반 500문항 생성기
- * - 객관식 400문항
- * - 단답형 100문항
+ * 2026년 『불조심 길라잡이』 기반 개념별 퀴즈 생성기
+ * - 개념당 객관식 4문항 + 단답형 1문항
  */
 
 const fs = require('fs');
@@ -54,8 +53,8 @@ function normalize(value) {
 }
 
 function buildDataset() {
-  if (concepts.length !== 100) {
-    throw new Error(`핵심 개념은 정확히 100개여야 합니다. 현재: ${concepts.length}`);
+  if (concepts.length < 100) {
+    throw new Error(`핵심 개념은 100개 이상이어야 합니다. 현재: ${concepts.length}`);
   }
 
   const multipleChoice = [];
@@ -113,13 +112,16 @@ function buildDataset() {
 function validateDataset(dataset) {
   const multipleChoice = dataset.filter((item) => item.type === 'multiple-choice');
   const shortAnswer = dataset.filter((item) => item.type === 'short-answer');
-  if (dataset.length !== 500 || multipleChoice.length !== 400 || shortAnswer.length !== 100) {
-    throw new Error(`문항 수 오류: 전체 ${dataset.length}, 객관식 ${multipleChoice.length}, 단답형 ${shortAnswer.length}`);
+  const expectedTotal = concepts.length * 5;
+  const expectedMultipleChoice = concepts.length * 4;
+  const expectedShortAnswer = concepts.length;
+  if (dataset.length !== expectedTotal || multipleChoice.length !== expectedMultipleChoice || shortAnswer.length !== expectedShortAnswer) {
+    throw new Error(`문항 수 오류: 전체 ${dataset.length}/${expectedTotal}, 객관식 ${multipleChoice.length}/${expectedMultipleChoice}, 단답형 ${shortAnswer.length}/${expectedShortAnswer}`);
   }
 
   dataset.forEach((item, index) => {
     if (item.id !== index + 1) throw new Error(`ID 순서 오류: ${item.id}`);
-    if (!Number.isInteger(item.conceptId) || item.conceptId < 1 || item.conceptId > 100) {
+    if (!Number.isInteger(item.conceptId) || item.conceptId < 1 || item.conceptId > concepts.length) {
       throw new Error(`개념 ID 오류: ${item.id}`);
     }
     if (!item.question || !item.explanation || !item.sourcePages?.length) {
@@ -146,8 +148,8 @@ function validateDataset(dataset) {
     counts.set(item.conceptId, (counts.get(item.conceptId) || 0) + 1);
     return counts;
   }, new Map());
-  if (conceptCounts.size !== 100 || [...conceptCounts.values()].some(count => count !== 5)) {
-    throw new Error('각 핵심 개념은 정확히 5개 변형 문항을 가져야 합니다.');
+  if (conceptCounts.size !== concepts.length || [...conceptCounts.values()].some(count => count !== 5)) {
+    throw new Error(`각 핵심 개념은 정확히 5개 변형 문항을 가져야 합니다. 현재 개념 수: ${concepts.length}`);
   }
 }
 
@@ -162,7 +164,7 @@ function writeDataset(dataset) {
   const loaderOutput = path.join(__dirname, 'src', 'quizData.js');
   fs.writeFileSync(
     loaderOutput,
-    "/** 2026년 『불조심 길라잡이』 기반 500문항 데이터셋 */\nmodule.exports = require('./quizData.json');\n",
+    "/** 2026년 『불조심 길라잡이』 기반 개념별 퀴즈 데이터셋 */\nmodule.exports = require('./quizData.json');\n",
     'utf8'
   );
 

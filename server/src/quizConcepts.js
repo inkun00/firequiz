@@ -1336,4 +1336,4 @@ const concepts = [
   )
 ];
 
-module.exports = concepts;
+module.exports = concepts.concat(require('./additionalQuizConcepts'));
